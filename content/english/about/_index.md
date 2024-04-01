@@ -1,8 +1,8 @@
 ---
-title: "Hey, I am John Doe!"
+title: "SNIGDHA OS WELCOMES YOU, MASTER!"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/avatar.png"
+image: "/images/snigdhaos-avatar.svg"
 draft: false
 ---
 

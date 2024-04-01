@@ -6,19 +6,23 @@ description: this is meta description
 social:
   - name: github
     icon: fa-brands fa-github
-    link: https://github.com
+    link: https://github.com/eshanized
 
   - name: twitter
     icon: fa-brands fa-twitter
-    link: https://twitter.com
+    link: https://twitter.com/eshanized
 
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://linkedin.com
+    link: https://linkedin.com/in/eshanized
   
-  - name: linkedin
+  - name: facebook
     icon: fa-brands fa-facebook
-    link: https://linkedin.com
+    link: https://facebook.com/eshanized
+  
+  - name: instagram
+    icon: fa-brands fa-instagram
+    link: https://instagram.com/eshanized
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+> Lead

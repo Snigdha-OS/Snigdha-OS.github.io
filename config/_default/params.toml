@@ -2,8 +2,8 @@
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/logo.png"
-logo_darkmode = "images/logo-darkmode.png"
+logo = "images/logo.svg"
+logo_darkmode = "images/logo.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "160px"
@@ -38,8 +38,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "get a quote"
-link = "contact"
+label = "Develop"
+link = "https://github.com/Snigdha-OS"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search

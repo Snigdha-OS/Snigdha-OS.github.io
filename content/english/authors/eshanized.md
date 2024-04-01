@@ -1,7 +1,7 @@
 ---
 title: Eshanized
 email: eshan@snigdhaos.org
-image: "/images/avatar.png"
+image: "https://github.com/eshanized/eshanized/blob/main/eshanized_square.png?raw=True"
 description: this is meta description
 social:
   - name: github
@@ -25,4 +25,12 @@ social:
     link: https://instagram.com/eshanized
 ---
 
-> Lead
+{{< notice "info" >}}
+Lead Maintainer & Developer
+{{< /notice >}}
+
+```bash
+#!/bin/bash
+echo -e "BE SILENT WHEN IT IS TIME TO HEAR!"
+```
+To leverage my expertise in computer science and systems programming to contribute to the creation and enhancement of cutting-edge operating systems.I aim to specialize in kernel development, device drivers, and system architecture, mastering the intricacies of operating system internals to optimize performance and reliability.

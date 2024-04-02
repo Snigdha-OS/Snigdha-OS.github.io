@@ -1,13 +1,13 @@
 ---
 # Banner
 banner:
-  title: "Fast & Clean 🚀<br> Optimized & Powerful 🕛"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "Blazing Fast 🚀<br> Optimized Performance 🕛"
+  content: "Snigdha OS has been developed with keeping in mind as a light-weight, easy-to-use, flexible customization, freedom of chocices during installation etc. We are developing separte distribution for Penetration Testing.<br> Till now, You can use Arctic*"
   image: "/images/banner.png"
   button:
     enable: true
     label: "GO TO DOWNLOADS"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "https://github.com/Snigdha-OS/"
 
 # Features
 features:

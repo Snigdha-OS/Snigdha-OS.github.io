@@ -26,7 +26,7 @@
   translation: Search Post ...
 
 - id: no_results_for
-  translation: No results for
+  translation: OOPS! No results for
 
 - id: empty_search_results_placeholder
   translation: Type something to search..

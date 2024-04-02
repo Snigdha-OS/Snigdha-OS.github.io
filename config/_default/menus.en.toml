@@ -34,7 +34,7 @@ weight = 4
 
 [[main]]
 # parent = "Pages"
-name = "Maintainers"
+name = "Authors"
 pageRef = "/authors"
 weight = 5
 

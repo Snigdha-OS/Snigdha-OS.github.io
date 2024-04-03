@@ -27,9 +27,12 @@ pageRef = "/blog"
 weight = 3
 
 [[main]]
-name = "Documentation"
-pageRef = "/documentation"
+name = "Docs"
 weight = 4
+identifier = "docs"
+url = "https://snigdhaos.org/documentation/"
+# pre = "images/book-solid.svg"
+target = "_blank"
 
 # [[main]]
 # # parent = "Pages"
@@ -38,7 +41,7 @@ weight = 4
 # weight = 5
 
 [[main]]
-# parent = "Pages"
+parent = "Extra"
 name = "Authors"
 pageRef = "/authors"
 weight = 6
@@ -46,26 +49,44 @@ weight = 6
 [[main]]
 parent = "Services"
 name = "Cloud"
-link = "https://cloud.snigdhaos.org/"
+weight = 4
+identifier = "cloud"
+url = "https://cloud.snigdhaos.org/"
+# pre = "images/book-solid.svg"
+target = "_blank"
 
 [[main]]
-parent = "Pages"
-name = "404 Page"
-pageRef = "/404"
-
+parent = "Services"
+name = "Forum"
+weight = 4
+identifier = "forum"
+url = "https://forum.snigdhaos.org/"
+# pre = "images/book-solid.svg"
+target = "_blank"
 
 # footer menu
 [[footer]]
-name = "About"
-pageRef = "/about"
+name = "Cloud"
 weight = 1
+identifier = "cloud"
+url = "https://cloud.snigdhaos.org/"
+target = "_blank"
 
 [[footer]]
-name = "Elements"
-pageRef = "/elements"
+name = "Forum"
 weight = 2
+identifier = "forum"
+url = "https://forum.snigdhaos.org/"
+target = "_blank"
+
+[[footer]]
+name = "Status"
+weight = 3
+identifier = "status"
+url = "https://snigdha-os.github.io/snigdhaos-status/"
+target = "_blank"
 
 [[footer]]
 name = "Privacy Policy"
 pageRef = "/privacy-policy"
-weight = 3
+weight = 4

@@ -16,9 +16,9 @@ weight = 2
 # pageRef = "/elements"
 # weight = 3
 
-# [[main]]
-# weight = 4
-# name = "Pages"
+[[main]]
+weight = 7
+name = "Services"
 
 [[main]]
 # parent = "Pages"
@@ -27,21 +27,26 @@ pageRef = "/blog"
 weight = 3
 
 [[main]]
-# parent = "Pages"
-name = "Contact"
-pageRef = "/contact"
+name = "Documentation"
+pageRef = "/documentation"
 weight = 4
+
+# [[main]]
+# # parent = "Pages"
+# name = "Contact"
+# pageRef = "/contact"
+# weight = 5
 
 [[main]]
 # parent = "Pages"
 name = "Authors"
 pageRef = "/authors"
-weight = 5
+weight = 6
 
 [[main]]
-parent = "Pages"
-name = "Categories"
-pageRef = "/categories"
+parent = "Services"
+name = "Cloud"
+link = "https://cloud.snigdhaos.org/"
 
 [[main]]
 parent = "Pages"

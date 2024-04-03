@@ -12,10 +12,10 @@ banner:
 # Features
 features:
   - title: "SNIGDHA OS - CLOUD"
-    image: "/images/snigdhaos-cloud-service.svg"
-    content: "Snigdha OS provides 1 GB Cloud Storage for free. It is 100% safe & secure. We value your privacy on the internet."
+    image: "/images/snigdhaos-cloud-home-second.png"
+    content: "Snigdha OS Cloud is a cloud-based file storage and synchronization service developed by Snigdha OS. It allows users to store files in the cloud, synchronize files across devices, and share files and folders with others. Users can access their files from any device with internet access, including computers, smartphones, and tablets, through [cloud](https://cloud.snigdhaos.org). Snigdha OS Cloud provides a convenient and secure way to store, access, and collaborate on files from anywhere."
     bulletpoints:
-      - "1 GB Free Cloud Storage"
+      - "1 GB* Free Cloud Storage"
       - "Powerful search capabilities"
       - "Prioritizes the security of user data through encryption"
       - "Share files or folders with specific individuals or groups"
@@ -27,10 +27,10 @@ features:
       link: "https://cloud.snigdhaos.org/"
 
   - title: "SNIGDHA OS - FORUM"
-    image: "/images/snigdhaos-forum-service.svg"
+    image: "/images/snigdhaos-forum-home.png"
     content: "**Snigdha OS Forum** offers a platform for users to engage in discussions, share information, ask questions, and connect with others who share similar interests. Get help from Admins, Mods and Members."
     bulletpoints:
-      - "Snigdha OS Forum organizes discussions into threads, where each thread typically focuses on a specific topic. Members can start new threads or participate in existing ones by posting replies."
+      - "Organizes discussions into threads."
       - "Navigate discussions and find relevant content more easily"
       - "Profile that displays information such as username, bio, avatar, join date, and post count"
       - "Moderation tools to help maintain a healthy community environment"

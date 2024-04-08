@@ -1,9 +1,9 @@
 #################### default parameters ################################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/favicon.png"
+favicon = "images/snigdhaos-favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/logo-light.svg"
-logo_darkmode = "images/logo-dark.svg"
+logo = "images/snigdhaos-logo.svg"
+logo_darkmode = "images/snigdhaos-logo.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "160px"
@@ -38,7 +38,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Develop"
+label = "Get Involve"
 link = "https://github.com/Snigdha-OS"
 
 # search
@@ -57,9 +57,9 @@ show_categories = true
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["Snigdha-OS", "Snigdha"]
-description = " Be silent when it is time to hear"
+description = "Be silent when it is time to hear"
 author = "eshanized"
-image = "images/og-image.png"
+image = "images/snigdhaos-showcase.png"
 
 
 # site verifications
@@ -76,7 +76,7 @@ mastodon = "" # Your verification code
 [cookies]
 enable = true
 expire_days = 60
-content = "SNIGDHAOS.ORG uses cookies. By continuing to use our website, you agree to their use."
+content = "We uses cookies. By continuing to use snigdhaos.org, you agree to their use."
 button = "Accept"
 
 ######################## sidebar widgets #########################

@@ -5,9 +5,10 @@
       <div class="container">
         <div class="row justify-center">
           <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
+            <h1 class="mb-6 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
+            <h3 class="mb-3 text-h3 lg:text-h3">Be Silent When It Is Time To Hear!</h3>
             <p class="mb-8">
               {{ .content | markdownify }}
             </p>
@@ -58,7 +59,7 @@
             <ul>
               {{ range .bulletpoints }}
                 <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
+                  <i class="fa fa-feather-pointed absolute left-0 top-1.5"></i>
                   {{ . | markdownify }}
                 </li>
               {{ end }}

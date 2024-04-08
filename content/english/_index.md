@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Blazing Fast 🚀<br> Optimized Performance 🕛"
+  title: "Blazing Fast🚀<br>Optimized Performance🕛"
   content: "Snigdha OS has been developed with keeping in mind as a light-weight, easy-to-use, flexible customization, freedom of chocices during installation etc. We are developing separte distribution for Penetration Testing.<br> Till now, You can use Arctic*"
   image: "/images/snigdhaos-banner-sec.svg"
   button:

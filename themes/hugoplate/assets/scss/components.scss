@@ -30,7 +30,7 @@ main {
   li {
     @apply inline-block;
     a {
-      @apply bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white;
+      @apply bg-primary dark:bg-darkmode-primary dark:text-white flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white;
       svg {
         @apply h-5 w-5;
       }

@@ -56,9 +56,9 @@ show_categories = true
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
+keywords = ["Snigdha-OS", "Snigdha"]
+description = " Be silent when it is time to hear"
+author = "eshanized"
 image = "images/og-image.png"
 
 
@@ -77,7 +77,7 @@ mastodon = "" # Your verification code
 enable = true
 expire_days = 60
 content = "SNIGDHAOS.ORG uses cookies. By continuing to use our website, you agree to their use."
-button = "I Accept"
+button = "Accept"
 
 ######################## sidebar widgets #########################
 [widgets]

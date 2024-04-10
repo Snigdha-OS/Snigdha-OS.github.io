@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "SNIGDHA OS - CLOUD"
-    image: "/images/snigdhaos-cloud-home-second.png"
+    image: "/images/snigdhaos-cloud.png"
     content: "Snigdha OS Cloud is a cloud-based file storage and synchronization service developed by Snigdha OS. It allows users to store files in the cloud, synchronize files across devices, and share files and folders with others. Users can access their files from any device with internet access, including computers, smartphones, and tablets, through [cloud](https://cloud.snigdhaos.org). Snigdha OS Cloud provides a convenient and secure way to store, access, and collaborate on files from anywhere."
     bulletpoints:
       - "1 GB* Free Cloud Storage"
@@ -27,7 +27,7 @@ features:
       link: "https://cloud.snigdhaos.org/"
 
   - title: "SNIGDHA OS - FORUM"
-    image: "/images/snigdhaos-forum-home.png"
+    image: "/images/snigdhaos-forum.png"
     content: "**Snigdha OS Forum** offers a platform for users to engage in discussions, share information, ask questions, and connect with others who share similar interests. Get help from Admins, Mods and Members."
     bulletpoints:
       - "Organizes discussions into threads."

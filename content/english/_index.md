@@ -54,7 +54,7 @@ features:
       label: "Go to Tools"
       link: "#"
   
-  - title: "SNIGDHA OS - TOOLS"
+  - title: "SNIGDHA OS - UPTIME"
     image: "/images/service-3.png"
     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:

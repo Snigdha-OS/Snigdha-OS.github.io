@@ -58,7 +58,7 @@ We generally process your personal data for as long as you have an account with 
 ## 4. Services of the website
 Our website offers you a range of services for which we process certain personal data:
 
-### 4.1. Snigdha OS Forum
+### 4.1. Forum
 You can read in our forums without giving us any personal data. However, if you wish to participate by posting entries, we will ask you to sign up for an account. In this case, we will collect your user name, email address and a captcha question. You are able to select if you wish that other users could see your email address and if other users shall be able to send you mails via the forums mail function. Furthermore, you can set location options as time zone and language preference.
 
 We process your data to provide you with the account, the forums and the respective functions. The captcha question is required to avoid abuse by spammers using automated tools to post their content and links to many sites. We process your location options and language preferences to provide you with the according account settings.
@@ -80,39 +80,44 @@ We offer you the opportunity to contact us via email. We will then process your 
 We will store your enquiry as long as we have lawful bases for processing the data. Where the GDPR applies, we may store data in accordance unless legal provisions prevent deletion. Where the GDPR applies, we may store data in accordance with Art. 6 para. 1 lit. f) GDPR where it is necessary for the purpose of providing evidence or to comply with legal retention periods in accordance with Art. 6 para. 1 lit. c) GDPR. If the request is made within the framework of an existing or prospective contractual relationship with us, the storage period shall be based on the underlying contractual relationship.
 
 ## 6. Donations
-You can donate to Arch Linux as a member project of the Software in the Public Interest, Inc. (SPI) as non-profit corporation using via Click&Pledge or via SPI directly using PayPal or Credit Card payment. For further information, please see the SPI donation website at: https://www.spi-inc.org/donations/. We publish the past donors on the website https://archlinux.org/donate/.
+You can donate to Snigdha OS as a member project of the Software in the Public Interest, Inc. (SPI) as non-profit corporation using via Click&Pledge or via SPI directly using PayPal or Credit Card payment. For further information, please see the SPI donation website at: https://www.spi-inc.org/donations/. We publish the past donors on the website https://snigdhaos.org/donate/.
 
 This processing is based on your consent (Art. 6 Abs. 1 lit. a) GDPR) until your withdrawal or until we end this publication of past donors. You have the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal e.g. by sending us an email.
 
-7. Storage period
+## 7. Storage period
 Unless explicitly stated otherwise, we will process and store your personal data for as long as it is required for the respective purpose and delete it thereafter.
 
-8. Categories of recipients
-We use external service providers if we are unable to provide services ourselves or if it is not reasonable to do so. These external service providers are primarily providers of IT services, such as our hosting service provider Hetzner (Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany).
+## 8. Categories of recipients
+We use external service providers if we are unable to provide services ourselves or if it is not reasonable to do so. These external service providers are primarily providers of IT services, such as our hosting service provider **TONMOY INFRASTRUCTURE™**.
+Street:  Landstrasse 39,
+City:  Sattel, 
+Zip code:  6417
+Country calling code:  +41
+Country:  Switzerland.
 
-9. General rights of data subjects
+## 9. General rights of data subjects
 The GDPR guarantees you certain rights, which you can assert against us - if the legal requirements are met.
 
-9.1. Art. 15 GDPR - Right of access
+### 9.1. Art. 15 GDPR - Right of access
 You have the right to obtain confirmation from us as to whether personal data relating to you are being processed and, if so, what these data are and the detailed circumstances of the processing.
 
-9.2. Art. 16 GDPR - Right of rectification
+### 9.2. Art. 16 GDPR - Right of rectification
 You have the right to ask us to rectify incorrect personal data concerning you immediately. You also have the right to request the completion of incomplete personal data, including by means of a supplementary declaration, taking into account the purposes of the processing.
 
-9.3. Art. 17 GDPR - Right to deletion
+### 9.3. Art. 17 GDPR - Right to deletion
 You have the right to demand that we delete any personal data relating to you immediately.
 
-9.4. Art. 18 GDPR - Right to restriction of processing
+### 9.4. Art. 18 GDPR - Right to restriction of processing
 You have the right to request us to restrict processing.
 
-9.5. Art. 20 GDPR - Right to data portability
+### 9.5. Art. 20 GDPR - Right to data portability
 You have the right, in the event of processing based on consent or for the fulfilment of a contract, to receive the personal data concerning you which you have provided us with in a structured, common and machine-readable format and to transfer this data to another responsible party without hindrance from us or to have the data transferred directly to the other responsible party, insofar as this is technically feasible.
 
-9.6. Art. 77 GDPR in conjunction with Section 19 BDSG - Right to lodge a complaint with a supervisory authority
+### 9.6. Art. 77 GDPR in conjunction with Section 19 BDSG - Right to lodge a complaint with a supervisory authority
 You have the right to lodge a complaint with a supervisory authority at any time, in particular in the Member State in which you are resident, your place of work or place of the alleged infringement if you consider that the processing of personal data relating to you infringes data protection law.
 
-10. In particular right to object and right to withdraw consent
-10.1. Art. 21 GDPR - Right to object
+## 10. In particular right to object and right to withdraw consent
+### 10.1. Art. 21 GDPR - Right to object
 You have the right to object at any time, for reasons arising from your particular situation, to the processing of personal data concerning you which is necessary on the basis of a legitimate interest on our part or in order to carry out a task in the public interest, or which is carried out in the exercise of official authority.
 
 If you object, we will no longer process your personal data unless we can prove compelling legitimate grounds for processing that override your interests, rights and freedoms, or unless the processing serves to assert, exercise or defend legal claims.
@@ -121,14 +126,14 @@ If we process your personal data for direct marketing purposes, you have the rig
 
 In order to exercise your right of objection, you can, for example, send us an email to the email address mentioned above.
 
-10.2. Withdrawal of consent
+### 10.2. Withdrawal of consent
 If you have given us your informed consent, you have the right to withdraw your consent at any time. In this case, all data processing that we have carried out until your withdrawal remains lawful.
 
-11. Obligation to provide data
+## 11. Obligation to provide data
 You have no contractual or legal obligation to provide us with personal data. However, we then might not be able to offer you the requested services.
 
-12. The existence of automated decision-making (including profiling)
+## 12. The existence of automated decision-making (including profiling)
 We will not make you subject to any automated decision-making, including profiling in accordance with Art. 22 para. 1 and 4 GDPR, which has legal effects on you or affects you.
 
-13. Internet-specific data processing and cookies
+## 13. Internet-specific data processing and cookies
 On some sub-directories of our website, cookies are set in your browser. Cookies are small text files that are stored on your hard drive and are assigned to the browser you are using. The provider who sets the cookie can collect certain information through the cookie. The only purpose of the cookies set on our website is to enable you to use the website and its functions safely. The legal basis for the processing is our legitimate interests in the aforementioned purpose according to Art. 6 para. 1 lit. f) GDPR. The cookies are necessary for the services you have requested.

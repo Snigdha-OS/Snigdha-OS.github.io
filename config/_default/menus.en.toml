@@ -11,17 +11,7 @@ name = "About"
 pageRef = "/about"
 weight = 2
 
-# [[main]]
-# name = "Elements"
-# pageRef = "/elements"
-# weight = 3
-
 [[main]]
-weight = 7
-name = "Services"
-
-[[main]]
-# parent = "Pages"
 name = "Blog"
 pageRef = "/blog"
 weight = 3
@@ -31,38 +21,12 @@ name = "Docs"
 weight = 4
 identifier = "docs"
 url = "https://snigdhaos.org/documentation/"
-# pre = "images/book-solid.svg"
-target = "_blank"
-
-# [[main]]
-# # parent = "Pages"
-# name = "Contact"
-# pageRef = "/contact"
-# weight = 5
-
-[[main]]
-parent = "Extra"
-name = "Authors"
-pageRef = "/authors"
-weight = 6
-
-[[main]]
-parent = "Services"
-name = "Cloud"
-weight = 4
-identifier = "cloud"
-url = "https://cloud.snigdhaos.org/"
-# pre = "images/book-solid.svg"
 target = "_blank"
 
 [[main]]
-parent = "Services"
-name = "Forum"
-weight = 4
-identifier = "forum"
-url = "https://forum.snigdhaos.org/"
-# pre = "images/book-solid.svg"
-target = "_blank"
+name = "Get Started"
+pageRef = "/get-started"
+weight = 5
 
 # footer menu
 [[footer]]

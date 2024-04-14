@@ -1,5 +1,5 @@
 ---
 title: "Blog"
 meta_title: "Blog"
-description: "this is meta description"
+description: "Discover Articles Related Snigdha OS & More"
 ---

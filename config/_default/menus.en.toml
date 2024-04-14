@@ -46,15 +46,15 @@ target = "_blank"
 [[footer]]
 name = "Uptime"
 weight = 3
-identifier = "status"
+identifier = "uptime"
 url = "https://uptime.snigdhaos.org/"
 target = "_blank"
 
 [[footer]]
-name = "Uptime"
+name = "Tools"
 weight = 3
-identifier = "uptime"
-url = "https://uptime.snigdhaos.org/"
+identifier = "tools"
+url = "https://tools.snigdhaos.org/"
 target = "_blank"
 
 [[footer]]

@@ -31,9 +31,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Fira Code:wght@400;600",
+      "primary": "Cabin:wght@400;600",
       "primary_type": "sans-serif",
-      "secondary": "Fira Code:wght@500;700",
+      "secondary": "Cabin:wght@500;700",
       "secondary_type": "sans-serif"
     },
     "font_size": {

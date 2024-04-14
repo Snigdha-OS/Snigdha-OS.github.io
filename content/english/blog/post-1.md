@@ -23,9 +23,9 @@ Here are some common components of a package version:
 
 **Pre-release and Build Metadata**: Some package versions include additional information such as pre-release identifiers (e.g., alpha, beta, rc for release candidates) or build metadata (e.g., a timestamp or commit hash) to provide further context about the version. These components typically appear after the main version number and are separated by hyphens or other delimiters.
 
-{{< notice "tip" >}}
+{{< notice "Example" >}}
 
-For example, a package version might look like this: `2.1.0-beta.1+20220315`.
+A package version might look like this: `2.1.0-beta.1+20220315`.
 
 In this version:
 - Major version: 2
@@ -35,7 +35,7 @@ In this version:
 - Build metadata: 20220315
 {{< /notice >}}
 
-Package versions are crucial for software development, deployment, and dependency management. They allow developers to communicate changes effectively, ensure compatibility between different versions of software components, and track which version of a package is installed in a system or project. Various versioning schemes exist, and different projects may follow different conventions, but the underlying purpose remains the same: to provide clear and unambiguous versioning for software packages.
+> Package versions are crucial for software development, deployment, and dependency management. They allow developers to communicate changes effectively, ensure compatibility between different versions of software components, and track which version of a package is installed in a system or project. Various versioning schemes exist, and different projects may follow different conventions, but the underlying purpose remains the same: to provide clear and unambiguous versioning for software packages.
 
 ## Checking package version
 To find out an installed package(Eg. Visual Studio Code) version in Snigdha OS, run the following command:

@@ -52,14 +52,14 @@ target = "_blank"
 
 [[footer]]
 name = "Tools"
-weight = 3
+weight = 4
 identifier = "tools"
 url = "https://tools.snigdhaos.org/"
 target = "_blank"
 
 [[footer]]
-name = "Server Status"
-weight = 3
+name = "Status"
+weight = 5
 identifier = "status"
 url = "https://snigdha-os.github.io/snigdhaos-status/"
 target = "_blank"
@@ -67,4 +67,4 @@ target = "_blank"
 [[footer]]
 name = "Privacy Policy"
 pageRef = "/privacy-policy"
-weight = 4
+weight = 6

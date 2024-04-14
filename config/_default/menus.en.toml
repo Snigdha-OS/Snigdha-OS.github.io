@@ -44,7 +44,21 @@ url = "https://forum.snigdhaos.org/"
 target = "_blank"
 
 [[footer]]
-name = "Status"
+name = "Uptime"
+weight = 3
+identifier = "status"
+url = "https://uptime.snigdhaos.org/"
+target = "_blank"
+
+[[footer]]
+name = "Uptime"
+weight = 3
+identifier = "uptime"
+url = "https://uptime.snigdhaos.org/"
+target = "_blank"
+
+[[footer]]
+name = "Server Status"
 weight = 3
 identifier = "status"
 url = "https://snigdha-os.github.io/snigdhaos-status/"

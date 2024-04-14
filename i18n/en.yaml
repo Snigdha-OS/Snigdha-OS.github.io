@@ -23,10 +23,10 @@
   translation: Share
 
 - id: search_input_placeholder
-  translation: Search Post ...
+  translation: Search ...
 
 - id: no_results_for
   translation: OOPS! No results for
 
 - id: empty_search_results_placeholder
-  translation: Type something to search..
+  translation: Type to search..

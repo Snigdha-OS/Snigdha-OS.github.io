@@ -25,7 +25,7 @@ contact_form_action = "#" # contact form works with [https://airform.io/] or [ht
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
-custom_script = ""
+# custom_script = "<script data-name=\"BMC-Widget\" data-cfasync=\"false\" src=\"https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js\" data-id=\"SnigdhaOS\" data-description=\"Support on Buy me a coffee!\" data-message=\"Your donation shows that you truly care about our cause and the work we do. Thank you for your continued support!\" data-color=\"#40DCA5\" data-position=\"Right\" data-x_margin=\"18\" data-y_margin=\"18\"></script>"
 # copyright
 copyright = "© SNIGDHAOS.ORG ❤️ ALL RIGHTS RESERVED."
 

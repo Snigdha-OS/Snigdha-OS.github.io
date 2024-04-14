@@ -25,7 +25,7 @@ social:
     link: https://instagram.com/eshanized
 ---
 
-{{< notice "info" >}}
+{{< notice "About" >}}
 Lead Maintainer & Developer
 {{< /notice >}}
 

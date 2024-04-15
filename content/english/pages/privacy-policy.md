@@ -46,7 +46,8 @@ Some of our services require that you sign up and create a user account(e.g Snig
 
 When you use our services we will collect certain information from you and associate it with your account, such as:
 
-- your password for the accounts service, the forums, security tracker or the bugtracker,
+- your password for the cloud service, the forums, uptime,
+- your github username (for issue tracker)
 - your IRC nickname,
 - your IP address,
 - your language preference,

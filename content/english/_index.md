@@ -45,8 +45,8 @@ features:
     image: "/images/snigdha-os-tools.svg"
     content: "Snigdha OS Provides Web Based Tools. Other websites charges an amount after you use certain limit. But Snigdha OS Tools doesn't charge you and usage limit is unlimited."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
+      - ""
+      - ""
       - "Use any front-end library or framework, or build custom components, for any project size."
       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
     button:

@@ -43,7 +43,7 @@ features:
 
   - title: "SNIGDHA OS - TOOLS"
     image: "/images/snigdha-os-tools.svg"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Snigdha OS Provides Web Based Tools. Other websites charges an amount after you use certain limit. But Snigdha OS Tools doesn't charge you and usage limit is unlimited."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."
       - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."

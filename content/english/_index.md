@@ -11,7 +11,7 @@ banner:
 
 # Features
 features:
-  - title: "SNIGDHA OS - CLOUD"
+  - title: "SNIGDHA OS CLOUD"
     image: "/images/snigdha-os-cloud.svg"
     content: "Snigdha OS Cloud is a cloud-based file storage service developed by Snigdha OS. It allows users to store files in the cloud and share files and folders with others. Users can access their files from any device with internet access, including computers, smartphones, and tablets, through [cloud](https://cloud.snigdhaos.org). Snigdha OS Cloud provides a convenient and secure way to store, access, and collaborate on files from anywhere."
     bulletpoints:
@@ -26,7 +26,7 @@ features:
       label: "Go to Cloud"
       link: "https://cloud.snigdhaos.org/"
 
-  - title: "SNIGDHA OS - FORUM"
+  - title: "SNIGDHA OS FORUM"
     image: "/images/snigdha-os-forum.svg"
     content: "**Snigdha OS Forum** offers a platform for users to engage in discussions, share information, ask questions, and connect with others who share similar interests. Get help from Admins, Mods and Members."
     bulletpoints:
@@ -41,7 +41,7 @@ features:
       label: "Go to Forums"
       link: "https://forum.snigdhaos.org/"
 
-  - title: "SNIGDHA OS - TOOLS"
+  - title: "SNIGDHA OS TOOLS"
     image: "/images/snigdha-os-tools.svg"
     content: "Snigdha OS Provides Web Based Tools. Other websites charges an amount after you use certain limit. But Snigdha OS Tools doesn't charge you and usage limit is unlimited."
     bulletpoints:

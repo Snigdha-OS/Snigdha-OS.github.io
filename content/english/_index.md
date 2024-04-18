@@ -11,7 +11,7 @@ banner:
 
 # Features
 features:
-  - title: "SNIGDHA OS CLOUD<br> Powered by: TONMOY INFRASTRUCTURE"
+  - title: "SNIGDHA OS CLOUD"
     image: "/images/snigdha-os-cloud.svg"
     content: "Snigdha OS Cloud is a cloud-based file storage service developed by Snigdha OS. It allows users to store files in the cloud and share files and folders with others. Users can access their files from any device with internet access, including computers, smartphones, and tablets, through [cloud](https://cloud.snigdhaos.org). Snigdha OS Cloud provides a convenient and secure way to store, access, and collaborate on files from anywhere."
     bulletpoints:

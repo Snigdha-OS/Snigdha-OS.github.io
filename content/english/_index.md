@@ -42,7 +42,7 @@ features:
       link: "https://forum.snigdhaos.org/"
 
   - title: "SNIGDHA OS - TOOLS"
-    image: "/images/service-3.png"
+    image: "/images/snigdha-os-tools.svg"
     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."

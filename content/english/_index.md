@@ -47,7 +47,7 @@ features:
     bulletpoints:
       - ""
       - ""
-      - "Use any front-end library or framework, or build custom components, for any project size."
+      - ""
       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
     button:
       enable: true

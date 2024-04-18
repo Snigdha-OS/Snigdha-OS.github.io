@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Blazing Fast🚀<br>Optimized Performance🕛"
-  content: "Snigdha OS has been developed with keeping in mind as a light-weight, easy-to-use, flexible customization, freedom of choice during installation and many more. We are developing separte distribution for Penetration Testing.<br> Till now, You can use Arctic*"
+  content: "Snigdha OS is an Arch based Linux Distribution.  . We are developing separte distribution for Penetration Testing.<br> Till now, You can use Arctic*"
   # image: "/images/snigdhaos-banner.svg"
   button:
     enable: true

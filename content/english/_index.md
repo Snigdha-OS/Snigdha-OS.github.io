@@ -65,5 +65,5 @@ features:
     button:
       enable: true
       label: "Go to Tools"
-      link: "#"
+      link: "https://uptime.snigdhaos.org/"
 ---

@@ -27,7 +27,7 @@ features:
       link: "https://cloud.snigdhaos.org/"
 
   - title: "SNIGDHA OS - FORUM"
-    image: "/images/snigdhaos-forum.png"
+    image: "/images/snigdha-os-forum.svg"
     content: "**Snigdha OS Forum** offers a platform for users to engage in discussions, share information, ask questions, and connect with others who share similar interests. Get help from Admins, Mods and Members."
     bulletpoints:
       - "Organizes discussions into threads."

@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Blazing Fast🚀<br>Optimized Performance🕛"
-  content: "Snigdha OS has been developed with keeping in mind as a light-weight, easy-to-use, flexible customization, freedom of chocices during installation etc. We are developing separte distribution for Penetration Testing.<br> Till now, You can use Arctic*"
+  content: "Snigdha OS has been developed with keeping in mind as a light-weight, easy-to-use, flexible customization, freedom of choice during installation and many more. We are developing separte distribution for Penetration Testing.<br> Till now, You can use Arctic*"
   # image: "/images/snigdhaos-banner.svg"
   button:
     enable: true
@@ -11,7 +11,7 @@ banner:
 
 # Features
 features:
-  - title: "SNIGDHA OS CLOUD"
+  - title: "SNIGDHA OS CLOUD<br> Powered by: TONMOY INFRASTRUCTURE"
     image: "/images/snigdha-os-cloud.svg"
     content: "Snigdha OS Cloud is a cloud-based file storage service developed by Snigdha OS. It allows users to store files in the cloud and share files and folders with others. Users can access their files from any device with internet access, including computers, smartphones, and tablets, through [cloud](https://cloud.snigdhaos.org). Snigdha OS Cloud provides a convenient and secure way to store, access, and collaborate on files from anywhere."
     bulletpoints:

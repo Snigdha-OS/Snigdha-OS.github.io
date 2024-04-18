@@ -48,7 +48,7 @@ features:
       - ""
       - ""
       - ""
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - ""
     button:
       enable: true
       label: "Go to Tools"

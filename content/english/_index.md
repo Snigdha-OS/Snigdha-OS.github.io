@@ -58,10 +58,10 @@ features:
     image: "/images/snigdha-os-uptime.svg"
     content: "Snigdha OS Uptime helps website owners or administrators track the availability and performance of their websites. It continuously monitors websites from various locations around the world and alert the website owner if there are any issues such as downtime or slow loading times."
     bulletpoints:
-      - "Snigdha OS Forum organizes discussions into threads, where each thread typically focuses on a specific topic. Members can start new threads or participate in existing ones by posting replies."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "100% free of costs"
+      - "Unlimited website monitor"
+      - "Dedicated status page for monitoring"
+      - "Supports custom domain & notification alerts"
     button:
       enable: true
       label: "Go to Tools"

@@ -48,7 +48,7 @@ features:
       - "100% free of cost."
       - "More than 1500 Web Tools."
       - "No signup required."
-      - "Unlimited Usage."
+      - "Unlimited Usage without any condition."
     button:
       enable: true
       label: "Go to Tools"

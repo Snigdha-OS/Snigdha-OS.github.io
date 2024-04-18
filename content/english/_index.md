@@ -55,7 +55,7 @@ features:
       link: "#"
   
   - title: "SNIGDHA OS - UPTIME"
-    image: "/images/service-3.png"
+    image: "/images/snigdha-os-uptime.svg"
     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:
       - "Snigdha OS Forum organizes discussions into threads, where each thread typically focuses on a specific topic. Members can start new threads or participate in existing ones by posting replies."

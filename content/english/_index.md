@@ -46,7 +46,7 @@ features:
     content: "Snigdha OS Provides Web Based Tools. Other websites charges an amount after you use certain limit. But Snigdha OS Tools doesn't charge you and usage limit is unlimited."
     bulletpoints:
       - "100% free of cost."
-      - "1500+ Tools"
+      - "More than 1500 Web Tools."
       - "No signup required."
       - "Unlimited Usage."
     button:

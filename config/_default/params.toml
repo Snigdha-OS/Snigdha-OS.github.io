@@ -76,7 +76,7 @@ mastodon = "" # Your verification code
 [cookies]
 enable = true
 expire_days = 60
-content = "We uses cookies. By continuing to use snigdhaos.org, you agree to their use."
+content = "Your privacy matters to us."
 button = "Accept"
 
 ######################## sidebar widgets #########################

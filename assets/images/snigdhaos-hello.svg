@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415 86" width="415" height="86">
+	<title>snigdhaos-hello</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { paint-order:stroke fill markers;stroke: #754ffe;stroke-width: 6;stroke-linejoin: round;;fill: #754ffe } 
+	</style>
+	<filter id="f0">
+		<feFlood flood-color="#754ffe" flood-opacity="1" />
+		<feBlend mode="normal" in2="SourceGraphic"/>
+		<feComposite in2="SourceAlpha" operator="in" />
+	</filter>
+	<g id="Folder 1" filter="url(#f0)">
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m39.9 59.3l5.7-5.7 5.7 5.7 5.7 5.7-11.4 11.4q-16.6-16.6-33.2-33.2 0-17.1 0-34.2l21.8 21.8-5.7 5.7-8.1-8v11.3l19.5 19.5z"/>
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m57 30.8l21.8-21.8q0 17.1 0 34.2-8.1 8-16.1 16.1l-17.1-17.1-5.7 5.7-5.7-5.7 11.4-11.4 17.1 17.1 8-8.1v-11.3l-8 8z"/>
+	</g>
+	<path id="SNIGDHA OS" class="s1" aria-label="SNIGDHA OS"  d="m109.4 22.3l5.3 5.3h-20.5v10.4h13.8l5.1 5.1v15.7l-5.1 5.2h-14.6l-5.2-5.2v-4.2l6-5.7v9.9h12.9v-15.7h-13.7l-5.2-5.1v-10.4l5.2-5.3zm43.2 0v41.6h-11.6l-10.1-36.2h-5.1l3.7 3.5v32.7h-5.9v-41.6h11.5l10 36.4h5.2l-3.7-3.8v-32.6zm17.9 0v41.7h-6v-41.7zm33.5 0l5.2 5.3h-21.5v31.2h14.1v-15.7h-9.7l5.2-5.1h10.5v26h-6v-4.5l-4.5 4.5h-10.4l-5.2-5.2v-31.2l5.2-5.3zm40.6 5.3v31.2l-5.2 5.2h-20.8v-31.3l5.2-5.1h-5.9v-5.3h21.5zm-15.7 31.2h9.7v-31.2h-14.1v35.7zm53-36.4v41.7h-6v-20.9h-14.1v20.9h-6v-41.7h6v20.1l4.4-4.5h9.7v-15.6zm37.5 0v41.7h-5.9v-15.6h-14.1v15.6h-6v-36.4l5.2-5.3zm-5.9 9l3.8-3.7h-17.9v20l4.5-4.5h9.6zm53.6-3.7v31.1l-5.2 5.3h-15.6l-5.2-5.3v-31.1l5.2-5.3h15.6zm-20.1 31.2h14.1v-31.2h-14.1zm50.5-36.4l5.3 5.3h-20.5v10.3h13.8l5.1 5.2v15.6l-5.1 5.3h-14.6l-5.2-5.3v-4.1l6-5.7v9.8h12.9v-15.6h-13.7l-5.2-5.2v-10.3l5.2-5.3z"/>
+</svg>

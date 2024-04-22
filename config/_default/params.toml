@@ -1,6 +1,6 @@
 #################### default parameters ################################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/snigdhaos-favicon.svg"
+favicon = "images/snigdhaos-favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 logo = "images/snigdhaos-logo.svg"
 logo_darkmode = "images/snigdhaos-logo.svg"

@@ -76,7 +76,7 @@ mastodon = "" # Your verification code
 [cookies]
 enable = true
 expire_days = 60
-content = "Your privacy matters to us. 🌟 We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. By clicking 'Accept All Cookies,' you consent to the use of ALL the cookies. However, you may visit 'Cookie Settings' to provide a controlled consent. Thank you for trusting us with your data privacy journey. ✨"
+content = "Your privacy matters to us. 🌟 We use cookies to provide social media features, and to analyze our traffic. By clicking 'Accept,' you consent to the use of ALL the cookies. Thank you for trusting us with your data privacy journey. ✨"
 button = "Accept"
 
 ######################## sidebar widgets #########################

@@ -38,11 +38,11 @@ features:
       - "Optimized for mobile devices, allowing users to access and participate in discussions on smartphones and tablets"
     button:
       enable: true
-      label: "Go to Forums"
+      label: "Go to Forum"
       link: "https://forum.snigdhaos.org/"
 
   - title: "SNIGDHA OS TOOLS"
-    image: "/images/snigdha-os-tools.svg"
+    image: "/images/snigdhaos-tools-banner.svg"
     content: "Snigdha OS Provides Web Based Tools. Other websites charges an amount after you use certain limit. But Snigdha OS Tools doesn't charge you and usage limit is unlimited."
     bulletpoints:
       - "100% free of cost."
@@ -52,10 +52,10 @@ features:
     button:
       enable: true
       label: "Go to Tools"
-      link: "#"
+      link: "https://tools.snigdhaos.org"
   
   - title: "SNIGDHA OS UPTIME"
-    image: "/images/snigdhaos-uptime.svg"
+    image: "/images/snigdhaos-uptime-banner.svg"
     content: "Snigdha OS Uptime helps website owners or administrators track the availability and performance of their websites. It continuously monitors websites from various locations around the world and alert the website owner if there are any issues such as downtime or slow loading times."
     bulletpoints:
       - "100% free of costs"
@@ -64,6 +64,6 @@ features:
       - "Supports custom domain & notification alerts"
     button:
       enable: true
-      label: "Go to Tools"
+      label: "Go to Uptime"
       link: "https://uptime.snigdhaos.org/"
 ---

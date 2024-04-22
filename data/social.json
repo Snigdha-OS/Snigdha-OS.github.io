@@ -11,6 +11,11 @@
       "link": "https://twitter.com/SnigdhaOS"
     },
     {
+      "name": "Instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://www.instagram.com/SnigdhaOS"
+    },
+    {
       "name": "github",
       "icon": "fab fa-github",
       "link": "https://www.github.com/Snigdha-OS"

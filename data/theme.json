@@ -31,13 +31,13 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Dosis:wght@400;600",
+      "primary": "Carme:wght@400;600",
       "primary_type": "sans-serif",
-      "secondary": "Dosis:wght@500;700",
+      "secondary": "Carme:wght@500;700",
       "secondary_type": "sans-serif"
     },
     "font_size": {
-      "base": "19",
+      "base": "18",
       "scale": "1.2"
     }
   }

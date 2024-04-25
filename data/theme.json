@@ -31,9 +31,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Carme:wght@400;600",
+      "primary": "Overpass:wght@400;600",
       "primary_type": "sans-serif",
-      "secondary": "Carme:wght@500;700",
+      "secondary": "Overpass:wght@500;700",
       "secondary_type": "sans-serif"
     },
     "font_size": {

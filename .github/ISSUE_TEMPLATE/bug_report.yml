@@ -1,31 +1,7 @@
-name: 🐛 Bug Report
-description: Report any issues you encounter to make hugoplate even more efficient.
+name: Report Bug in Snigdha OS Web
+description: Report any issues you encounter to make snigdhaos-web even more efficient.
 
 body:
-  - type: input
-    id: hugo-version
-    attributes:
-      label: What is your Hugo Extended Version
-      description: Check the [README](https://github.com/zeon-studio/hugoplate?tab=readme-ov-file#user-content-️-prerequisites) for the required version. Use "hugo version" in your terminal to see your Hugo version.
-    validations:
-      required: true
-
-  - type: input
-    id: go-version
-    attributes:
-      label: What is your Go Version
-      description: Check the [README](https://github.com/zeon-studio/hugoplate?tab=readme-ov-file#user-content-️-prerequisites) for the required version. Use "go version" in your terminal to see your Go version.
-    validations:
-      required: true
-
-  - type: input
-    id: node-version
-    attributes:
-      label: What is your Node.js Version
-      description: Check the [README](https://github.com/zeon-studio/hugoplate?tab=readme-ov-file#user-content-️-prerequisites) for the required version. Use "node -v" in your terminal to see your Node.js version.
-    validations:
-      required: true
-
   - type: checkboxes
     id: make-sure
     attributes:
@@ -51,9 +27,8 @@ body:
       description: |
         Please explain the steps required to duplicate this issue. Include detailed commands and expected outcomes.
       placeholder: |
-        1.
-        2.
-        3.
+        
+        
     validations:
       required: true
 

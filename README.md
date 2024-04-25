@@ -1,13 +1,3 @@
----
-title: "Privacy"
-# meta title
-meta_title: "Privacy Policy"
-# meta description
-description: "Snigdha OS Privacy Policy"
-# save as draft
-draft: false
----
-
 Version: 2024-04-25
 
 # Privacy Policy
@@ -212,3 +202,5 @@ We will not make you subject to any automated decision-making, including profili
 ## 13. Internet-specific data processing and cookies
 
 On some sub-directories of our website, cookies are set in your browser. Cookies are small text files that are stored on your hard drive and are assigned to the browser you are using. The provider who sets the cookie can collect certain information through the cookie. The only purpose of the cookies set on our website is to enable you to use the website and its functions safely. The legal basis for the processing is our legitimate interests in the aforementioned purpose according to Art. 6 para. 1 lit. f) GDPR. The cookies are necessary for the services you have requested.
+
+> Forked from Arch Linux Privacy Policy

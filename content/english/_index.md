@@ -53,7 +53,7 @@ features:
       enable: true
       label: "Go to Tools"
       link: "https://tools.snigdhaos.org"
-  
+
   - title: "SNIGDHA OS UPTIME"
     image: "/images/snigdhaos-uptime-banner.svg"
     content: "Snigdha OS Uptime helps website owners or administrators track the availability and performance of their websites. It continuously monitors websites from various locations around the world and alert the website owner if there are any issues such as downtime or slow loading times."

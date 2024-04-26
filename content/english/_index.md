@@ -3,7 +3,7 @@
 banner:
   title: "Blazing Fast🚀<br>Optimal Performance🕛"
   content: "Snigdha OS is an Arch based Linux Distribution (*Known as <ins>**Distro**</ins>). It is light-weight, easy to use interface (***DE: Gnome**), clean and minimal, get a wide range of options during installation. It has been developed as minimal and bloatware free OS. Which is known as **Snigdha OS Arctic**. Click on the <ins>**Download**</ins> button and experience a new and modern linux distribution. "
-  image: "/images/snigdhaos-banner.svg"
+  image: "/images/snigdhaos-icon.svg"
   button:
     enable: true
     label: "Download"

@@ -1,7 +1,7 @@
 ---
 title: Eshanized
 email: eshan@snigdhaos.org
-image: "https://github.com/eshanized/eshanized/blob/main/eshanized_square.png?raw=True"
+image: "eshanized.jpg"
 description: this is meta description
 social:
   - name: github

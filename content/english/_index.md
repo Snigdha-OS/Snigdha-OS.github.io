@@ -2,8 +2,8 @@
 # Banner
 banner:
   title: "Blazing Fast🚀<br>Optimal Performance🕛"
-  content: "Snigdha OS is an Arch based Linux Distro. It is light in weight, easy to use interface, clean and minimal, get a wide range of options during installation. It has been developed as minimal and bloatware free OS. Which is known as **Snigdha OS Arctic**. In future it will be upgrading to penetration distribution with code name **bloodline** along with same build id.Click on the **Download** button and experience a new and modern linux distribution powered by **Snigdha OS ZEN Kernel.**"
-  # image: "/images/snigdhaos-banner.svg"
+  content: "Snigdha OS is an Arch based Linux Distribution (*Known as <ins>**Distro**</ins>). It is light-weight, easy to use interface (***DE: Gnome**), clean and minimal, get a wide range of options during installation. It has been developed as minimal and bloatware free OS. Which is known as **Snigdha OS Arctic**. Click on the <ins>**Download**</ins> button and experience a new and modern linux distribution. "
+  image: "/images/snigdhaos-banner.svg"
   button:
     enable: true
     label: "Download"

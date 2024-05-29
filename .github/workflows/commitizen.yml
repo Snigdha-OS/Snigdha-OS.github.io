@@ -1,7 +1,10 @@
-name: Snigdha OS Commitizen Check on Push
+name: Commitizen Check
 
 on:
   push:
+    branches:
+      - master
+  pull_request:
     branches:
       - master
 

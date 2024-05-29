@@ -1,0 +1,1 @@
+![image](https://github.com/Snigdha-OS/snigdhaos-arctic/assets/148610067/07971fdd-b6a1-4c68-b454-98168f3cccaf)

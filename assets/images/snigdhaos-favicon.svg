@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>snigdhaos-favicon</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<filter id="f0">
+		<feFlood flood-color="#754ffe" flood-opacity="1" />
+		<feBlend mode="normal" in2="SourceGraphic"/>
+		<feComposite in2="SourceAlpha" operator="in" />
+	</filter>
+	<g id="Folder 1" filter="url(#f0)">
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m218.1 365.9l37.7-37.7 37.7 37.7 37.7 37.7-75.4 75.4q-109.9-109.9-219.8-219.8 0-113.1 0-226.2l144.4 144.4-37.8 37.7-53.3-53.4v75.4l128.8 128.8z"/>
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m331.2 177.4l144.3-144.4q0 113.1 0 226.2c-35.5 35.6-71.1 71.1-106.6 106.7l-113.1-113.1-37.7 37.7-37.7-37.7 75.4-75.4 113.1 113.1 53.3-53.4v-75.4l-53.3 53.4z"/>
+	</g>
+</svg>

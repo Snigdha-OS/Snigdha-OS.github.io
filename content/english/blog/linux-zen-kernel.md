@@ -2,7 +2,7 @@
 title: "What is Linux Zen Patched Kernel?"
 meta_title: "What is Linux Zen Patched Kernel?"
 description: "What is Linux Zen Patched Kernel?"
-image: "/images/linux-kernel.jpg"
+# image: "/images/linux-kernel.jpg"
 categories: ["Information"]
 author: "Iconized"
 tags: ["Information"]

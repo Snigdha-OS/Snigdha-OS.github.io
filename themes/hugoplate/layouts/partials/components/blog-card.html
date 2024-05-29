@@ -13,11 +13,11 @@
     <ul class="mb-4">
       <li class="mr-4 inline-block">
         <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-          <i class="fa-regular fa-user-tag mr-2"></i>{{ .Params.author }}
+          <i class="fa-regular fa-user mr-2"></i>{{ .Params.author }}
         </a>
       </li>
       <li class="mr-4 inline-block">
-        <i class="fa-regular fa-layer-group mr-1"></i>
+        <i class="fa-regular fa-folder mr-1"></i>
         {{ range $i,$p:= $categories }}
           <a
             href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"

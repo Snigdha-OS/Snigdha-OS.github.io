@@ -3,7 +3,7 @@ title: "How to check package version on Snigdha OS?"
 meta_title: "How to check package version on Snigdha OS?"
 description: "How to check package version on Snigdha OS?"
 # date: 2024-04-14T05:00:00Z
-image: "/images/snigdhaos-versioning.png"
+# image: "/images/snigdhaos-versioning.png"
 categories: ["Information"]
 author: "Eshanized"
 tags: ["version"]

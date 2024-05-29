@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+#!/bin/bash
+=======
 #!/bin/bash
 
 # Author    : Eshan Roy
@@ -30,3 +33,4 @@ main() {
 }
 
 main
+>>>>>>> 122db96bc4e6a7242cb3d37c53eef560cb6aba8f

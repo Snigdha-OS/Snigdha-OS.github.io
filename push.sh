@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Iconized
+# Author : Abhiraj Roy (Iconized)
+# Author URL : https://iconized.github.io
 
 pull_from_github(){
     git pull
 }
 
 push_to_github() {
-    # git pull
-    git add .
     ezcommits
     git push -u origin master
 }

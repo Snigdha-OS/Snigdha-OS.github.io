@@ -2,7 +2,7 @@
   <main v-if="!loading" id="about-me" class="page">
 
     <div id="mobile-page-title">
-      <h2>_about-me</h2>
+      <h2>_about</h2>
     </div>
 
     <div id="page-menu" class="w-full flex">

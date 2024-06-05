@@ -9,7 +9,7 @@
 		
 			<div class="head">
 				<span>
-					Hi all, I am
+					<h2>Greetings From</h2>
 				</span>
 				<h1>{{ config.dev.name }}</h1>
         <span class="diple flex">

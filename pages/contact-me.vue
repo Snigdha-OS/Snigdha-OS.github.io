@@ -2,7 +2,7 @@
     <main id="contact-me" class="page">
 
         <div id="mobile-page-title">
-            <h2>_contact-me</h2>
+            <h2>_contact</h2>
         </div>
 
         <div id="page-menu" class="w-full h-full flex flex-col border-right">

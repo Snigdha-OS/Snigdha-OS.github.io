@@ -1,7 +1,7 @@
 {
-    "name": "Micheal Weaver",
-    "logo_name": "micheal-weaver",
-    "role": "Front-end developer",
+    "name": "SNIGDHA OS",
+    "logo_name": "snigdha-os",
+    "role": "be silent when it is time to hear!",
     "about": {
         "sections": {
             "professional-info": {
@@ -70,17 +70,17 @@
         },
         "social": {
             "github": {
-                "title": "Github profile",
+                "title": "Github",
                 "url": "https://github.com/",
-                "user": "username"
+                "user": "Snigdha-OS"
             },
             "facebook": {
-                "title": "Facebook profile",
+                "title": "Facebook",
                 "url": "https://facebook.com/",
                 "user": "username"
             },
             "twitter": {
-                "title": "Twitter account",
+                "title": "Twitter",
                 "url": "https://twitter.com/",
                 "user": "username"
             }

@@ -4,7 +4,7 @@
         <!-- social icons -->
         <div class="w-full flex justify-between md:justify-start">
             <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
-                find me in:
+                social refs:
             </span>
             <div id="social-icons" class="flex">
                 <NuxtLink :to="social.twitter.url + social.twitter.user" target="_blank" class="flex justify-center items-center">
@@ -20,7 +20,7 @@
         </div>
 
         <!-- github user -->
-        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left">
+        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-10 border-left">
             @{{ social.github.user }}
             <img src="/icons/social/github.svg"/>
         </NuxtLink>
@@ -33,7 +33,7 @@
 footer {
     height: 40px;
     min-height: 40px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 footer a:hover {

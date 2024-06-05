@@ -21,25 +21,68 @@
 			<div id="info">
 				<span class="action">
 					// complete the game to continue
+					 or skip to see about "Snigdha OS"
 				</span>
 				<span :class="{hide: isMobile}">
-					// you can also see it on my Github page
+					// source code can be found on
 				</span>
 				<span :class="{hide: !isMobile}">
-					// find my profile on Github:
+					// browse the source code:
 				</span>
 				<p class="code">
 					<span class="identifier">
 						const
 					</span>
 					<span class="variable-name">
-						githubLink
+						github
 					</span>
 					<span class="operator">
 						=
 					</span>
 					<a class="string" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
 						"https://github.com/{{ config.public.dev.contacts.social.github.user }}"
+					</a>
+				</p>
+				<p class="mb-6"></p>
+				<span :class="{hide: isMobile}">
+					// download Snigdha OS
+				</span>
+				<span :class="{hide: !isMobile}">
+					// we recommend you to download the <b>ISO</b> file on PC
+				</span>
+				<p class="code">
+					<span class="identifier">
+						const
+					</span>
+					<span class="variable-name">
+						download
+					</span>
+					<span class="operator">
+						=
+					</span>
+					<a class="string" :href="'https://download.com/' + config.public.dev.contacts.social.download.user">
+						"https://download.com/{{ config.public.dev.contacts.social.download.user }}"
+					</a>
+				</p>
+				<p class="mb-6"></p>
+				<span :class="{hide: isMobile}">
+					// having problem with installation?
+				</span>
+				<span :class="{hide: !isMobile}">
+					// having problem with installation?
+				</span>
+				<p class="code">
+					<span class="identifier">
+						const
+					</span>
+					<span class="variable-name">
+						docs
+					</span>
+					<span class="operator">
+						=
+					</span>
+					<a class="string" :href="'https://download.com/' + config.public.dev.contacts.social.download.user">
+						"https://download.com/{{ config.public.dev.contacts.social.download.user }}"
 					</a>
 				</p>
 			</div>
@@ -122,7 +165,7 @@ function handleResize() {
   font-size: 58px;
   line-height: 1;
   color: #E5E9F0;
-  font-family: 'Fira Code Regular';
+  font-family: 'Fira Code Bold';
   padding-top: 1rem; /* 16px */
   padding-bottom: 1rem; /* 16px */
 }
@@ -130,7 +173,7 @@ function handleResize() {
 #hello .head h2, #hello .head .diple {
   font-size: 32px;
   line-height: 1;
-  color: #4D5BCE;
+  color: #FF7F53;
   font-family: 'Fira Code Retina';
 }
 
@@ -147,7 +190,7 @@ function handleResize() {
   font-size: 14px;
   line-height: 1;
   color: #607B96;
-  font-family: 'Fira Code Retina';
+  font-family: 'Fira Code Medium';
   padding-bottom: 1rem; /* 16px */
 }
 
@@ -157,7 +200,7 @@ function handleResize() {
 }
 
 .code .identifier {
-  color: #4D5BCE;
+  color: #FF7F53;
 }
 
 .code .variable-name {
@@ -195,7 +238,7 @@ function handleResize() {
 	border-radius: 0% 0% 50% 50%;
   rotate: 10deg;
 	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
+  background: radial-gradient(circle at 50% 50%,rgba(255, 127, 83, 1), rgba(76, 0, 255, 0));
   opacity: 0.5;
   z-index: 10;
 }
@@ -214,7 +257,7 @@ function handleResize() {
 }
 
 #info {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Typewrite Animation */

@@ -76,7 +76,7 @@
       </div>
         <!-- skip -->
         <NuxtLink id="skip-btn" to="/about-me" class="font-fira_retina flex hover:bg-white/20">
-          skip
+          skip?
         </NuxtLink>
         
       </div>

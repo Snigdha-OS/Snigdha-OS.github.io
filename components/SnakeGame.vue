@@ -29,8 +29,8 @@
         <div>
 
         <div id="instructions" class="font-fira_retina text-sm text-white">
-          <p>// use your keyboard</p>
-          <p>// arrows to play</p>
+          <p># use your keyboard</p>
+          <p># arrows to play</p>
 
           <div id="buttons" class="w-full flex flex-col items-center gap-1 pt-5">
 
@@ -57,7 +57,7 @@
 
         <!-- score board -->
         <div id="score-board" class="w-full flex flex-col pl-5">
-          <p class="font-fira_retina text-white pt-5">// food left</p>
+          <p class="font-fira_retina text-white pt-5"># food left</p>
 
           <div id="score" class="grid grid-cols-5 gap-5 justify-items-center pt-5 w-fit">
             <div class="food"></div>
@@ -271,9 +271,9 @@
             
             /* Food cell style */
             if (j === this.food.x && i === this.food.y) {
-              cell.style.backgroundColor = "#43D9AD";
+              cell.style.backgroundColor = "#FF7F53";
               cell.style.borderRadius = "50%";
-              cell.style.boxShadow = "0 0 10px #43D9AD";
+              cell.style.boxShadow = "0 0 10px #FF7F53";
             }
     
             /* Estilo de la serpiente a medida que va crediendo */
@@ -282,7 +282,7 @@
             );
 
             if (snakeCell) {
-                cell.style.backgroundColor = "#43D9AD";
+                cell.style.backgroundColor = "#FF7F53";
                 cell.style.opacity = 1 - (this.snake.indexOf(snakeCell) / this.snake.length);
               cell.classList.add("green");
 
@@ -409,7 +409,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(35, 123, 109, 1), rgba(67, 217, 173, 0.13));
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     padding: 30px;
     position: relative;
@@ -419,7 +419,7 @@
 #game-screen {
     width: 240px;
     height: 400px;
-    border-radius: 10px;
+    border-radius: 0px;
     background-color: rgba(1, 22, 39, 0.84);
     display: flex;
     flex-wrap: wrap;
@@ -429,9 +429,9 @@
 #start-button {
   padding-inline: 16px;
   padding-block: 8px;
-  border-radius: 10px;
+  border-radius: 2px;
   border: 1px solid black;
-  background-color: #FEA55F;
+  background-color: #FF7F53;
   color: black;
   cursor: pointer;
   position: absolute;
@@ -442,7 +442,7 @@
 }
 
 #start-button:hover {
-  background-color: rgb(255, 178, 119);
+  background-color: #ff416c;
 }
 
 #console-menu{
@@ -461,7 +461,7 @@
 
 #console-button:hover {
   background-color: #010c15d8;
-  box-shadow: #43D9AD 0 0 10px;
+  box-shadow: #FF7F53 0 0 10px;
 }
 
 #instructions {
@@ -471,9 +471,9 @@
 }
 
 .food {
-  background-color: #43D9AD;
+  background-color: white;
   border-radius: 50%;
-  box-shadow: 0 0 10px #43D9AD;
+  box-shadow: 0 0 10px white;
   width: 8px;
   height: 8px;
   opacity: 0.3;
@@ -482,7 +482,7 @@
 #game-over, #congrats {
   position: absolute;
   bottom: 12%;
-  color: #43D9AD;
+  color: #FF7F53;
   width: 240px;
 }
 
@@ -555,7 +555,7 @@
 #game-over, #congrats {
   position: absolute;
   bottom: 10%;
-  color: #43D9AD;
+  color: #FF7F53;
   width: 192px;
 }
 

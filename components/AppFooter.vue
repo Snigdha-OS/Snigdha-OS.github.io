@@ -41,7 +41,7 @@ footer a:hover {
 }
 
 #social-icons > a {
-    border-right: 1px solid #1E2D3D;
+    border-right: 0px solid #1E2D3D;
     height: 100%;
     width: 50px;
  }
@@ -61,6 +61,7 @@ footer > a > img {
 
 #social-icons > a:hover img {
     opacity: 1;
+    color: #FF416C;
 }
 
 @media (max-width: 768px) {

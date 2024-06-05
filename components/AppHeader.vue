@@ -8,24 +8,24 @@
             </NuxtLink>
 
             <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
-              _hello
+              _hello.py
             </NuxtLink>
   
             <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
-              _about
+              _about.py
             </NuxtLink>
   
             <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
-              _projects
+              _projects.py
             </NuxtLink>
 
             <NuxtLink id="nav-link" to="https://forum.snigdhaos.org" :class="{ active: isActive('') }">
-              _forum
+              _forum.py
             </NuxtLink>
           </div>
 
           <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-            _contact
+            _contact.py
           </NuxtLink>
       
       </nav>
@@ -86,7 +86,7 @@ export default {
 }
 
 #nav-link.router-link-active, #nav-link-contact.router-link-active {
-  border-bottom: 2px solid #FF7F53;
+  border-bottom: 1px solid #FF416C;
   color: white;
 }
 

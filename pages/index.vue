@@ -8,7 +8,7 @@
 		<section class="hero">
 		
 			<div class="head">
-				<span>
+				<span class="mb-12">
 					<h2>greetings,</h2>
 				</span>
 				<h1>{{ config.dev.name }}</h1>
@@ -24,15 +24,14 @@
 					 or skip to see about "Snigdha OS" -->
 				</span>
 				<span :class="{hide: isMobile}">
-					# source code can be found on <br>
-					# do follow us on github
+					# source code can be found on, do follow us on github
 				</span>
 				<span>#!/usr/bin/python</span>
 				<span :class="{hide: !isMobile}">
 					# source code:<br>
 					# follow us on github
 				</span>
-				<p class="code mb-5">
+				<p class="code mb-2">
 					<!-- <span class="identifier">
 						const
 					</span> -->
@@ -53,7 +52,7 @@
 				<span :class="{hide: !isMobile}">
 					# it is recommended to download the <b>ISO</b> file on PC
 				</span>
-				<p class="code mb-5">
+				<p class="code">
 					<!-- <span class="identifier">
 						const
 					</span> -->
@@ -74,7 +73,7 @@
 				<span :class="{hide: !isMobile}">
 					# having problem with installation?
 				</span>
-				<p class="code mb-5">
+				<p class="code">
 					<!-- <span class="identifier">
 						const
 					</span> -->
@@ -176,7 +175,7 @@ function handleResize() {
 #hello .head h2, #hello .head .diple {
   font-size: 32px;
   line-height: 1;
-  color: #FF7F53;
+  color: #FF416C;
   font-family: 'Fira Code Retina';
 }
 
@@ -203,7 +202,7 @@ function handleResize() {
 }
 
 .code .identifier {
-  color: #FF7F53;
+  color: #FF416C;
 }
 
 .code .variable-name {
@@ -254,7 +253,7 @@ function handleResize() {
   height: 300px;
 	border-radius: 0% 50% 0% 50%;
 	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(67, 217, 173, 1), rgba(76, 0, 255, 0));
+  background: radial-gradient(circle at 50% 50%,rgba(255, 127, 83, 1), rgba(76, 0, 255, 0));
   opacity: 0.5;
   z-index: 10;
 }

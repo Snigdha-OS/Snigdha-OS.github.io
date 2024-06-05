@@ -38,9 +38,9 @@ const { project, key, index } = defineProps(['project', 'key', 'index'])
 }
 
 #project-card {
-  border: 1px solid #1E2D3D;
+  border: 1px solid #FF7F53;
   background-color: #011221;
-  border-radius: 15px;
+  border-radius: 1px;
   max-width: 400px;
 }
 

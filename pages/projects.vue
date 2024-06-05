@@ -151,8 +151,8 @@ input[type="checkbox"] {
   background-color: transparent;
   width: 1.15em;
   height: 1.15em;
-  border: 2px solid currentColor;
-  border-radius: 0.15em;
+  border: 1px solid currentColor;
+  border-radius: 0px;
   margin-top: 1px;
 }
 
@@ -164,7 +164,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked:hover {
-  box-shadow: #607b968b 0px 0px 0px 2px;
+  box-shadow: #FF7F53 0px 0px 0px 2px;
 }
 
 input[type="checkbox"]:not(:checked) {
@@ -177,14 +177,14 @@ input[type="checkbox"]:hover {
   background-image: url("data:image/svg+xml;utf8,<svg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.38587 7.2802L11.9718 0.693573L12.9856 1.70668L5.38587 9.30641L0.826172 4.74671L1.83928 3.73361L5.38587 7.2802Z' fill='white'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: #607b968b 0px 0px 0px 2px;
+  box-shadow: #FF7F53 0px 0px 0px 2px;
 }
 
 input[type="checkbox"]:hover:not(:checked) {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: none;
-  box-shadow: #607b968b 0px 0px 0px 2px;
+  box-shadow: #FF7F53 0px 0px 0px 2px;
 }
 
 input[type="checkbox"]:focus {

@@ -275,8 +275,8 @@
 export default {
   data() {
     return {
-      currentSection: 'personal-info',
-      folder: 'bio',
+      currentSection: 'professional-info',
+      folder: 'experience',
       loading: true,
     }
   },

@@ -44,8 +44,8 @@
 .snippet-container {
     background-color: #011221;
     padding: 5px;
-    border-radius: 15px;
-    border: 1px solid #1E2D3D;
+    border-radius: 0px;
+    border: 1px solid #FF7F53;
     font-size: 12px;
     overflow-y: scroll;
     overflow-x: scroll;
@@ -86,7 +86,7 @@ code.hljs{
 }
 
 #username:hover {
-    color: #5e6ef2;
+    color: #FF7F53;
 }
 
 /* #comment {

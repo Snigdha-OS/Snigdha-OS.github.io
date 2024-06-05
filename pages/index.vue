@@ -9,7 +9,7 @@
 		
 			<div class="head">
 				<span>
-					<h2>Greetings From</h2>
+					<h2>greetings,</h2>
 				</span>
 				<h1>{{ config.dev.name }}</h1>
         <span class="diple flex">
@@ -20,19 +20,22 @@
 
 			<div id="info">
 				<span class="action">
-					// complete the game to continue
-					 or skip to see about "Snigdha OS"
+					<!-- // complete the game to continue
+					 or skip to see about "Snigdha OS" -->
 				</span>
 				<span :class="{hide: isMobile}">
-					// source code can be found on
+					# source code can be found on <br>
+					# do follow us on github
 				</span>
+				<span>#!/usr/bin/python</span>
 				<span :class="{hide: !isMobile}">
-					// browse the source code:
+					# source code:<br>
+					# follow us on github
 				</span>
-				<p class="code">
-					<span class="identifier">
+				<p class="code mb-5">
+					<!-- <span class="identifier">
 						const
-					</span>
+					</span> -->
 					<span class="variable-name">
 						github
 					</span>
@@ -43,17 +46,17 @@
 						"https://github.com/{{ config.public.dev.contacts.social.github.user }}"
 					</a>
 				</p>
-				<p class="mb-6"></p>
+				<p class="mb-4"></p>
 				<span :class="{hide: isMobile}">
-					// download Snigdha OS
+					# click on the link to download snigdha os iso file
 				</span>
 				<span :class="{hide: !isMobile}">
-					// we recommend you to download the <b>ISO</b> file on PC
+					# it is recommended to download the <b>ISO</b> file on PC
 				</span>
-				<p class="code">
-					<span class="identifier">
+				<p class="code mb-5">
+					<!-- <span class="identifier">
 						const
-					</span>
+					</span> -->
 					<span class="variable-name">
 						download
 					</span>
@@ -66,17 +69,17 @@
 				</p>
 				<p class="mb-6"></p>
 				<span :class="{hide: isMobile}">
-					// having problem with installation?
+					# having problem with installation?
 				</span>
 				<span :class="{hide: !isMobile}">
-					// having problem with installation?
+					# having problem with installation?
 				</span>
-				<p class="code">
-					<span class="identifier">
+				<p class="code mb-5">
+					<!-- <span class="identifier">
 						const
-					</span>
+					</span> -->
 					<span class="variable-name">
-						docs
+						documentation
 					</span>
 					<span class="operator">
 						=

@@ -4,7 +4,7 @@
         <github-corner url="https://github.com/Snigdha-OS/" />
           <div class="flex">
             <NuxtLink id="nav-logo" to="/">
-              {{ config.dev.logo_name }}
+              {{ config.dev.name }}
             </NuxtLink>
 
             <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">

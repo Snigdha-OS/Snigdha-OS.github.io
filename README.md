@@ -71,10 +71,10 @@ yarn build
 yarn preview
 ```
 
-## Contributions
+## 🤝 Contributions
 
 If you find any bugs or have any suggestions, you can open an <a href="https://github.com/Snigdha-OS/Snigdha-OS.github.io/issues">issue</a>.
 
-## License
+## 🧾 License
 
 This project is licensed under the MIT License. See the <a href="https://github.com/Snigdha-OS/Snigdha-OS.github.io/blob/master/LICENSE">LICENSE</a> file for more information.

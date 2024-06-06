@@ -45,7 +45,7 @@
     background-color: #011221;
     padding: 5px;
     border-radius: 0px;
-    border: 1px solid #FF7F53;
+    border: 1px solid #FF416C;
     font-size: 12px;
     overflow-y: scroll;
     overflow-x: scroll;
@@ -86,7 +86,7 @@ code.hljs{
 }
 
 #username:hover {
-    color: #FF7F53;
+    color: #FF416C;
 }
 
 /* #comment {

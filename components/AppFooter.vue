@@ -2,9 +2,10 @@
     <footer class='flex md:justify-between border-top text-menu-text font-fira_retina'>
 
         <!-- social icons -->
+        
         <div class="w-full flex justify-between md:justify-start">
             <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
-                social refs:
+                social:
             </span>
             <div id="social-icons" class="flex">
                 <NuxtLink :to="social.twitter.url + social.twitter.user" target="_blank" class="flex justify-center items-center">
@@ -13,14 +14,18 @@
                 <NuxtLink :to="social.facebook.url + social.facebook.user" target="_blank" class="flex justify-center items-center">
                     <img src="/icons/social/facebook.svg"/>
                 </NuxtLink>
+                
+                <!-- <span class="flex mx-50 justify-center items-center">Snigdha OS</span> -->
                 <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="flex md:hidden justify-center items-center">
                 <img src="/icons/social/github.svg"/>
             </NuxtLink>
+            
             </div>
         </div>
+        <!-- <div class="w-full inline justify-center md:justify-center items-center">Snigdha OS</div> -->
 
         <!-- github user -->
-        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-10 border-left">
+        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="md:flex items-center px-10 border-left">
             @{{ social.github.user }}
             <img src="/icons/social/github.svg"/>
         </NuxtLink>
@@ -49,14 +54,14 @@ footer a:hover {
 #social-icons > a > img {
     width: 1.25rem; /* 20px */
     height: 1.25rem; /* 20px */
-    margin: auto;
-    opacity: 0.4;
+    /* margin: auto; */
+    opacity: 1;
 }
 
 footer > a > img {
     width: 1.25rem; /* 20px */
     height: 1.25rem; /* 20px */
-    margin-left: 0.5rem; /* 8px */
+    /* margin-left: 0.5rem; 8px */
   }
 
 #social-icons > a:hover img {

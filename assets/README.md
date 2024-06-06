@@ -10,11 +10,11 @@ In your application's code, you can reference a file located in the `assets/` di
 
 For example, referencing an image file that will be processed if a build tool is configured to handle this file extension:
 
-*app.vue*
-````html
+`app.vue`
+```html
 <template>
-  <img src="~/assets/img/nuxt.png" alt="Discover Nuxt 3" />
+  <img src="~/assets/img/snigdhaos.png" alt="Download Snigdha OS" />
 </template>
-````
+```
 
->> Nuxt won't serve files in the `assets/` directory at a static URL like `/assets/my-file.png`. If you need a static URL, use the `public/` directory.
+> Nuxt won't serve files in the `assets/` directory at a static URL like `/assets/my-file.png`. If you need a static URL, use the `public/` directory.

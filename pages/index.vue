@@ -13,8 +13,8 @@
 				</span>
 				<h1>{{ config.dev.name }}</h1>
         <span class="diple flex">
-          >&nbsp;
-				<h2 class="line-1 anim-typewriter max-w-fit"> {{ config.dev.role }} </h2>
+          <!-- # -->
+				<h2 class="line-1 anim-typewriter max-w-fit"> # {{ config.dev.role }} </h2>
         </span>
 			</div>
 
@@ -24,7 +24,7 @@
 					 or skip to see about "Snigdha OS" -->
 				</span>
 				<span :class="{hide: isMobile}">
-					# source code can be found on, do follow us on github
+					# do follow us on github
 				</span>
 				<span>#!/usr/bin/python</span>
 				<span :class="{hide: !isMobile}">
@@ -83,8 +83,8 @@
 					<span class="operator">
 						=
 					</span>
-					<a class="string" :href="'https://download.com/' + config.public.dev.contacts.social.download.user">
-						"https://download.com/{{ config.public.dev.contacts.social.download.user }}"
+					<a class="string" :href="'https://snigdhaos.org/documentation'">
+						"https://snigdhaos.org/documentation"
 					</a>
 				</p>
 			</div>
@@ -160,7 +160,7 @@ function handleResize() {
   font-size: 18px;
   line-height: 1;
   color: #E5E9F0;
-  font-family: 'Fira Code Retina';
+  font-family: 'Fira Code';
 }
 
 #hello .head h1 {

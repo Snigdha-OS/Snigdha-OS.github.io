@@ -1,5 +1,5 @@
 <template>
-  <main v-if="!loading" id="about-me" class="page">
+  <main v-if="!loading" id="about" class="page">
 
     <div id="mobile-page-title">
       <h2>_about</h2>
@@ -275,8 +275,8 @@
 export default {
   data() {
     return {
-      currentSection: 'professional-info',
-      folder: 'experience',
+      currentSection: 'about',
+      folder: 'overview',
       loading: true,
     }
   },

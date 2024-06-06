@@ -1,8 +1,8 @@
 <h1 align="center">
-  developer-portfolio-v2
+  SNIGDHA OS
 </h1>
 <p align="center">
-  The first open source version of <a href="https://www.figma.com/community/file/1100794861710979147" target="_blank"> Portfolio for Developers Concept V.2</a>, designed by <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and developed by <a href="https://github.com/alexdeploy">@alexdeploy</a>. Built with <a href="https://nuxt.com/" target="_blank">Nuxt.js 3.0</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+  This website has been developed with the open source version of <a href="https://www.figma.com/community/file/1100794861710979147" target="_blank"> Portfolio for Developers Concept V.2</a>, designed by <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and developed by <a href="https://github.com/alexdeploy">@alexdeploy</a>. Built with <a href="https://nuxt.com/" target="_blank">Nuxt.js 3.0</a>.
 </p>
 <div align="center">
 
@@ -12,34 +12,28 @@
 
 <p align="center">
   <a href="" target="_blank">
-    <img src="./public/images/demo-share.png" />
+    <img src="./public/images/snigdhaos-view.png" />
   </a>
 </p>
-
-## 🚨 Forking this repo
-
-Feel free to fork this repository and make it your own! You can use it as a starting point for your own portfolio website. However, please note that the effort and time deserves to be recognized and *plagiarism is a bad practice*. If you use this project, we would greatly appreciate it if you give credits to the designer <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and the developer <a href="https://github.com/alexdeploy">@alexdeploy</a>, or linking <a href="https://github.com/alexdeploy/developer-portfolio-v2">this repo</a>.
-
-Thanks 🤘 and enjoy it!
 
 ## 🛠 Installation
 
 1. Clone the project to your local machine.
 
 ```sh
-git clone https://github.com/alexdeploy/developer-portfolio-v2.git
+git clone https://github.com/Snigdha-OS/Snigdha-OS.github.io.git
 ```
 
 2. Navigate to the project directory
 
 ```sh
-cd developer-portfolio-v2
+cd Snigdha-OS.github.io
 ```
 
 3. Install the required dependencies
 
 ```sh
-yarn
+yarn install
 ```
 
 4. Start the development server
@@ -53,7 +47,7 @@ yarn dev
 
 ## ✒️ Customization
 
-The portfolio template includes some default content, but you can easily customize it to fit your needs. Here are some of the things you can change:
+The template includes some default content, but you can easily customize it to fit your needs. Here are some of the things you can change:
 
 * Update the `developer.json` file on root directory, which contains all the text for the project and the portfolio "user" information, including *projects*, *about-me*, *gists* (Ids) and *contact* info.
 
@@ -79,8 +73,8 @@ yarn preview
 
 ## Contributions
 
-If you find any bugs or have any suggestions, you can open an <a href="https://github.com/alexdeploy/developer-portfolio-v2/issues">issue</a>.
+If you find any bugs or have any suggestions, you can open an <a href="https://github.com/Snigdha-OS/Snigdha-OS.github.io/issues">issue</a>.
 
 ## License
 
-This project is licensed under the MIT License. See the <a href="https://github.com/alexdeploy/developer-portfolio-v2/blob/main/LICENSE">LICENSE</a> file for more information.
+This project is licensed under the MIT License. See the <a href="https://github.com/Snigdha-OS/Snigdha-OS.github.io/blob/master/LICENSE">LICENSE</a> file for more information.

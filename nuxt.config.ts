@@ -19,16 +19,17 @@ export default defineNuxtConfig({
    * TODO: Migrate apple-touch-icon config to manifest.json
    */
   app: {
+    baseURL: '/',
     head: {
       title: siteTitle, // App window nav title
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'A awesome developer portfolio design.' },
+        { hid: 'description', name: 'description', content: 'Snigdha OS on the web.' },
         { hid: 'og:title', property: 'og:title', content: siteTitle },
-        { hid: 'og:description', property: 'og:description', content: 'A awesome developer portfolio design.' },
-        { hid: 'og:image', property: 'og:image', content: 'demo-share.jpg' },
-        { hid: 'og:url', property: 'og:url', content: 'https://developer-portfolio-v1.netlify.app/' },
+        { hid: 'og:description', property: 'og:description', content: 'Snigdha OS on the web.' },
+        { hid: 'og:image', property: 'og:image', content: 'snigdhaos-view.png' },
+        { hid: 'og:url', property: 'og:url', content: 'https://snigdhaos.org/' },
         { name: 'theme-color', content: '#010C15' },
         // ...
       ],
@@ -38,6 +39,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  // router: {
+  //   base: '/',
+  // },
 
   /**
    * * Nuxt 3 Modules

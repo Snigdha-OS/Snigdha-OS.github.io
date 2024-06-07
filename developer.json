@@ -1,0 +1,166 @@
+{
+    "name": "SNIGDHA OS",
+    "logo_name": "snigdha-os",
+    "role": "be silent when it is time to hear!",
+    "about": {
+        "sections": {
+            "about": {
+                "title": "about",
+                "icon": "icons/info-professional.svg",
+                "info": {
+                    "overview": {
+                        "title": "about",
+                        "description": "<br>Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    "hard-skills": {
+                        "title": "hard-skills",
+                        "description": "<br>As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    "soft-skills": {
+                        "title": "soft-skills",
+                        "description": "<br>I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                }
+            },
+            "personal-info": {
+                "title": "personal-info",
+                "icon": "icons/info-personal.svg",
+                "info": { 
+                    "bio": {
+                        "title": "About",
+                        "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                    },
+                    "interests": {
+                        "title": "interests",
+                        "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    "education": {
+                        "title": "education",
+                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "files": {
+                            "high-school": "I have been in 'Las viñas'...",
+                            "university": "The university..."
+                        }
+                    }
+                }
+            },
+            "hobbies-info": {
+                "title": "hobbies-info",
+                "icon": "icons/info-hobbies.svg",
+                "info": {
+                    "sports": {
+                        "title": "sports",
+                        "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    "favorite-games": {
+                        "title": "favorite-games",
+                        "description": "<br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    }
+                }
+            }
+        }
+    },
+    "contacts": {
+        "direct": {
+            "title": "contacts",
+            "sources": {
+                "email": "hello@snigdhaos.org"
+            }
+        },
+        "social": {
+            "github": {
+                "title": "Github",
+                "url": "https://github.com/",
+                "user": "Snigdha-OS"
+            },
+            "download": {
+                "title": "Download",
+                "url": "#",
+                "user": "#"
+            },
+            "facebook": {
+                "title": "Facebook",
+                "url": "https://facebook.com/",
+                "user": "username"
+            },
+            "twitter": {
+                "title": "Twitter",
+                "url": "https://twitter.com/",
+                "user": "username"
+            }
+        },
+        "find_me_also_in": {
+            "title": "developers",
+            "sources": {
+                "youtube": {
+                    "title": "GitHub",
+                    "url": "https://www.youtube.com/",
+                    "user": "username"
+                },
+                "gurushots": {
+                    "title": "GuruShots profile",
+                    "url": "https://gurushots.com/",
+                    "user": "username"
+                },
+                "instagram": {
+                    "title": "Instagram account",
+                    "url": "https://instagram.com/",
+                    "user": "username"
+                },
+                "twitch": {
+                    "title": "Twitch profile",
+                    "url": "https://twitch.com/",
+                    "user": "username"
+                }
+            }
+        }
+    },
+    "gists": {
+        "1": "7991ac9882771df1c56578fa60d5f0ab",
+        "2": "1851f532dedb1e515f0aacd24276c9dd"
+    },
+    "projects": {
+        "1": {
+            "title": "snigdhaos-assistant",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/ui-animations2.png",
+            "tech": ["CPP"],
+            "url": "https://github.com/"
+        },
+        "2": {
+            "title": "snigdhaos-kernel-manager",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/ai-resources.png",
+            "tech": ["Python"],
+            "url": "https://github.com/"
+        },
+        "3": {
+            "title": "snigdhaos-blackbox",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/worldmap.png",
+            "tech": ["Angular"],
+            "url": "https://github.com/"
+        },
+        "4": {
+            "title": "_ui-animations",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/ui-animations.png",
+            "tech": ["React"],
+            "url": "https://github.com/Snigdha-OS/snigdhaos-zen-kernel"
+        },
+        "5": {
+            "title": "_tetris-game",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/tetris-game.png",
+            "tech": ["React"],
+            "url": "https://github.com/"
+        },
+        "6": {
+            "title": "_ethereum",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/ethereum.png",
+            "tech": ["Vue"],
+            "url": "https://github.com/"
+        }
+    }
+}

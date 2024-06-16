@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "vitest": "^0.25.3"
+  },
+  "dependencies": {
+    "@highlightjs/vue-plugin": "highlightjs/vue-plugin",
+    "@nuxtjs/tailwindcss": "^6.1.3",
+    "aos": "^3.0.0-beta.6",
+    "highlight.js": "^11.7.0"
+  }
+}

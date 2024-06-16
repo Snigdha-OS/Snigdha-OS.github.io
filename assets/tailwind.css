@@ -1,0 +1,327 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h3, h2 {
+ /*  @apply font-fira_retina; */
+  font-family: 'Fira Code Retina';
+  font-size: 15px;
+}
+
+html {
+    @apply bg-dark-background;
+    height: stretch;
+    width: stretch;
+    margin: 30px;
+}
+
+body {
+    height: stretch;
+    width: stretch;
+}
+
+main.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+#__nuxt {
+  @apply bg-blue-background flex flex-col justify-between;
+  border-radius: 7px;
+  border: 1px solid #1E2D3D;
+  height: 100%;
+  width: 100%;
+}
+
+#section-content-title {
+  width: 100%;
+  min-height: 35px;
+  border-bottom: 1px solid #1E2D3D;
+  }
+
+#section-content-title:hover {
+  cursor: pointer;
+}
+
+#section-content-title-contact {
+  @apply cursor-pointer;
+  border-bottom: 1px solid #1E2D3D;
+
+  height: 35px;
+}
+
+/* Mobile */
+#mobile-page-title {
+  display: flex;
+  font-size: 14px;
+  height: 70px;
+  color: white;
+  padding: 0 25px;
+  align-items: center;
+}
+
+.section-arrow {
+  margin-right: 10px;
+  transition: 0.1s;
+}
+
+
+/* MOBILE AND TABLET (SM - LG) */
+@media (max-width: 1024px) {
+
+  html {
+    margin: 15px;
+    min-height: 100%;
+    height: stretch;
+    width: stretch;
+  }
+
+  #__nuxt {
+    @apply bg-blue-background flex flex-col;
+    justify-content: space-between;
+    height: auto;
+    min-height: stretch; /* This allows the page view for mobile to be full height when the content is less than the screen height. */
+    width: 100%;
+    width: auto;
+  }
+
+  #page-menu, #nav-logo, #filter-menu {
+    border: 0px;
+  }
+
+  #page-menu {
+    width: 100% !important;
+  }
+
+  #section-content-title {
+  width: 100%;
+  height: 30px;
+  background-color: #1E2D3D;
+  align-items: center;
+  padding: 0 25px;
+  }
+
+  .submenu .title {
+    display:flex;
+    align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    height: 35px;
+    background-color: #1E2D3D;
+    margin-bottom: 3px
+  }
+
+  #left, #contact-menu {
+    border-right: 0px;
+  }
+
+    /* contact */
+  #contact-me #left {
+    padding: 35px 25px;
+  }
+
+  /* footer */
+  footer {
+    height: 50px;
+    min-height: 50px !important;
+    font-size: 14px !important;
+  }
+
+  #social-icons > a {
+    width: 55px !important;
+  }
+
+}
+
+/* LG - XL */
+@media (min-width: 1024px) {
+  #page-menu, #nav-logo, #filter-menu {
+    min-width: 275px !important;
+    max-width: 275px !important;
+  }
+
+  #page-menu, #filter-menu {
+    font-size: 14px;
+  }
+
+  #commented-text {
+    font-size: 14px;
+  }
+
+  #mobile-page-title {
+    display: none;
+  }
+  /* contact */
+  #contact-me #left {
+    padding: 50px 25px 0px 25px;
+  }
+
+  #contact-form {
+      max-width: 220px;
+      width: 100%;
+  }
+
+  main.page {
+    flex-direction: row;
+  }
+}
+
+/* 2XL */
+@media (min-width: 1536px) {
+
+}
+
+/* 2K */
+@media (min-width: 1920px) {
+
+
+  #page-menu, #nav-logo, #filter-menu {
+    min-width: 310px !important;
+    max-width: 310px !important;
+  }
+
+  /* header */
+  #navbar > nav {
+    height: 50px !important;
+    font-size: 14px !important;
+  }
+
+  /* footer */
+  footer {
+    height: 50px;
+    min-height: 50px !important;
+    font-size: 14px !important;
+  }
+
+  #social-icons > a {
+    width: 55px !important;
+  }
+
+  #social-icons > a > svg, footer > a > svg {
+    width: 1.5rem !important; /* 20px */
+    height: 1.5rem !important; /* 20px */
+  }
+
+  /* about */
+  #commented-text {
+    font-size: 16px !important;
+  }
+  #page-menu, #filter-menu {
+    font-size: 16px !important;
+  }
+
+  /* contact */
+  #contact-me #left {
+    padding: 100px 25px 0px 25px !important;
+  }
+
+  .form-content {
+    padding: 100px 100px !important;
+    font-size: 16px !important;
+  }
+}
+
+
+/* 
+ * Mobile min view to tablet max view (width: 0 to 1020)
+*/
+@media screen (max-width: 1020px) {
+
+}
+
+/* 
+ * Tablet min view to desktop medium view (width: 1020 to 1920) (height: 0 to 1080)
+*/
+@media screen (min-width: 1020px) and (max-width: 1920px) and (max-height: 1080px) {
+
+}
+
+/* 
+ * Desktop medium view to desktop max view (width: 1920 to infinte) (height: 1080 to infinite)
+*/
+@media screen (min-width: 1920px) and (min-height: 1080px) {
+
+}
+
+/* Borders */
+
+.border-top {
+  border-top: 1px solid #1E2D3D;
+}
+
+.border-right {
+  border-right: 1px solid #1E2D3D;
+}
+
+.border-bot {
+  border-bottom: 1px solid #1E2D3D;
+}
+
+.border-left {
+  border-left: 1px solid #1E2D3D;
+}
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  border-left: 1px solid #1E2D3D;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7B9BBB;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Fira Code Light";
+    src: url("./fonts/fira-code/FiraCode-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code Regular";
+  src: url("./fonts/fira-code/FiraCode-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code Retina";
+  src: url("./fonts/fira-code/FiraCode-Retina.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code Medium";
+  src: url("./fonts/fira-code/FiraCode-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code SemiBold";
+  src: url("./fonts/fira-code/FiraCode-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code Bold";
+  src: url("./fonts/fira-code/FiraCode-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code Variable";
+  src: url("./fonts/fira-code/FiraCode-Variable.ttf") format('truetype');
+}

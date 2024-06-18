@@ -1,86 +1,54 @@
-<h1 align="center">
-  developer-portfolio-v2
-</h1>
-<p align="center">
-  The first open source version of <a href="https://www.figma.com/community/file/1100794861710979147" target="_blank"> Portfolio for Developers Concept V.2</a>, designed by <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and developed by <a href="https://github.com/alexdeploy">@alexdeploy</a>. Built with <a href="https://nuxt.com/" target="_blank">Nuxt.js 3.0</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
-</p>
-<div align="center">
+# Starlight Starter Kit: Basics
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6fa55804-6799-419f-9222-359ba49c5e4c/deploy-status)](https://app.netlify.com/sites/developer-portfolio-v2/deploys)
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-</div>
-
-<p align="center">
-  <a href="" target="_blank">
-    <img src="./public/images/demo-share.png" />
-  </a>
-</p>
-
-## 🚨 Forking this repo
-
-Feel free to fork this repository and make it your own! You can use it as a starting point for your own portfolio website. However, please note that the effort and time deserves to be recognized and *plagiarism is a bad practice*. If you use this project, we would greatly appreciate it if you give credits to the designer <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and the developer <a href="https://github.com/alexdeploy">@alexdeploy</a>, or linking <a href="https://github.com/alexdeploy/developer-portfolio-v2">this repo</a>.
-
-Thanks 🤘 and enjoy it!
-
-## 🛠 Installation
-
-1. Clone the project to your local machine.
-
-```sh
-git clone https://github.com/alexdeploy/developer-portfolio-v2.git
+```
+npm create astro@latest -- --template starlight
 ```
 
-2. Navigate to the project directory
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
 
-```sh
-cd developer-portfolio-v2
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+## 🚀 Project Structure
+
+Inside of your Astro + Starlight project, you'll see the following folders and files:
+
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   │   └── config.ts
+│   └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
 ```
 
-3. Install the required dependencies
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-```sh
-yarn
-```
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-4. Start the development server
+Static assets, like favicons, can be placed in the `public/` directory.
 
-```sh
-yarn dev
-```
+## 🧞 Commands
 
-5. The development server should now be running on <a href="http://localhost:3000/">http://localhost:3000/</a>
+All commands are run from the root of the project, from a terminal:
 
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## ✒️ Customization
+## 👀 Want to learn more?
 
-The portfolio template includes some default content, but you can easily customize it to fit your needs. Here are some of the things you can change:
-
-* Update the `developer.json` file on root directory, which contains all the text for the project and the portfolio "user" information, including *projects*, *about-me*, *gists* (Ids) and *contact* info.
-
-* Update the `nuxt.config.ts` file for meta tags of website and some additional config.
-
-* Update the `public/pwa/manifest.json` file for PWA config.
-
-* Change the styling and design of the website to match your personal style.
-
-## 🚀 Building and Running for Production
-
-1. Generate a full static production build
-
-```sh
-yarn build
-```
-
-2. Preview the site as it will appear once deployed.
-
-```sh
-yarn preview
-```
-
-## Contributions
-
-If you find any bugs or have any suggestions, you can open an <a href="https://github.com/alexdeploy/developer-portfolio-v2/issues">issue</a>.
-
-## License
-
-This project is licensed under the MIT License. See the <a href="https://github.com/alexdeploy/developer-portfolio-v2/blob/main/LICENSE">LICENSE</a> file for more information.
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

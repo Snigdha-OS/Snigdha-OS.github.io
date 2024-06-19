@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [starlight({
     title: 'SNIGDHA OS',
     social: {
-      github: 'https://github.com/withastro/starlight'
+      github: 'https://github.com/Snigdha-OS/'
     },
     sidebar: [{
       label: 'Guides',

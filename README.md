@@ -1,54 +1,117 @@
-# Starlight Starter Kit: Basics
+<p align="center">
+  <img src="https://i.imgur.com/ROJE2rc.png" width="100" alt="bartzalewski.com logo" />
+</p>
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+<h1 align="center">
+  bartzalewski.com - v2
+</h1>
 
-```
-npm create astro@latest -- --template starlight
-```
+<p align="center">
+  This is a project of my new, refreshed website, that is free to use.
+</p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+<p align="center">
+  <a href="https://app.netlify.com/sites/eager-lichterman-b07f67/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/84b336d8-8c1f-484e-ad19-efabafc468f0/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![demo](https://i.imgur.com/ApY87ek.png)
 
-## 🚀 Project Structure
+## ⭐ How To Install?
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+To be able to use this properly, you need to choose between the three versions of this portfolio. If you want to make sure that it'll work for you, just don't install it via the master branch, because it won't start for you. There are 3 versions down below, depending on what you choose, you will have to do different things to make it fully working.
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+### Choose your version:
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+- <a href="#contentful">Contentful Blog</a>
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+- [Markdown blog](https://github.com/bartzalewski/bartzalewski.com-v2/tree/md-blog)
 
-Static assets, like favicons, can be placed in the `public/` directory.
+- [No blog](https://github.com/bartzalewski/bartzalewski.com-v2/tree/no-blog)
 
-## 🧞 Commands
+<h2 id="contentful">
+  1️⃣ Contentful Blog Installation
+</h2>
 
-All commands are run from the root of the project, from a terminal:
+1. Create [Contentful](http://contentful.com) account.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. Create New Content Model with fields:
 
-## 👀 Want to learn more?
+- title (Short Text)
+- slug (Short Text)
+- publishedDate (Date & time)
+- background (Media)
+- Body (Rich text)
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+3. Add a new post and publish it.
+
+4. In the portfolio root directory, create a file ".env", and paste the following code to it:
+
+   ```
+   CONTENTFUL_SPACE_ID=YOUR_CONTENTFUL_SPACE_ID
+   CONTENTFUL_ACCESS_TOKEN=YOUR_CONTENTFUL_ACCESS_TOKEN
+   ```
+
+5. Paste your IDs and re-run the development server.
+
+<h2 id="markdown">
+  2️⃣ Markdown blog/No blog Installation
+</h2>
+
+No configuration at all. Just install.
+
+### Installation and set up:
+
+1. Install [Node.js](https://nodejs.org)
+
+2. Install the Gatsby CLI
+
+   ```
+   npm install -g gatsby-cli
+   ```
+
+3. CD to the forked repo
+
+   ```
+   cd bartzalewski.com-v2
+   ```
+
+4. Install the packages
+
+   ```
+   npm install
+   ```
+
+5. Start the development server
+
+   ```
+   npm start
+   ```
+
+## 📝 How to make the Contact Form work?
+
+[Click here](https://github.com/bartzalewski/bartzalewski.com-v2-mail)
+
+## ⚠️ Using it as Your Portfolio
+
+As I'm making this repo public for all, you can easily get it and use it how you want. But, there is a must. You need to attribute me. You must leave alone the attribution under the copyright statement ("Created By Bart Zalewski").
+
+In the beginning, I created this website only for myself, for portfolio purposes. Now, you can just download it and use it for your purposes.
+
+### TL;DR
+
+You can fork this repository, but please give me proper credit by linking back to my website - [bartzalewski.com](https://bartzalewski.com).
+
+Thank you! 💚
+
+## ✨ What kind of technologies did I use?
+
+- GatsbyJS
+- styled-components
+- Contentful
+- React Helmet
+
+## Follow me!
+
+[Website](https://www.bartzalewski.com) • [Instagram](https://www.instagram.com/bart.code) • [YouTube](https://www.youtube.com/channel/UCwkU0-_RJbS16X5pbcW-tPQ)

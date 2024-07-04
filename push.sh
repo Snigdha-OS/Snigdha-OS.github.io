@@ -3,7 +3,7 @@
 # Author        : ESHAN ROY
 # Author URI    : https://eshanized.github.io
 
-# NOTE : Run at your own Risk!
+# NOTE : RUN AT YOUR OWN RISK!
 
 # Define the conventional commit types with emojis
 TYPES=("🎉 feat" "🐞 fix" "📚 docs" "💅 style" "🔨 refactor" "⚡️ perf" "🧪 test" "🛠️ build" "🤖 ci" "🧹 chore" "⏪️ revert")

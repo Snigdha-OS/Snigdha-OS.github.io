@@ -11,6 +11,7 @@ print_options() {
   echo "1. 📝 Enter GitHub username and password"
   echo "2. 🔑 Enter GitHub personal access token"
   echo "3. 📁 Use existing GitHub credentials from ~/.gitconfig"
+  echo "4. Github user and email config"
 }
 
 # Print options and prompt user to select
@@ -38,6 +39,14 @@ case $OPTION in
     ;;
   3) 
     echo "Using existing GitHub credentials from ~/.gitconfig"
+    ;;
+  4)
+    echo "Enter github email address: "
+    read -r USEREMAIL
+    echo "Enter GitHub username: "
+    read -r USERNAME
+    git config --global user.email "$USEREMAIL"
+    git config --global user.name "$USERNAME"
     ;;
   *) 
     echo "Invalid option. Exiting."

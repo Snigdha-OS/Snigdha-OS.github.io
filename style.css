@@ -22,11 +22,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(26, 31, 44, 0.95);
+    background-color: rgba(26, 31, 44, 0.70);
     z-index: 1000;
 }
 
@@ -52,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 5%;
-    background-image: url(/assets/background.jpg); 
+    background-image: url(/assets/background.jpg);
     position: relative;
     overflow: hidden;
     background-position: bottom;
@@ -255,7 +254,7 @@ body {
 }
 
 .desktop-environments {
-    padding: 5rem 5%;
+    padding: 10px;
 }
 
 .desktop-grid {
@@ -277,7 +276,7 @@ body {
 
 .desktop-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -339,6 +338,8 @@ body {
     .platform-grid {
         grid-template-columns: 1fr;
     }
+    
+    
 }
 .footer {
 background-color: #000;
@@ -515,12 +516,23 @@ margin-top: 2rem;
 .footer-content {
     grid-template-columns: 1fr;
 }
-
+nav.navbar{
+    width: 100%;
+}
 .footer-section {
     text-align: center;
 }
 
 .with-icon {
     justify-content: center;
+}
+.desktop-card{
+    width: 460px;
+    text-align: left;
+}
+.desktop-card p {
+    text-align: left;
+    
+}
 }
 }

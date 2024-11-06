@@ -25,13 +25,36 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(26, 31, 44, 0.70);
+    background-color: rgba(26, 31, 44, 0.0);
     z-index: 1000;
 }
 
 .logo {
     height: 40px;
 }
+
+a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a::before {
+    background: #754ffe;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
 
 .nav-links {
     display: flex;
@@ -51,7 +74,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 5%;
-    background-image: url(/assets/background.jpg);
+    background-image: url(/assets/background.png);
     position: relative;
     overflow: hidden;
     background-position: bottom;

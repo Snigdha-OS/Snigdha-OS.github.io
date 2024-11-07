@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -45,7 +45,7 @@ a {
     inset: 0;
     position: absolute;
     transform: scaleX(0);
-    transform-origin: right;
+    transform-origin: left;
     transition: transform 0.5s ease-in-out;
     z-index: -1;
   }
@@ -91,11 +91,6 @@ a {
     align-items: center;
 }
 
-.kali-dragon {
-    width: 100%;
-    max-width: 400px;
-}
-
 .hero-text h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -111,7 +106,7 @@ a {
 .hero-text p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #a0a0a0;
+    color: #ffffff;
 }
 
 .cta-buttons {

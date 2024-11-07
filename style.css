@@ -28,7 +28,10 @@ body {
     top: 0;
     background-color: rgba(26, 31, 44, 0.0);
     z-index: 1000;
-}
+    padding-inline:5rem;
+    backdrop-filter:blur(5px);
+    border:
+    }
 
 .logo {
     height: 40px;

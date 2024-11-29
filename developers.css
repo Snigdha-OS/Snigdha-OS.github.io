@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #111;
+  background: url(./assets/background.png);
   transition: 0.5s;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -20,13 +20,19 @@ body {
 }
 
 body:has(.box[data-color="clr1"]:hover) {
-  background: #754ffe;
+  background: url(./assets/eshanized.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body:has(.box[data-color="clr2"]:hover) {
-  background: #301a15;
+  background: url(./assets/alok.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body:has(.box[data-color="clr3"]:hover) {
-  background: #1b2a32;
+  background: url(./assets/iconixed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {

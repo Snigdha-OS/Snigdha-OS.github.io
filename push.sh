@@ -3,12 +3,10 @@
 # Author        : ESHAN ROY
 # Author URI    : https://eshanized.github.io
 
-# NOTE : Run at your own risk!
-
 # Define the conventional commit types with new emojis
 TYPES=("🚀 feat" "🐛 fix" "📝 docs" "✨ style" "🛠 refactor" "⚡️ perf" "🔬 test" "🔧 build" "🤖 ci" "🧹 chore" "⏪ revert")
 
-# Function to display an error and exit
+# Function to display an error and exit and
 error_exit() {
     echo -e "\033[1;31m[ERROR]\033[0m $1"
     exit 1
@@ -68,13 +66,6 @@ fi
 # Print the commit message to the console
 echo -e "\nCommit message:"
 echo -e "\033[1;36m$commit_msg\033[0m"
-
-# Confirm before committing
-read -p "Do you want to proceed with this commit? (y/n): " confirm
-if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
-    echo "Commit aborted."
-    exit 0
-fi
 
 # Stage all changes
 git add .

@@ -26,7 +26,7 @@ export function Maintainers() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-4 border-indigo-500 border-t-transparent"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-4 border-[#6495ed] border-t-transparent"></div>
       </div>
     );
   }
@@ -69,7 +69,7 @@ function MaintainerCard({ maintainer }: { maintainer: Maintainer }) {
         <img
           src={maintainer.avatarUrl}
           alt={maintainer.name || maintainer.login}
-          className="w-24 h-24 rounded-full ring-2 ring-indigo-50"
+          className="w-24 h-24 rounded-full ring-2 ring-[#6495ed]"
         />
         <div>
           <h2 className="text-2xl font-semibold text-gray-800">{maintainer.name || maintainer.login}</h2>
@@ -108,7 +108,7 @@ function MaintainerCard({ maintainer }: { maintainer: Maintainer }) {
             href={`https://twitter.com/${maintainer.twitterUsername}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700 transition-colors duration-200"
+            className="text-[#6495ed] hover:text-[#4169e1] transition-colors duration-200"
           >
             <Twitter className="h-6 w-6" />
           </a>
@@ -118,7 +118,7 @@ function MaintainerCard({ maintainer }: { maintainer: Maintainer }) {
             href={maintainer.blog}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-500 hover:text-indigo-700 transition-colors duration-200"
+            className="text-[#6495ed] hover:text-[#4169e1] transition-colors duration-200"
           >
             <Globe className="h-6 w-6" />
           </a>

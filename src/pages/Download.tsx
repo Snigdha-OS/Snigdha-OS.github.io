@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Download as DownloadIcon, Monitor, Server, HardDrive, Smartphone } from 'lucide-react';
+import { Download as DownloadIcon, Monitor, Server, HardDrive, Smartphone, Move } from 'lucide-react';
 
 export function DownloadPage() {
   const [userLocation, setUserLocation] = useState<string | null>(null);
   const [userRegion, setUserRegion] = useState<string | null>(null);
 
-  // Detect user location using a public API
   useEffect(() => {
     async function fetchLocation() {
       try {
@@ -22,11 +21,9 @@ export function DownloadPage() {
     fetchLocation();
   }, []);
 
-  // Find the closest mirror based on the user's region
   const getSuggestedMirror = () => {
-    if (!userRegion) return null; // If region is not detected, return null
-  
-    // Normalize userRegion to handle cases like "United States" vs. "USA"
+    if (!userRegion) return null;
+
     const regionMap: { [key: string]: string } = {
       "united states": "north america",
       "canada": "north america",
@@ -39,27 +36,25 @@ export function DownloadPage() {
       "south africa": "africa",
       "australia": "australia",
     };
-  
-    // Lowercase the userRegion for more lenient matching
+
     const normalizedRegion = regionMap[userRegion.toLowerCase()] || userRegion.toLowerCase();
-  
-    // Find the closest mirror based on the user's region
+
     return mirrorData.find((mirror) =>
       mirror.region.toLowerCase().includes(normalizedRegion)
     );
   };
-  
+
   const suggestedMirror = getSuggestedMirror();
 
   return (
-    <div className="py-12">
+    <div className="bg-gradient-to-b from-[#f0f4f8] to-[#e1e8f0] py-12">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-6 text-[#6495ed]">
+          <h1 className="text-4xl font-extrabold mb-6 text-[#333]">
             Download Snigdha OS
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Choose the edition that best suits your needs. All versions are free
             to download and use, providing the best experience for developers,
             students, and professionals alike.
@@ -70,7 +65,7 @@ export function DownloadPage() {
               <FeatureBadge color="#6495ed" text="Open Source & Free" />
               <FeatureBadge color="#6495ed" text="Customizable & Secure" />
             </div>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto mt-6">
               Snigdha OS is designed to provide an unparalleled experience,
               whether you're working on an older device or a high-end system.
               Built with efficiency, reliability, and beauty in mind, it’s
@@ -89,10 +84,10 @@ export function DownloadPage() {
 
         {/* System Requirements */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#6495ed]">
+          <h2 className="text-3xl font-extrabold text-center mb-8 text-[#333]">
             System Requirements
           </h2>
-          <div className="rounded-lg p-10 shadow-lg">
+          <div className="rounded-[5px] p-10 shadow-2xl bg-white">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <SystemRequirements
                 title="Minimum Requirements"
@@ -118,7 +113,7 @@ export function DownloadPage() {
 
         {/* Download Mirrors */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-3xl font-extrabold text-center mb-8 text-[#333]">
             Download Mirrors
           </h2>
           <p className="text-lg text-gray-600 text-center mb-6 max-w-2xl mx-auto">
@@ -161,7 +156,7 @@ function FeatureBadge({
 }) {
   return (
     <span
-      className={`inline-block px-4 py-2 text-sm bg-[${color}] text-white rounded-[5px] shadow-md`}
+      className={`inline-block px-6 py-3 text-sm bg-[${color}] text-white rounded-[5px] shadow-md transform transition-all hover:scale-105`}
     >
       {text}
     </span>
@@ -185,17 +180,17 @@ function EditionCard({
 }) {
   return (
     <div
-      className={`bg-white rounded-lg shadow-lg p-8 relative ${
+      className={`bg-white rounded-[5px] shadow-lg hover:shadow-2xl p-8 relative transition-transform transform hover:scale-105 ${
         recommended ? 'border-2 border-[#6495ed]' : ''
       }`}
     >
       {recommended && (
-        <div className="absolute top-4 right-4 bg-[#6495ed] text-white px-2 py-1 rounded-[5px] text-sm">
+        <div className="absolute top-4 right-4 bg-[#6495ed] text-white px-3 py-2 rounded-[5px] text-sm shadow-lg">
           Recommended
         </div>
       )}
       <div className="flex justify-center mb-4">{icon}</div>
-      <h3 className="text-xl font-bold mb-2 text-center">{title}</h3>
+      <h3 className="text-2xl font-semibold mb-2 text-center text-[#333]">{title}</h3>
       <p className="text-gray-600 text-center mb-4">{description}</p>
       <div className="mb-4">
         <h4 className="text-sm font-bold text-[#6495ed]">Key Features:</h4>
@@ -210,8 +205,8 @@ function EditionCard({
         <p className="text-gray-600 text-sm">{idealFor}</p>
       </div>
       <div className="flex justify-center mt-6">
-        <button className="flex items-center space-x-2 bg-[#6495ed] text-white px-6 py-2 rounded-[5px] hover:bg-[#4169e1] transition-colors">
-          <DownloadIcon className="h-5 w-5" />
+        <button className="flex items-center space-x-2 bg-[#6495ed] text-white px-8 py-3 rounded-[5px] hover:bg-[#4169e1] transition-colors transform hover:scale-105">
+          <DownloadIcon className="h-6 w-6" />
           <span>Download</span>
         </button>
       </div>
@@ -229,9 +224,9 @@ function SystemRequirements({
   notes: string;
 }) {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-xl hover:shadow-2xl transition-shadow">
-      <h3 className="text-xl font-bold text-[#6495ed]">{title}</h3>
-      <ul className="space-y-3 text-gray-700">
+    <div className="bg-white shadow-lg rounded-[5px] p-8">
+      <h3 className="text-2xl font-semibold text-[#333]">{title}</h3>
+      <ul className="space-y-3 text-gray-700 mt-4">
         {specs.map((spec, index) => (
           <li key={index}>{spec}</li>
         ))}
@@ -246,13 +241,15 @@ function MirrorButton({
   speed,
   host,
   url,
-  suggested = false,  // Added 'suggested' prop to highlight the suggested mirror
+  suggested = false,
+  description,
 }: {
   region: string;
   speed: string;
   host: string;
   url: string;
-  suggested?: boolean; // Optional prop to check if this is the suggested mirror
+  suggested?: boolean;
+  description: string;
 }) {
   const speedColor = {
     'Very Fast': 'text-green-500',
@@ -263,30 +260,31 @@ function MirrorButton({
   return (
     <a
       href={url}
-      className={`block bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 border border-gray-200 ${suggested ? 'border-2 border-[#6495ed] bg-[#e6f0ff]' : ''}`}
+      className={`block bg-white rounded-[5px] shadow hover:shadow-xl transition-all p-6 border-2 border-gray-200 ${suggested ? 'bg-[#e6f0ff]' : ''} hover:bg-[#f4f7ff]`}
     >
-      <div className="flex flex-col space-y-3">
-        <div className="text-center">
-          <h3 className="text-xl font-bold">{region}</h3>
-          <p className="text-sm">{host}</p>
-        </div>
-        <div className="text-center">
-          <span className={`font-semibold ${speedColor}`}>{speed}</span>
-        </div>
-        <button className="bg-[#6495ed] text-white py-2 px-4 rounded-lg">
-          Download
-        </button>
-        {suggested && (
-          <div className="absolute top-2 right-2 bg-[#6495ed] text-white text-sm px-2 py-1 rounded-lg">
-            Suggested Mirror
-          </div>
-        )}
+      <div className="text-center">
+        <h3 className="text-xl font-bold text-[#333]">{region}</h3>
+        <p className="text-sm text-gray-600">{host}</p>
       </div>
+      <div className="text-center mt-2">
+        <span className={`font-semibold ${speedColor}`}>{speed}</span>
+      </div>
+      <div className="text-sm text-gray-600 mt-2">
+        {description}
+      </div>
+      <button className="bg-[#6495ed] text-white py-2 px-6 rounded-[5px] mt-4 transition-colors hover:bg-[#4169e1]">
+        Download
+      </button>
+      {suggested && (
+        <div className="absolute top-2 right-2 bg-[#6495ed] text-white text-xs px-2 py-1 rounded-[5px]">
+          Suggested Mirror
+        </div>
+      )}
     </a>
   );
 }
 
-// Data
+// Data for editions and mirrors
 const editionData = [
   {
     title: 'Gnome Edition',
@@ -317,26 +315,57 @@ const editionData = [
     idealFor: 'Power users who want control and beauty in equal measure.',
     icon: <Smartphone className="h-12 w-12 text-[#6495ed]" />,
   },
+  {
+    title: 'i3 Window Manager Edition',
+    description: 'Minimal and efficient. Perfect for users who prefer keyboard-driven navigation.',
+    keyFeatures: ['Tiling Window Manager', 'Lightweight', 'Highly Configurable'],
+    idealFor: 'Users who value efficiency and are comfortable with manual configuration.',
+    icon: <Move className="h-12 w-12 text-[#6495ed]" />,
+  },
+  {
+    title: 'Openbox Edition',
+    description: 'A fast and lightweight window manager with full customization.',
+    keyFeatures: ['Highly Customizable', 'Low Memory Usage', 'Simple Layout'],
+    idealFor: 'Users looking for a lightweight and minimal window manager.',
+    icon: <Move className="h-12 w-12 text-[#6495ed]" />,
+  },
 ];
 
-// Example of mirrorData (you can add more mirrors as needed)
 const mirrorData = [
   {
     region: 'North America (USA)',
     speed: 'Very Fast',
     host: 'ExampleMirrorHost.com',
     url: 'https://example.com/download',
+    description: 'Located in the United States, this mirror offers extremely fast download speeds for North American users.',
   },
   {
     region: 'Europe (Germany)',
     speed: 'Fast',
     host: 'EU-Mirror.com',
     url: 'https://eu-mirror.com/download',
+    description: 'This server in Germany provides good download speeds for European users.',
   },
   {
     region: 'Asia (India)',
     speed: 'Moderate',
     host: 'IN-Mirror.com',
     url: 'https://in-mirror.com/download',
+    description: 'Located in India, this mirror is suitable for users in South Asia. Speeds may vary depending on network conditions.',
   },
+  {
+    region: 'South America (Brazil)',
+    speed: 'Fast',
+    host: 'BR-Mirror.com',
+    url: 'https://br-mirror.com/download',
+    description: 'This mirror in Brazil offers fast download speeds for South American users.',
+  },
+  {
+    region: 'Australia',
+    speed: 'Very Fast',
+    host: 'AU-Mirror.com',
+    url: 'https://au-mirror.com/download',
+    description: 'Users in Australia can enjoy very fast download speeds from this mirror.',
+  },
+  // Add more mirrors as needed
 ];

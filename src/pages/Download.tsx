@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Download as DownloadIcon, Monitor, Server, HardDrive, Smartphone, Code } from 'lucide-react';
+import { Download as DownloadIcon, Monitor, Server, HardDrive, Smartphone } from 'lucide-react';
 
 export function DownloadPage() {
   const [userLocation, setUserLocation] = useState<string | null>(null);
@@ -56,7 +56,7 @@ export function DownloadPage() {
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-6 text-indigo-600">
+          <h1 className="text-4xl font-bold mb-6 text-[#6495ed]">
             Download Snigdha OS
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -66,9 +66,9 @@ export function DownloadPage() {
           </p>
           <div className="mt-8 space-y-6">
             <div className="flex justify-center items-center space-x-4">
-              <FeatureBadge color="indigo" text="Lightweight & Fast" />
-              <FeatureBadge color="indigo" text="Open Source & Free" />
-              <FeatureBadge color="indigo" text="Customizable & Secure" />
+              <FeatureBadge color="#6495ed" text="Lightweight & Fast" />
+              <FeatureBadge color="#6495ed" text="Open Source & Free" />
+              <FeatureBadge color="#6495ed" text="Customizable & Secure" />
             </div>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
               Snigdha OS is designed to provide an unparalleled experience,
@@ -89,7 +89,7 @@ export function DownloadPage() {
 
         {/* System Requirements */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8 text-indigo-600">
+          <h2 className="text-3xl font-bold text-center mb-8 text-[#6495ed]">
             System Requirements
           </h2>
           <div className="rounded-lg p-10 shadow-lg">
@@ -139,7 +139,7 @@ export function DownloadPage() {
           </div>
           {suggestedMirror && (
             <div className="mt-8 text-center">
-              <h3 className="text-2xl font-bold text-indigo-600">
+              <h3 className="text-2xl font-bold text-[#6495ed]">
                 Suggested Mirror for You
               </h3>
               <MirrorButton {...suggestedMirror} />
@@ -161,7 +161,7 @@ function FeatureBadge({
 }) {
   return (
     <span
-      className={`inline-block px-4 py-2 text-sm bg-${color}-600 text-white rounded-[5px] shadow-md`}
+      className={`inline-block px-4 py-2 text-sm bg-[${color}] text-white rounded-[5px] shadow-md`}
     >
       {text}
     </span>
@@ -186,11 +186,11 @@ function EditionCard({
   return (
     <div
       className={`bg-white rounded-lg shadow-lg p-8 relative ${
-        recommended ? 'border-2 border-indigo-500' : ''
+        recommended ? 'border-2 border-[#6495ed]' : ''
       }`}
     >
       {recommended && (
-        <div className="absolute top-4 right-4 bg-indigo-500 text-white px-2 py-1 rounded-[5px] text-sm">
+        <div className="absolute top-4 right-4 bg-[#6495ed] text-white px-2 py-1 rounded-[5px] text-sm">
           Recommended
         </div>
       )}
@@ -198,7 +198,7 @@ function EditionCard({
       <h3 className="text-xl font-bold mb-2 text-center">{title}</h3>
       <p className="text-gray-600 text-center mb-4">{description}</p>
       <div className="mb-4">
-        <h4 className="text-sm font-bold text-indigo-600">Key Features:</h4>
+        <h4 className="text-sm font-bold text-[#6495ed]">Key Features:</h4>
         <ul className="list-disc list-inside text-gray-600 text-sm">
           {keyFeatures.map((feature, index) => (
             <li key={index}>{feature}</li>
@@ -206,11 +206,11 @@ function EditionCard({
         </ul>
       </div>
       <div>
-        <h4 className="text-sm font-bold text-indigo-600">Ideal For:</h4>
+        <h4 className="text-sm font-bold text-[#6495ed]">Ideal For:</h4>
         <p className="text-gray-600 text-sm">{idealFor}</p>
       </div>
       <div className="flex justify-center mt-6">
-        <button className="flex items-center space-x-2 bg-indigo-600 text-white px-6 py-2 rounded-[5px] hover:bg-indigo-700 transition-colors">
+        <button className="flex items-center space-x-2 bg-[#6495ed] text-white px-6 py-2 rounded-[5px] hover:bg-[#4169e1] transition-colors">
           <DownloadIcon className="h-5 w-5" />
           <span>Download</span>
         </button>
@@ -230,7 +230,7 @@ function SystemRequirements({
 }) {
   return (
     <div className="bg-white rounded-lg p-6 shadow-xl hover:shadow-2xl transition-shadow">
-      <h3 className="text-xl font-bold text-indigo-600">{title}</h3>
+      <h3 className="text-xl font-bold text-[#6495ed]">{title}</h3>
       <ul className="space-y-3 text-gray-700">
         {specs.map((spec, index) => (
           <li key={index}>{spec}</li>
@@ -263,7 +263,7 @@ function MirrorButton({
   return (
     <a
       href={url}
-      className={`block bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 border border-gray-200 ${suggested ? 'border-2 border-indigo-500 bg-indigo-100' : ''}`}
+      className={`block bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 border border-gray-200 ${suggested ? 'border-2 border-[#6495ed] bg-[#e6f0ff]' : ''}`}
     >
       <div className="flex flex-col space-y-3">
         <div className="text-center">
@@ -273,11 +273,11 @@ function MirrorButton({
         <div className="text-center">
           <span className={`font-semibold ${speedColor}`}>{speed}</span>
         </div>
-        <button className="bg-indigo-600 text-white py-2 px-4 rounded-lg">
+        <button className="bg-[#6495ed] text-white py-2 px-4 rounded-lg">
           Download
         </button>
         {suggested && (
-          <div className="absolute top-2 right-2 bg-indigo-600 text-white text-sm px-2 py-1 rounded-lg">
+          <div className="absolute top-2 right-2 bg-[#6495ed] text-white text-sm px-2 py-1 rounded-lg">
             Suggested Mirror
           </div>
         )}
@@ -293,7 +293,7 @@ const editionData = [
     description: 'Modern, innovative features while being traditional and familiar.',
     keyFeatures: ['Dynamic Workspaces', 'Extensible Extensions', 'Built-in Accessibility'],
     idealFor: 'General users who prefer a sleek and functional desktop experience.',
-    icon: <Monitor className="h-12 w-12 text-indigo-600" />,
+    icon: <Monitor className="h-12 w-12 text-[#6495ed]" />,
     recommended: true,
   },
   {
@@ -301,88 +301,42 @@ const editionData = [
     description: 'Traditional desktop experience, highly stable and reliable.',
     keyFeatures: ['Low Resource Usage', 'Consistent Workflow', 'Legacy Support'],
     idealFor: 'Users who value simplicity and reliability over modern features.',
-    icon: <Server className="h-12 w-12 text-blue-600" />,
+    icon: <Server className="h-12 w-12 text-[#6495ed]" />,
   },
   {
     title: 'Xfce Edition',
     description: 'Lightweight and stable. Perfect for older computers.',
     keyFeatures: ['Minimal Resource Usage', 'Fast Boot Times', 'Highly Customizable'],
     idealFor: 'Users with older hardware or those who need maximum performance.',
-    icon: <HardDrive className="h-12 w-12 text-purple-600" />,
+    icon: <HardDrive className="h-12 w-12 text-[#6495ed]" />,
   },
   {
     title: 'KDE Plasma Edition',
-    description: 'Customizable and visually stunning, perfect for power users.',
-    keyFeatures: ['Advanced Widgets', 'Custom Themes', 'Built-in Productivity Apps'],
-    idealFor: 'Tech enthusiasts and power users who love customization.',
-    icon: <Code className="h-12 w-12 text-pink-600" />,
-  },
-  {
-    title: 'Minimal Edition',
-    description: 'Barebones version for advanced users who prefer custom setups.',
-    keyFeatures: ['Minimal Preinstalled Apps', 'Manual Configuration', 'Highly Flexible'],
-    idealFor: 'Experienced users who want a clean slate to build their OS.',
-    icon: <Code className="h-12 w-12 text-gray-600" />,
-  },
-  {
-    title: 'ARM Edition',
-    description: 'Optimized for ARM-based devices like Raspberry Pi.',
-    keyFeatures: ['Optimized for ARM', 'Pre-configured Packages', 'Energy Efficient'],
-    idealFor: 'Raspberry Pi enthusiasts and developers working on ARM devices.',
-    icon: <Smartphone className="h-12 w-12 text-teal-600" />,
-  },
-  {
-    title: 'Education Edition',
-    description: 'Packed with educational tools for students and teachers.',
-    keyFeatures: ['Preloaded Educational Software', 'Child-friendly Interface', 'Classroom Tools'],
-    idealFor: 'Students, teachers, and educational institutions.',
-    icon: <Server className="h-12 w-12 text-orange-600" />,
-  },
-  {
-    title: 'Gaming Edition',
-    description: 'Enhanced with gaming tools and pre-installed gaming libraries.',
-    keyFeatures: ['Gaming Drivers', 'Pre-installed Steam', 'Optimized Performance'],
-    idealFor: 'Gamers who need a robust environment for PC gaming.',
-    icon: <Monitor className="h-12 w-12 text-red-600" />,
+    description: 'Feature-rich, eye-catching, and offers tons of customization.',
+    keyFeatures: ['Cutting-edge Visuals', 'Full Customization', 'Highly Extensible'],
+    idealFor: 'Power users who want control and beauty in equal measure.',
+    icon: <Smartphone className="h-12 w-12 text-[#6495ed]" />,
   },
 ];
 
-// Mirrors Data
+// Example of mirrorData (you can add more mirrors as needed)
 const mirrorData = [
   {
-    region: 'North America',
-    speed: 'Fast',
-    host: 'MirrorHost USA',
-    url: '#',
-  },
-  {
-    region: 'Europe',
+    region: 'North America (USA)',
     speed: 'Very Fast',
-    host: 'EuroMirror DE',
-    url: '#',
+    host: 'ExampleMirrorHost.com',
+    url: 'https://example.com/download',
   },
   {
-    region: 'Asia',
+    region: 'Europe (Germany)',
     speed: 'Fast',
-    host: 'AsiaNet JP',
-    url: '#',
+    host: 'EU-Mirror.com',
+    url: 'https://eu-mirror.com/download',
   },
   {
-    region: 'Australia',
+    region: 'Asia (India)',
     speed: 'Moderate',
-    host: 'AusSpeed AU',
-    url: '#',
-  },
-  {
-    region: 'South America',
-    speed: 'Moderate',
-    host: 'LATAM Mirror BR',
-    url: '#',
-  },
-  {
-    region: 'Africa',
-    speed: 'Fast',
-    host: 'Afrinet ZA',
-    url: '#',
+    host: 'IN-Mirror.com',
+    url: 'https://in-mirror.com/download',
   },
 ];

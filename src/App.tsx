@@ -8,7 +8,7 @@ import { Maintainers } from './pages/Maintainers';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

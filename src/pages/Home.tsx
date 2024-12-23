@@ -175,19 +175,19 @@ export function Home() {
         <div className="container mx-auto px-4 text-center relative z-10">
           {/* Main Heading */}
           <h1 className="text-5xl font-extrabold mb-6 text-shadow-md leading-tight hero-heading">
-            EXPERIENCE THE POWER OF
+            UNLEASH THE FUTURE WITH
           </h1>
           <h1 className="text-5xl font-extrabold mb-6 text-shadow-md leading-tight hero-heading">
-            SNIGDHA OS 🔥
+            SNIGDHA OS 🌐
           </h1>
 
           {/* Tagline with Typing Effect */}
           <h2 className="text-2xl font-semibold mb-8 max-w-3xl mx-auto text-shadow-lg text-center">
-            <span className="typing-effect">"Where Performance Meets Innovation ✨"</span>
+            <span className="typing-effect">~Innovation begins with freedom!</span>
           </h2>
 
           <p className="text-xl mb-8 max-w-3xl mx-auto text-shadow-lg text-justify">
-            Snigdha OS is a lightweight, Arch-based Linux distribution crafted for <strong>Penetration Testing 🛡️</strong>, <strong>Ethical Hacking 🔍</strong>, and general use. Power up your system with cutting-edge tools 🛠️ and enhanced security features 🔐💻.
+            Snigdha OS is an intuitive, cutting-edge Linux distribution designed for <strong>Privacy Protection 🔐</strong>, <strong>Advanced Development Tools 👩‍💻</strong>, and <strong>Daily Computing 💻</strong>. Empower your workflow with powerful apps and unmatched performance 🚀.
           </p>
 
           {/* Call to Action Buttons */}
@@ -205,7 +205,7 @@ export function Home() {
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold transform hover:scale-105 hover:bg-white hover:text-[#6495ed] transition-all duration-300 inline-flex items-center space-x-3"
             >
               <Book className="h-5 w-5" />
-              <span>Documentation 📚</span>
+              <span>Read the Docs 📚</span>
             </Link>
 
             <Link
@@ -213,11 +213,12 @@ export function Home() {
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold transform hover:scale-105 hover:bg-white hover:text-[#6495ed] transition-all duration-300 inline-flex items-center space-x-3"
             >
               <Users className="h-5 w-5" />
-              <span>Community Forum 🌐</span>
+              <span>Join the Community 🌍</span>
             </Link>
           </div>
         </div>
       </section>
+
 
       {/* Features Section */}
       <section className="py-16 bg-gradient-to-r from-[#f0f4f8] to-[#ffffff]">

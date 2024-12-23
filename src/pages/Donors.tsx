@@ -40,7 +40,7 @@ function useGitHubDonors(usernames: string[]): { [key: string]: { name: string; 
 
 export function Donors() {
   const donorUsernames = [
-    "eshanized", "GlobalSystemsLtd", "FutureComputingInc", "SarahJohnson", "MichaelChang",
+    "eshanized", "TIAsCode", "IXINTL", "SarahJohnson", "MichaelChang",
     "DataFlowSolutions", "RobertWilson", "EmmaThompson", "RajeshKumar", "PriyaSharma",
     "AryanPatel", "MeenaIyer", "VikramSingh"
   ];

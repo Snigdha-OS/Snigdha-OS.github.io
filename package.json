@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://Snigdha-OS.github.io/",
   "description": "Official website source code for Snigdha OS, a lightweight Arch-based Linux distribution.",
   "scripts": {
     "dev": "vite",
@@ -53,8 +54,4 @@
     "Arch Linux",
     "Website"
   ]
-},
-{
-  "homepage": "https://Snigdha-OS.github.io/"
 }
-

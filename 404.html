@@ -1,124 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snigdha OS</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      var pathSegmentsToKeep = 1;
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>404 - Page Not Found</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #333;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 600px;
-      padding: 40px;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    h1 {
-      font-size: 7rem;
-      color: #ff6347;
-      font-weight: 700;
-      margin-bottom: 20px;
-      animation: bounceIn 1s;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #555;
-      margin-bottom: 30px;
-    }
-
-    .message {
-      font-size: 1.2rem;
-      color: #888;
-      margin-bottom: 20px;
-    }
-
-    .btn-home {
-      display: inline-block;
-      padding: 14px 30px;
-      font-size: 1.2rem;
-      background-color: #ff6347;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .btn-home:hover {
-      background-color: #e5533d;
-      transform: translateY(-2px);
-    }
-
-    .footer {
-      font-size: 0.9rem;
-      color: #aaa;
-      margin-top: 30px;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes bounceIn {
-      0% {
-        transform: scale(0);
-      }
-
-      50% {
-        transform: scale(1.2);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h1>404</h1>
-    <h2>Oops! The page you're looking for doesn't exist.</h2>
-    <p class="message">We couldn't find the page you're looking for. But don't worry, you can go back to the home page.</p>
-    <a href="/" class="btn-home">Go Back to Home</a>
-    <div class="footer">
-      <p>Snigdha OS | 2024</p>
-    </div>
-  </div>
-
-  <script>
-    // Redirect to the root index.html page after a slight delay
-    setTimeout(function() {
-      window.location.replace("/");
-    }, 5000); // Redirect after 5 seconds
-  </script>
-</body>
-
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
 </html>

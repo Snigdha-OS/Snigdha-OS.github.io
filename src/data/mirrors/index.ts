@@ -3,7 +3,7 @@ import { americasMirrors } from './americas';
 import { asianMirrors } from './asia';
 import { europeanMirrors } from './europe';
 import { oceaniaMirrors } from './oceania';
-import { type Mirror } from '@/types/download';
+import { type Mirror } from '../../types/download';
 
 export const mirrors: Mirror[] = [
   ...americasMirrors,

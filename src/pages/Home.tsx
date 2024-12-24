@@ -1,11 +1,11 @@
 import { Shield, Terminal, Cpu } from 'lucide-react';
-import { HeroSection } from '@/components/home/HeroSection';
-import { FeatureCard } from '@/components/home/FeatureCard';
-import { StatsSection } from '@/components/home/StatsSection';
-import { ToolsShowcase } from '@/components/home/ToolsShowcase';
-import { TestimonialCard } from '@/components/home/TestimonialCard';
-import { ComparisonSection } from '@/components/home/ComparisonSection';
-import { testimonials } from '@/data/testimonials';
+import { HeroSection } from '../components/home/HeroSection';
+import { FeatureCard } from '../components/home/FeatureCard';
+import { StatsSection } from '../components/home/StatsSection';
+import { ToolsShowcase } from '../components/home/ToolsShowcase';
+import { TestimonialCard } from '../components/home/TestimonialCard';
+// import { ComparisonSection } from '../components/home/ComparisonSection';
+import { testimonials } from '../data/testimonials';
 
 const features = [
   {

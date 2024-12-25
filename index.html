@@ -12,7 +12,7 @@
     <!-- Open Graph Tags for Social Media -->
     <meta property="og:title" content="Snigdha OS - Advanced Penetration Testing Distribution" />
     <meta property="og:description" content="Snigdha OS is an advanced penetration testing distribution designed for professionals to perform security testing and vulnerability assessments." />
-    <meta property="og:image" content="/path/to/your/image.jpg" />
+    <meta property="og:image" content="/snigdhaos-og.png" />
     <meta property="og:url" content="https://www.snigdhaos.org" />
     <meta property="og:type" content="website" />
     
@@ -20,10 +20,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Snigdha OS - Advanced Penetration Testing Distribution" />
     <meta name="twitter:description" content="Snigdha OS is an advanced penetration testing distribution designed for professionals to perform security testing and vulnerability assessments." />
-    <meta name="twitter:image" content="/path/to/your/image.jpg" />
+    <meta name="twitter:image" content="/snigdhaos-og.png" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     
     <!-- Canonical Link to prevent duplicate content issues -->
     <link rel="canonical" href="https://www.snigdhaos.org" />
@@ -39,7 +39,7 @@
         "publisher": {
           "@type": "Organization",
           "name": "Snigdha OS Team",
-          "logo": "https://www.snigdhaos.org/logo.png"
+          "logo": "https://www.snigdhaos.org/snigdhaos-logo.png"
         }
       }
     </script>
@@ -53,16 +53,22 @@
     <!-- Single Page Apps for GitHub Pages (SPA) Script -->
     <script type="text/javascript">
       (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+        if (l.search && l.search.startsWith('/')) {
+          const decoded = l.search
+            .slice(1) // Remove the leading "/"
+            .split('&') // Split the query string
+            .map(s => s.replace(/~and~/g, '&')) // Replace "~and~" with "&"
+            .join('?'); // Join the components with "?"
+    
+          window.history.replaceState(
+            null, 
+            '', // The second argument is the title; an empty string keeps it unchanged
+            l.pathname.slice(0, -1) + decoded + l.hash // Build the new URL
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
+    
   </head>
 
   <body>

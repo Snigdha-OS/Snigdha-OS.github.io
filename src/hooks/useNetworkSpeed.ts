@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { measureNetworkSpeed } from '@/lib/network';
+import { measureNetworkSpeed } from '../lib/network';
 
 export function useNetworkSpeed() {
   const [speed, setSpeed] = useState<number | null>(null);

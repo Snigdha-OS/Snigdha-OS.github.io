@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getUserLocation, type UserLocation } from '@/lib/location';
+import { getUserLocation, type UserLocation } from '../lib/location';
 
 export function useLocation() {
   const [location, setLocation] = useState<UserLocation | null>(null);

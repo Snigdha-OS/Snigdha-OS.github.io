@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
-import { GithubSponsorButton } from '@/components/donate/GithubSponsorButton';
-import { SponsorshipTiers } from '@/components/donate/SponsorshipTiers';
-import { SponsorshipStats } from '@/components/donate/SponsorshipStats';
-import { KeySponsors } from '@/components/donate/KeySponsors';
+import { GithubSponsorButton } from '../components/donate/GithubSponsorButton';
+import { SponsorshipTiers } from '../components/donate/SponsorshipTiers';
+import { SponsorshipStats } from '../components/donate/SponsorshipStats';
+import { KeySponsors } from '../components/donate/KeySponsors';
 
 export default function Donate() {
   return (

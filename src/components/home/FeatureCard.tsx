@@ -18,12 +18,20 @@ export function FeatureCard({ title, description, icon: Icon, delay = 0 }: Featu
       whileHover={{ y: -5 }}
       className="relative group"
     >
-      <div className="rounded-xl bg-white/80 backdrop-blur p-8 ring-1 ring-gray-200 hover:ring-cornflower-blue transition-all shadow-lg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-cornflower-blue/0 to-cornflower-blue/0 group-hover:from-cornflower-blue/5 group-hover:to-cornflower-blue/10 transition-colors" />
+      <div className="rounded-xl bg-white/90 backdrop-blur-lg p-8 ring-1 ring-gray-200 hover:ring-cornflower-blue transition-all shadow-2xl hover:shadow-cornflower-blue/40 overflow-hidden flex flex-col justify-center items-center">
+        {/* Hover gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cornflower-blue/0 to-cornflower-blue/0 group-hover:from-cornflower-blue/10 group-hover:to-cornflower-blue/20 transition-all ease-in-out" />
+
+        {/* Icon centered with hover effect */}
+        <div className="mb-6 flex justify-center items-center">
+          <Icon className="h-12 w-12 text-cornflower-blue transition-all transform group-hover:scale-105" />
+        </div>
+
+        {/* Title with enhanced typography */}
+        <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">{title}</h3>
         
-        <Icon className="h-10 w-10 text-cornflower-blue mb-4" />
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        {/* Description with improved readability */}
+        <p className="text-lg text-gray-600 text-center">{description}</p>
       </div>
     </motion.div>
   );

@@ -1,25 +1,81 @@
-import { Mirror } from '@/types/download';
+import { Mirror } from '../types/download';
 
 export const mirrors: Mirror[] = [
   {
     id: 'us-east',
     name: 'US East Mirror',
-    location: 'New York, USA',
+    location: 'New York, USA 🇺🇸',
     url: 'https://mirror-east.snigdhaos.org',
     speed: 120,
   },
   {
     id: 'eu-central',
     name: 'EU Central Mirror',
-    location: 'Frankfurt, Germany',
+    location: 'Frankfurt, Germany 🇩🇪',
     url: 'https://mirror-eu.snigdhaos.org',
     speed: 100,
   },
   {
     id: 'asia-east',
     name: 'Asia East Mirror',
-    location: 'Singapore',
+    location: 'Singapore 🇸🇬',
     url: 'https://mirror-asia.snigdhaos.org',
     speed: 80,
+  },
+  {
+    id: 'uk-london',
+    name: 'UK London Mirror',
+    location: 'London, United Kingdom 🇬🇧',
+    url: 'https://mirror-uk.snigdhaos.org',
+    speed: 95,
+  },
+  {
+    id: 'india-bangalore',
+    name: 'India Bangalore Mirror',
+    location: 'Bangalore, India 🇮🇳',
+    url: 'https://mirror-india.snigdhaos.org',
+    speed: 75,
+  },
+  {
+    id: 'australia-sydney',
+    name: 'Australia Sydney Mirror',
+    location: 'Sydney, Australia 🇦🇺',
+    url: 'https://mirror-aus.snigdhaos.org',
+    speed: 85,
+  },
+  {
+    id: 'canada-toronto',
+    name: 'Canada Toronto Mirror',
+    location: 'Toronto, Canada 🇨🇦',
+    url: 'https://mirror-canada.snigdhaos.org',
+    speed: 110,
+  },
+  {
+    id: 'brazil-sao-paulo',
+    name: 'Brazil São Paulo Mirror',
+    location: 'São Paulo, Brazil 🇧🇷',
+    url: 'https://mirror-brazil.snigdhaos.org',
+    speed: 60,
+  },
+  {
+    id: 'japan-tokyo',
+    name: 'Japan Tokyo Mirror',
+    location: 'Tokyo, Japan 🇯🇵',
+    url: 'https://mirror-japan.snigdhaos.org',
+    speed: 90,
+  },
+  {
+    id: 'south-korea-seoul',
+    name: 'South Korea Seoul Mirror',
+    location: 'Seoul, South Korea 🇰🇷',
+    url: 'https://mirror-korea.snigdhaos.org',
+    speed: 95,
+  },
+  {
+    id: 'south-africa-cape-town',
+    name: 'South Africa Cape Town Mirror',
+    location: 'Cape Town, South Africa 🇿🇦',
+    url: 'https://mirror-sa.snigdhaos.org',
+    speed: 50,
   },
 ];

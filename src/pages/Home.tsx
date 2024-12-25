@@ -4,7 +4,6 @@ import { FeatureCard } from '../components/home/FeatureCard';
 import { StatsSection } from '../components/home/StatsSection';
 import { ToolsShowcase } from '../components/home/ToolsShowcase';
 import { TestimonialCard } from '../components/home/TestimonialCard';
-// import { ComparisonSection } from '../components/home/ComparisonSection';
 import { testimonials } from '../data/testimonials';
 
 const features = [
@@ -54,8 +53,6 @@ export default function Home() {
       </section>
 
       <ToolsShowcase />
-
-      {/* <ComparisonSection /> */}
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Youtube, Mail, Book, FileText, MessageSquare, Newspaper, HelpCircle } from 'lucide-react';
+import { Github, Twitter, Youtube, Book, MessageSquare, Newspaper, HelpCircle } from 'lucide-react';
 
 const footerNavigation = {
   main: [
@@ -15,7 +15,7 @@ const footerNavigation = {
   community: [
     { name: 'Community', href: '/community', icon: MessageSquare },
     { name: 'GitHub', href: 'https://github.com/Snigdha-OS', icon: Github },
-    { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
+    { name: 'Twitter', href: 'https://twitter.com/SnigdhaOS', icon: Twitter },
     { name: 'YouTube', href: 'https://youtube.com', icon: Youtube },
   ],
 };
@@ -95,7 +95,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
-          <p>&copy; {currentYear} Snigdha OS. All rights reserved.</p>
+          <p>&copy; {currentYear} Snigdha OS - All rights reserved. Powered by <b className="text-cornflower-blue">Tonmoy Infrastructure™</b></p>
+          <p>Developed with ❤️ by <b className="text-cornflower-blue"><u>Snigdha OS Open Source Team.</u></b></p>
         </div>
       </div>
     </footer>

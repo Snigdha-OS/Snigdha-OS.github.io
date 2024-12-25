@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Globe, Wifi, Download } from 'lucide-react';
-import { type Mirror } from '@/types/download';
-import { formatSpeed } from '@/lib/utils';
+import { type Mirror } from '../../types/download';
+import { formatSpeed } from '../../lib/utils';
 
 interface MirrorListProps {
   mirrors: Mirror[];

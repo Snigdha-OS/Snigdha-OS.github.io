@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Camera } from 'lucide-react';
-import { GalleryImage } from '@/components/gallery/GalleryImage';
-import { CategoryFilter } from '@/components/gallery/CategoryFilter';
-import { galleryImages, categories } from '@/data/gallery';
+import { GalleryImage } from '../components/gallery/GalleryImage';
+import { CategoryFilter } from '../components/gallery/CategoryFilter';
+import { galleryImages, categories } from '../data/gallery';
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('All');

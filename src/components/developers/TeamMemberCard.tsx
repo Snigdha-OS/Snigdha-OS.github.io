@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { MapPin, Users, Book } from 'lucide-react';
-import type { GithubUser } from '@/lib/github';
+import type { GithubUser } from '../../lib/github';
 
 interface TeamMemberCardProps {
   user: GithubUser;

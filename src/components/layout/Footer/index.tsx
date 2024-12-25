@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Youtube, Book, MessageSquare, Newspaper, HelpCircle } from 'lucide-react';
+// import { Github, Twitter, Youtube, Book, MessageSquare, Newspaper, HelpCircle } from 'lucide-react';
 import { ContactSection } from './ContactSection';
-import { footerNavigation } from '@/data/footerNavigation';
+import { footerNavigation } from '../../../data/footerNavigation';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

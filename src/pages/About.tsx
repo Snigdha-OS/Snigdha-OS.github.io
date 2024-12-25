@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Timeline } from '@/components/about/Timeline';
-import { TeamSection } from '@/components/about/TeamSection';
-import { MissionSection } from '@/components/about/MissionSection';
+import { Timeline } from '../components/about/Timeline';
+import { TeamSection } from '../components/about/TeamSection';
+import { MissionSection } from '../components/about/MissionSection';
 
 export default function About() {
   return (

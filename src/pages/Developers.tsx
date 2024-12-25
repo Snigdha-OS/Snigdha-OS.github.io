@@ -1,10 +1,10 @@
 import { useQueries, useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import { Loader2 } from 'lucide-react';
-import { TeamMemberCard } from '@/components/developers/TeamMemberCard';
-import { RepoCard } from '@/components/developers/RepoCard';
-import { fetchGithubUser, fetchOrgRepos } from '@/lib/github';
-import { teamMembers } from '@/data/team';
+import { TeamMemberCard } from '../components/developers/TeamMemberCard';
+import { RepoCard } from '../components/developers/RepoCard';
+import { fetchGithubUser, fetchOrgRepos } from '../lib/github';
+import { teamMembers } from '../data/team';
 
 export default function Developers() {
   const queries = useQueries({
@@ -39,40 +39,48 @@ export default function Developers() {
   }
 
   return (
-    <div className="py-12">
+    <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold text-gray-900">Our Team</h1>
+          <h1 className="text-4xl font-extrabold text-gray-900">Meet Our Team</h1>
           <p className="mt-4 text-lg text-gray-600">
-            Meet the dedicated team behind Snigdha OS
+            The amazing developers behind Snigdha OS
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16 justify-center items-center">
           {queries.map((query, index) => (
             query.data && (
-              <TeamMemberCard
+              <motion.div
                 key={query.data.login}
-                user={query.data}
-                role={teamMembers[index].role}
-                description={teamMembers[index].description}
-              />
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.2 }}
+                className="flex justify-center items-center"
+              >
+                <TeamMemberCard
+                  user={query.data}
+                  role={teamMembers[index].role}
+                  description={teamMembers[index].description}
+                />
+              </motion.div>
             )
           ))}
         </div>
+
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mt-16"
+          className="mt-16 text-center"
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Repositories</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-8">Our Repositories</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {repos?.map((repo) => (
               <RepoCard key={repo.id} repo={repo} />
             ))}

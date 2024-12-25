@@ -54,20 +54,24 @@
     <script type="text/javascript">
       (function(l) {
         if (l.search && l.search.startsWith('/')) {
+          // Extract and clean up the query string
           const decoded = l.search
             .slice(1) // Remove the leading "/"
-            .split('&') // Split the query string
+            .split('&') // Split the query string by "&"
+            .filter(Boolean) // Remove empty strings caused by consecutive "&"
             .map(s => s.replace(/~and~/g, '&')) // Replace "~and~" with "&"
-            .join('?'); // Join the components with "?"
-    
+            .join('&'); // Join back with "&"
+          
+          // Reconstruct the URL and replace the history entry
           window.history.replaceState(
-            null, 
-            '', // The second argument is the title; an empty string keeps it unchanged
-            l.pathname.slice(0, -1) + decoded + l.hash // Build the new URL
+            null,
+            '', // Keep the title unchanged
+            `${l.pathname.slice(0, -1)}${decoded ? `?${decoded}` : ''}${l.hash}` // Build the new URL
           );
         }
       })(window.location);
     </script>
+    
     
   </head>
 

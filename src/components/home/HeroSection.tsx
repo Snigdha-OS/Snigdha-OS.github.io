@@ -5,7 +5,7 @@ import { Download, ChevronRight } from 'lucide-react';
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-[url('https://cdn.pixabay.com/photo/2022/05/29/04/35/trails-7228378_1280.jpg?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-15" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50" />
       
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

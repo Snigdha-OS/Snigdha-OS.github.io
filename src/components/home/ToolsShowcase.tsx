@@ -27,10 +27,13 @@ export function ToolsShowcase() {
               key={tool.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)" }}
+              className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out"
             >
-              <tool.icon className={`h-10 w-10 ${tool.color} mb-4`} />
+              <div className="p-4 bg-gradient-to-r from-cornflower-blue/10 to-cornflower-blue/30 rounded-lg mb-4">
+                <tool.icon className={`h-12 w-12 ${tool.color} transition-all`} />
+              </div>
               <h3 className="text-lg font-semibold text-gray-900">{tool.name}</h3>
             </motion.div>
           ))}

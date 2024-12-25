@@ -1,6 +1,6 @@
 export const teamMembers = [
   {
-    username: 'eshanized', // Using placeholder usernames that exist on GitHub
+    username: 'eshanized',
     role: 'Lead Developer & Maintainer',
     description: 'Leading the development of Snigdha OS core system and architecture',
   },

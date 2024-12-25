@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { SearchBar } from '@/components/features/SearchBar';
-import { CategoryFilter } from '@/components/features/CategoryFilter';
-import { ToolCard } from '@/components/features/ToolCard';
-import { tools, categories } from '@/data/tools';
+import { SearchBar } from '../components/features/SearchBar';
+import { CategoryFilter } from '../components/features/CategoryFilter';
+import { ToolCard } from '../components/features/ToolCard';
+import { tools, categories } from '../data/tools';
 
 export default function Features() {
   const [searchQuery, setSearchQuery] = useState('');

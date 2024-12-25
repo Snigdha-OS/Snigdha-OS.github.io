@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Loader2 } from 'lucide-react';
-import { DownloadButton } from '@/components/download/DownloadButton';
-import { SystemRequirements } from '@/components/download/SystemRequirements';
-import { Checksum } from '@/components/download/Checksum';
-import { MirrorList } from '@/components/download/MirrorList';
-import { NetworkSpeed } from '@/components/download/NetworkSpeed';
-import { SuggestedMirror } from '@/components/download/SuggestedMirror';
-import { downloads } from '@/data/download';
-import { mirrors } from '@/data/mirrors';
-import { type Mirror } from '@/types/download';
-import { useNetworkSpeed } from '@/hooks/useNetworkSpeed';
-import { useLocation } from '@/hooks/useLocation';
+import { DownloadButton } from '../components/download/DownloadButton';
+import { SystemRequirements } from '../components/download/SystemRequirements';
+import { Checksum } from '../components/download/Checksum';
+import { MirrorList } from '../components/download/MirrorList';
+import { NetworkSpeed } from '../components/download/NetworkSpeed';
+import { SuggestedMirror } from '../components/download/SuggestedMirror';
+import { downloads } from '../data/download';
+import { mirrors } from '../data/mirrors';
+import { type Mirror } from '../types/download';
+import { useNetworkSpeed } from '../hooks/useNetworkSpeed';
+import { useLocation } from '../hooks/useLocation';
 
 export default function Download() {
   const latestVersion = downloads[0];

@@ -1,4 +1,4 @@
-import { type Mirror } from '@/types/download';
+import { type Mirror } from '../../types/download';
 
 export const europeanMirrors: Mirror[] = [
   {

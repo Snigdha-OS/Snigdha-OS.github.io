@@ -23,18 +23,6 @@ export function HeroSection() {
             transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
           >
             {/* Custom SVG icon */}
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto h-20 w-20 text-cornflower-blue"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M3 5h18M3 12h18M3 19h18" />
-            </svg> */}
             <svg xmlns="http://www.w3.org/2000/svg"
             className="mx-auto h-20 w-20 text-cornflower-blue"
             viewBox="0 0 256 256" width="24" height="24">
@@ -49,19 +37,22 @@ export function HeroSection() {
             transition={{ delay: 0.3 }}
             className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl"
           >
-            The Future of
-            <span className="text-cornflower-blue"> Security Testing </span>
-            is Here
+            <span className="text-cornflower-blue"> ~</span>
+            Be 
+            <span className="text-cornflower-blue"> Silent! </span><br></br>
+            When It Is Time To
+            <span className="text-cornflower-blue"> Hear. </span>
           </motion.h1>
           
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="mt-6 text-lg leading-8 text-gray-300 max-w-2xl mx-auto"
+            className="mt-6 text-lg leading-8 text-gray-300 max-w-2xl mx-auto text-justify"
           >
-            Snigdha OS redefines penetration testing with advanced tools, intuitive interface, and unmatched performance.
+            ~ <b className="text-cornflower-blue">Snigdha OS</b> revolutionizes the world of penetration testing by offering a cutting-edge suite of tools, a user-friendly and intuitive interface, and unparalleled performance. Designed to empower security professionals, Snigdha OS not only simplifies complex testing processes but also enhances the accuracy and speed of vulnerability assessments. Whether you're a beginner or a seasoned expert, Snigdha OS provides a seamless experience, ensuring that your security testing efforts are more effective, efficient, and reliable than ever before.
           </motion.p>
+
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -71,7 +62,7 @@ export function HeroSection() {
           >
             <Link
               to="/download"
-              className="group relative rounded-lg bg-cornflower-blue px-8 py-3 text-sm font-semibold text-white shadow-lg hover:bg-blue-600 transition-colors overflow-hidden"
+              className="group relative rounded-[5px] bg-cornflower-blue px-8 py-3 text-sm font-semibold text-white shadow-lg hover:bg-blue-600 transition-colors overflow-hidden"
             >
               <span className="relative flex items-center gap-2">
                 <Download className="h-4 w-4" />
@@ -83,7 +74,14 @@ export function HeroSection() {
               to="/features"
               className="text-sm font-semibold leading-6 text-white flex items-center group"
             >
-              Learn more 
+              User Docs 
+              <ChevronRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              to="/features"
+              className="text-sm font-semibold leading-6 text-white flex items-center group"
+            >
+              Dev Docs 
               <ChevronRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>

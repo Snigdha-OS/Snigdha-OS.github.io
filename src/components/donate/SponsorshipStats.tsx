@@ -1,23 +1,23 @@
 import { motion } from 'framer-motion';
 import { Users, Star, Heart } from 'lucide-react';
-import { formatINR } from '@/lib/currency';
+import { formatINR } from '../../lib/currency';
 
 const stats = [
   {
-    label: 'Current Sponsors',
-    value: '50+',
+    label: 'Total Sponsors',
+    value: '6+',
     icon: Users,
     color: 'text-blue-500'
   },
   {
-    label: 'Monthly Support',
-    value: formatINR(200000),
+    label: 'Total Support',
+    value: formatINR(164563.08),
     icon: Heart,
     color: 'text-red-500'
   },
   {
     label: 'GitHub Stars',
-    value: '1.2K+',
+    value: '200+',
     icon: Star,
     color: 'text-yellow-500'
   }

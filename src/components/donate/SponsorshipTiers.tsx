@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
-import { formatINR } from '@/lib/currency';
+import { formatINR } from '../../lib/currency';
+
+// Hardcoded conversion rate (you can replace this with dynamic data)
+const INR_TO_USD_CONVERSION_RATE = 0.012;
 
 const tiers = [
   {
     name: 'Community Hero',
-    amount: 399,
+    amount: 999,
     description: 'Support the ongoing development of Snigdha OS',
     benefits: [
       'Special recognition on our GitHub repository',
@@ -15,7 +18,7 @@ const tiers = [
   },
   {
     name: 'Security Champion',
-    amount: 799,
+    amount: 2999,
     description: 'Help shape the future of security testing',
     benefits: [
       'All Community Hero benefits',
@@ -27,7 +30,7 @@ const tiers = [
   },
   {
     name: 'Enterprise Partner',
-    amount: 1999,
+    amount: 5999,
     description: 'Perfect for organizations using Snigdha OS',
     benefits: [
       'All Security Champion benefits',
@@ -38,6 +41,11 @@ const tiers = [
     ]
   }
 ];
+
+// Function to convert INR to USD
+const convertINRToUSD = (inrAmount: number) => {
+  return (inrAmount * INR_TO_USD_CONVERSION_RATE).toFixed(2); // Convert INR to USD with 2 decimal places
+};
 
 export function SponsorshipTiers() {
   return (
@@ -65,7 +73,9 @@ export function SponsorshipTiers() {
             <h3 className="text-xl font-semibold text-gray-900">{tier.name}</h3>
             <div className="mt-2">
               <span className="text-3xl font-bold text-gray-900">{formatINR(tier.amount)}</span>
-              <span className="text-gray-600">/month</span>
+              <span className="text-gray-600"> / ₹</span>
+              <span className="text-3xl font-bold text-gray-900 ml-2">${convertINRToUSD(tier.amount)}</span>
+              <span className="text-gray-600"> / USD</span>
             </div>
             <p className="mt-2 text-gray-600">{tier.description}</p>
           </div>
@@ -80,7 +90,7 @@ export function SponsorshipTiers() {
           </ul>
 
           <a
-            href={`https://github.com/sponsors/eshanized?frequency=monthly&sponsor=${encodeURIComponent(tier.name)}`}
+            href={`https://github.com/sponsors/eshanized?frequency=one-time&amount=${convertINRToUSD(tier.amount)}`}
             target="_blank"
             rel="noopener noreferrer"
             className={`block w-full text-center py-2 px-4 rounded-lg transition-colors ${
@@ -89,7 +99,7 @@ export function SponsorshipTiers() {
                 : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
             }`}
           >
-            Become a {tier.name}
+            Make a One-Time Donation
           </a>
         </motion.div>
       ))}

@@ -18,7 +18,7 @@ export function ContributorCard({ login, avatarUrl, contributions, profileUrl }:
         <img
           src={avatarUrl}
           alt={`${login}'s avatar`}
-          className="w-16 h-16 rounded-full"
+          className="w-24 h-24 rounded-full"
         />
         <div>
           <h3 className="font-semibold text-gray-900">{login}</h3>

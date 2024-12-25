@@ -6,27 +6,56 @@ export function MissionSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm"
+      transition={{ duration: 0.6 }}
+      className="bg-gradient-to-r from-cornflower-blue/10 to-white p-10 rounded-lg shadow-xl"
     >
-      <div className="flex items-center gap-3 mb-6">
-        <Target className="h-6 w-6 text-cornflower-blue" />
-        <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
+      <div className="flex items-center gap-4 mb-6">
+        <Target className="h-8 w-8 text-cornflower-blue" />
+        <h2 className="text-3xl font-extrabold text-gray-900">Our Mission</h2>
       </div>
       
-      <div className="prose prose-gray max-w-none">
-        <p className="text-gray-600 leading-relaxed">
+      <div className="max-w-3xl mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
           Snigdha OS aims to provide security professionals and enthusiasts with the most comprehensive, 
-          reliable, and up-to-date collection of security tools. Our mission is to enable the security 
-          community to perform professional-grade security auditing and penetration testing with a 
-          standardized, well-documented platform.
+          reliable, and up-to-date collection of security tools. Our mission is to empower the security 
+          community with a standardized platform that allows for professional-grade security auditing and 
+          penetration testing, enhancing both efficiency and accuracy.
         </p>
         
-        <h3 className="text-xl font-semibold mt-6 mb-3">Core Values</h3>
-        <ul className="space-y-2 text-gray-600">
-          <li>Open Source: Maintaining transparency and community collaboration</li>
-          <li>Security: Providing robust tools for security testing</li>
-          <li>Education: Supporting learning and skill development</li>
-          <li>Community: Fostering a strong, supportive user community</li>
+        <h3 className="text-2xl font-semibold mt-6 mb-4 text-gray-900">Core Values</h3>
+        <ul className="space-y-3 text-lg text-gray-600">
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            className="hover:text-cornflower-blue"
+          >
+            <span className="font-semibold text-gray-800">Open Source: </span> 
+            Maintaining transparency and community collaboration.
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            className="hover:text-cornflower-blue"
+          >
+            <span className="font-semibold text-gray-800">Security: </span> 
+            Providing robust tools for security testing.
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            className="hover:text-cornflower-blue"
+          >
+            <span className="font-semibold text-gray-800">Education: </span> 
+            Supporting learning and skill development.
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            className="hover:text-cornflower-blue"
+          >
+            <span className="font-semibold text-gray-800">Community: </span> 
+            Fostering a strong, supportive user community.
+          </motion.li>
         </ul>
       </div>
     </motion.div>

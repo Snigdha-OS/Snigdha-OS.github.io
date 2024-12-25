@@ -19,19 +19,19 @@ export function Timeline() {
           key={release.version}
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: index * 0.1 }}
-          className="relative pl-12 pb-8"
+          transition={{ delay: index * 0.2, duration: 0.8 }}
+          className="relative pl-12 pb-12"
         >
-          <div className="absolute left-0 p-2 bg-white rounded-full border-2 border-cornflower-blue">
-            <Calendar className="h-4 w-4 text-cornflower-blue" />
+          <div className="absolute left-0 top-0 p-2 bg-cornflower-blue/70 rounded-full border-2 border-white shadow-lg">
+            <Calendar className="h-5 w-5 text-white" />
           </div>
           
-          <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-            <h3 className="text-lg font-semibold text-gray-900">
-              Kali {release.version}
+          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Snigdha OS {release.version}
             </h3>
-            <time className="text-sm text-gray-500">{release.date}</time>
-            <p className="mt-1 text-gray-600">{release.description}</p>
+            <time className="text-sm text-gray-500 font-light">{release.date}</time>
+            <p className="mt-2 text-gray-700 text-lg leading-relaxed">{release.description}</p>
           </div>
         </motion.div>
       ))}

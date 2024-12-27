@@ -1,9 +1,19 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
+import ViteSitemap from 'vite-plugin-sitemap';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    ViteSitemap({
+      hostname: 'https://www.snigdhaos.org',
+      outDir: './dist',
+      changefreq: 'daily',
+      priority: 0.7,
+      // lastmod: true,
+    }),
+  ],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
@@ -12,14 +22,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        // Make sure main.js is generated as part of the build
         entryFileNames: 'main.js',
-        // Output CSS as a separate file (style.css)
         assetFileNames: ({ name }) => {
           if (name && name.endsWith('.css')) {
-            return 'style.css'; // Ensure style.css is generated
+            return 'style.css';
           }
-          return 'assets/[name]-[hash][extname]'; // Other assets (images, etc.)
+          return 'assets/[name]-[hash][extname]';
         },
       },
     },

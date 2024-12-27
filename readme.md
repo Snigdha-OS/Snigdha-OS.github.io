@@ -1,6 +1,7 @@
-# Snigdha OS Web Dev 🌐
 
-Welcome to the Snigdha OS Web Dev repository! This repository contains the source code, components, and resources used for building and maintaining the official website for Snigdha OS. 🚀
+# Snigdha OS Web 🌐
+
+Welcome to the Snigdha OS Web repository! This repository contains the source code, components, and resources used for building and maintaining the official website for Snigdha OS. 🚀
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/03563b4f-142a-4d7d-8d97-ecfff7b87b29/deploy-status)](https://app.netlify.com/sites/snigdhaos/deploys)
 
@@ -10,6 +11,7 @@ Welcome to the Snigdha OS Web Dev repository! This repository contains the sourc
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Dependencies & Scripts Explanation](#dependencies--scripts-explanation)
+- [Repository Structure](#repository-structure)
 - [Developers](#developers)
 - [Development Guide](#development-guide)
 - [Contributing](#contributing)
@@ -17,7 +19,7 @@ Welcome to the Snigdha OS Web Dev repository! This repository contains the sourc
 
 ## Overview 🌟
 
-The Snigdha OS Web Dev repository powers the official Snigdha OS website. It includes various web development components, styles, and scripts necessary for the website's functionality. The website is designed to be clean, lightweight, and user-friendly, aligning with the philosophy of Snigdha OS. 🎨💻
+The Snigdha OS Web repository powers the official Snigdha OS website. It includes various web development components, styles, and scripts necessary for the website's functionality. The website is designed to be clean, lightweight, and user-friendly, aligning with the philosophy of Snigdha OS. 🎨💻
 
 ## Features 🔧
 
@@ -97,9 +99,129 @@ These are various commands that help automate tasks in the development process:
 - **`check-deps`** 🔍: Audits and updates dependencies.
 - **`postinstall`** 🧰: Runs additional commands after dependencies are installed (like starting Vite).
 
+## Repository Structure 📂
+
+Here is the general structure of the repository:
+
+```
+snigdha-os.github.io/
+.
+├── CODE_OF_CONDUCT.md
+├── config.sh
+├── CONTRIBUTING.md
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   ├── 404.html
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── snigdhaos-logo.png
+│   └── snigdhaos-og.png
+├── push.sh
+├── readme.md
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── about
+│   │   │   ├── MissionSection.tsx
+│   │   │   ├── TeamSection.tsx
+│   │   │   └── Timeline.tsx
+│   │   ├── developers
+│   │   │   ├── ContributorCard.tsx
+│   │   │   ├── ContributorStats.tsx
+│   │   │   ├── RepoCard.tsx
+│   │   │   └── TeamMemberCard.tsx
+│   │   ├── donate
+│   │   │   ├── DonationTier.tsx
+│   │   │   ├── DonorWall.tsx
+│   │   │   ├── GithubSponsorButton.tsx
+│   │   │   ├── KeySponsors.tsx
+│   │   │   ├── SponsorshipStats.tsx
+│   │   │   └── SponsorshipTiers.tsx
+│   │   ├── download
+│   │   │   ├── Checksum.tsx
+│   │   │   ├── DownloadButton.tsx
+│   │   │   ├── MirrorList.tsx
+│   │   │   ├── NetworkSpeed.tsx
+│   │   │   ├── SuggestedMirror.tsx
+│   │   │   └── SystemRequirements.tsx
+│   │   ├── features
+│   │   │   ├── CategoryFilter.tsx
+│   │   │   ├── SearchBar.tsx
+│   │   │   └── ToolCard.tsx
+│   │   ├── gallery
+│   │   │   ├── CategoryFilter.tsx
+│   │   │   └── GalleryImage.tsx
+│   │   ├── home
+│   │   │   ├── ComparisonSection.tsx
+│   │   │   ├── FeatureCard.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── StatsSection.tsx
+│   │   │   ├── TestimonialCard.tsx
+│   │   │   └── ToolsShowcase.tsx
+│   │   ├── layout
+│   │   │   ├── Footer
+│   │   │   │   ├── ContactSection.tsx
+│   │   │   │   └── index.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   └── ui
+│   │       └── ErrorBoundary.tsx
+│   ├── data
+│   │   ├── donations.ts
+│   │   ├── download.ts
+│   │   ├── footerNavigation.ts
+│   │   ├── gallery.ts
+│   │   ├── mirrors
+│   │   │   ├── africa.ts
+│   │   │   ├── americas.ts
+│   │   │   ├── asia.ts
+│   │   │   ├── europe.ts
+│   │   │   ├── index.ts
+│   │   │   └── oceania.ts
+│   │   ├── mirrors.ts
+│   │   ├── navigation.ts
+│   │   ├── team.ts
+│   │   ├── testimonials.ts
+│   │   └── tools.ts
+│   ├── hooks
+│   │   ├── useLocation.ts
+│   │   └── useNetworkSpeed.ts
+│   ├── index.css
+│   ├── lib
+│   │   ├── currency.ts
+│   │   ├── github.ts
+│   │   ├── location.ts
+│   │   ├── network.ts
+│   │   └── utils.ts
+│   ├── main.tsx
+│   ├── pages
+│   │   ├── About.tsx
+│   │   ├── Developers.tsx
+│   │   ├── Donate.tsx
+│   │   ├── Download.tsx
+│   │   ├── Features.tsx
+│   │   ├── Gallery.tsx
+│   │   └── Home.tsx
+│   ├── routes.tsx
+│   ├── types
+│   │   └── download.ts
+│   └── vite-env.d.ts
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+```
+
 ## Developers 👨‍💻👩‍💻
 
 - **Eshanized** - Lead Developer, Web Architect 🔧
+- **RiO** - Developer & Maintainer
 
 If you would like to contribute or join the team, feel free to reach out! 📬
 
@@ -118,8 +240,8 @@ To get started with development, you need:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Snigdha-OS/snigdhaos-web-dev.git
-   cd snigdhaos-web-dev
+   git clone https://github.com/Snigdha-OS/snigdha-os.github.io.git
+   cd snigdha-os.github.io
    ```
 
 2. Install dependencies:
@@ -129,18 +251,12 @@ To get started with development, you need:
 
 3. Run the development server:
    ```bash
-   pnpm start
+   pnpm dev
    ```
 
-   This will start the development server at `http://localhost:5173`. Any changes made to the code will be reflected immediately. 🔄
+   This will start the development server at `http://localhost:5173`. Any changes
 
-### Folder Structure 📂
-
-- `src/`: Contains all the source code for the frontend. 🖥️
-- `public/`: Static files such as images, icons, and fonts. 📸
-- `components/`: Reusable components like headers, footers, and forms. 🛠️
-- `pages/`: Individual pages of the website like home, about, and download pages. 📄
-- `styles/`: CSS files for styling the website. 🎨
+ made to the code will be reflected immediately. 🔄
 
 ### Contribution Guidelines ✍️
 
@@ -170,7 +286,7 @@ This will run the Jest test suite for any components or functions that have been
 
 ## Contributing 🤝
 
-We welcome contributions from everyone! If you'd like to contribute to Snigdha OS Web Dev, please follow these steps:
+We welcome contributions from everyone! If you'd like to contribute to Snigdha OS Web, please follow these steps:
 
 1. Fork the repository.
 2. Clone your fork locally and create a new branch.
@@ -183,4 +299,4 @@ If you have any ideas or suggestions, please feel free to open an issue or start
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-<div align="center">Thanks for contributing to Snigdha OS Web Dev! 🌟</div>
+<div align="center">Thanks for contributing to Snigdha OS Web! 🌟</div>

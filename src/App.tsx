@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom'; // Use HashRouter
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 import { Navbar } from './components/layout/Navbar';
@@ -18,7 +18,7 @@ function App() {
   return (
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
-        <Router>
+        <Router> {/* Using HashRouter */}
           <div className="min-h-screen bg-gray-50 font-fira-sans flex flex-col">
             <Navbar />
             <main className="flex-grow pt-16">

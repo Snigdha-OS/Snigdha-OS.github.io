@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// import { Github, Twitter, Youtube, Book, MessageSquare, Newspaper, HelpCircle } from 'lucide-react';
 import { ContactSection } from './ContactSection';
 import { footerNavigation } from '../../../data/footerNavigation';
 
@@ -68,6 +67,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
           <p>&copy; {currentYear} Snigdha OS. All rights reserved.</p>
+          <p className="mt-4 text-gray-400 text-sm">Powered by <span className="font-semibold text-white">TONMOY INFRASTRUCTURE</span></p>
         </div>
       </div>
     </footer>

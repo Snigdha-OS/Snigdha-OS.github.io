@@ -1,4 +1,4 @@
-import{c as m,j as e,r}from"./index-CZOPZUyu.js";import{m as s}from"./proxy-o5KGle87.js";import{T as p}from"./terminal-CAeTTJqS.js";/**
+import{c as m,j as e,r}from"../main.js";import{m as s}from"./proxy-DPp9lXkG.js";import{T as p}from"./terminal-DUBj4IUX.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.

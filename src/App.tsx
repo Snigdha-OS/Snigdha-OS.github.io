@@ -1,4 +1,4 @@
-import { HashRouter as Router } from 'react-router-dom'; // Change to HashRouter
+import { BrowserRouter as Router } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 import { Navbar } from './components/layout/Navbar';

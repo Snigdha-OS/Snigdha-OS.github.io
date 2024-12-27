@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { Loader2 } from 'lucide-react';
 
@@ -20,16 +20,18 @@ function LoadingSpinner() {
 
 export function AppRoutes() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/features" element={<FeaturesPage />} />
-        <Route path="/download" element={<DownloadPage />} />
-        <Route path="/developers" element={<DevelopersPage />} />
-        <Route path="/donate" element={<DonatePage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-      </Routes>
-    </Suspense>
+    <Router>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/download" element={<DownloadPage />} />
+          <Route path="/developers" element={<DevelopersPage />} />
+          <Route path="/donate" element={<DonatePage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }

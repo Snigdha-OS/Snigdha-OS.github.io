@@ -20,24 +20,24 @@ export function NetworkSpeed({ speed }: NetworkSpeedProps) {
   };
 
   return (
-    <div className="bg-white/90 backdrop-blur-lg p-8 rounded-xl shadow-lg hover:scale-105 transform transition-all">
-      <div className="flex items-center gap-3 mb-5">
-        <Wifi className="h-7 w-7 text-cornflower-blue" />
-        <h2 className="text-2xl font-extrabold text-gray-900">Network Speed</h2>
+    <div className="bg-white/90 backdrop-blur-lg p-8 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+      <div className="flex items-center gap-3 mb-6">
+        <Wifi className="h-8 w-8 text-cornflower-blue" />
+        <h2 className="text-3xl font-extrabold text-gray-900">Network Speed</h2>
       </div>
       
-      <div className="space-y-4">
-        <div className="flex items-center gap-4">
-          <span className={`text-4xl font-bold ${getSpeedClass(speed)}`}>
+      <div className="space-y-5">
+        <div className="flex items-center gap-5">
+          <span className={`text-5xl font-bold ${getSpeedClass(speed)}`}>
             {speed} Mbps
           </span>
         </div>
-        <p className="text-lg text-gray-700">{getRecommendation(speed)}</p>
+        <p className="text-lg text-gray-600">{getRecommendation(speed)}</p>
       </div>
       
       <div className="mt-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <span className={`font-medium ${getSpeedClass(speed)}`}>Speed Quality:</span>
+        <div className="flex items-center gap-4">
+          <span className={`font-medium text-gray-800 ${getSpeedClass(speed)}`}>Speed Quality:</span>
           <span className={`${getSpeedClass(speed)} font-semibold`}>
             {speed >= 100 ? 'Excellent' : speed >= 50 ? 'Good' : speed >= 20 ? 'Moderate' : 'Poor'}
           </span>

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { LucideIcon } from 'lucide-react';
+import clsx from 'clsx'; // Optional, for cleaner class management
 
 interface FeatureCardProps {
   title: string;
@@ -18,18 +19,27 @@ export function FeatureCard({ title, description, icon: Icon, delay = 0 }: Featu
       whileHover={{ y: -5 }}
       className="relative group"
     >
-      <div className="rounded-xl bg-white/90 backdrop-blur-lg p-8 ring-1 ring-gray-200 hover:ring-cornflower-blue transition-all shadow-2xl hover:shadow-cornflower-blue/40 overflow-hidden flex flex-col justify-center items-center">
+      <div
+        className={clsx(
+          'rounded-xl bg-white/90 backdrop-blur-lg p-8 ring-1 ring-gray-200 hover:ring-cornflower-blue transition-all shadow-2xl hover:shadow-cornflower-blue/40 overflow-hidden flex flex-col justify-center items-center',
+          'hover:scale-105 transform transition-all'
+        )}
+        role="presentation"
+      >
         {/* Hover gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-cornflower-blue/0 to-cornflower-blue/0 group-hover:from-cornflower-blue/10 group-hover:to-cornflower-blue/20 transition-all ease-in-out" />
 
         {/* Icon centered with hover effect */}
         <div className="mb-6 flex justify-center items-center">
-          <Icon className="h-12 w-12 text-cornflower-blue transition-all transform group-hover:scale-105" />
+          <Icon
+            className="h-12 w-12 text-cornflower-blue transition-all transform group-hover:scale-110"
+            aria-hidden="true"
+          />
         </div>
 
         {/* Title with enhanced typography */}
-        <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">{title}</h3>
-        
+        <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">{title}</h3>
+
         {/* Description with improved readability */}
         <p className="text-lg text-gray-600 text-center">{description}</p>
       </div>

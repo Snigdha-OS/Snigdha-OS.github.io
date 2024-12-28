@@ -9,4 +9,19 @@ export const teamMembers = [
     role: 'Co Maintainer & Tools Developer',
     description: 'Managing security tools integration and package maintenance',
   },
+  {
+    username: 'iconized',
+    role: 'Co Maintainer & Server Designer',
+    description: 'Managing security tools integration and package maintenance',
+  },
+  {
+    username: 'alokified',
+    role: 'Co Web Infrastructure Developer',
+    description: 'Managing security tools integration and package maintenance',
+  },
+  {
+    username: 'utkrshift',
+    role: 'DM/WM UI Moders',
+    description: 'Managing security tools integration and package maintenance',
+  },
 ];

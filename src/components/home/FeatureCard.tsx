@@ -14,15 +14,15 @@ export function FeatureCard({ title, description, icon: Icon, delay = 0 }: Featu
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
+      transition={{ duration: 0.6, delay }}
       viewport={{ once: true }}
       whileHover={{ y: -5 }}
       className="relative group"
     >
       <div
         className={clsx(
-          'rounded-xl bg-white/90 backdrop-blur-lg p-8 ring-1 ring-gray-200 hover:ring-cornflower-blue transition-all shadow-2xl hover:shadow-cornflower-blue/40 overflow-hidden flex flex-col justify-center items-center',
-          'hover:scale-105 transform transition-all'
+          'rounded-xl bg-white/90 backdrop-blur-lg p-8 ring-1 ring-gray-200 hover:ring-cornflower-blue transition-all shadow-xl hover:shadow-cornflower-blue/40 overflow-hidden flex flex-col justify-center items-center',
+          'hover:scale-105 transform transition-all duration-300'
         )}
         role="presentation"
       >
@@ -32,16 +32,20 @@ export function FeatureCard({ title, description, icon: Icon, delay = 0 }: Featu
         {/* Icon centered with hover effect */}
         <div className="mb-6 flex justify-center items-center">
           <Icon
-            className="h-12 w-12 text-cornflower-blue transition-all transform group-hover:scale-110"
+            className="h-12 w-12 text-cornflower-blue transition-all transform group-hover:scale-110 group-hover:rotate-3"
             aria-hidden="true"
           />
         </div>
 
         {/* Title with enhanced typography */}
-        <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center">{title}</h3>
+        <h3 className="text-2xl font-semibold text-gray-800 mb-3 text-center capitalize leading-tight">
+          {title}
+        </h3>
 
         {/* Description with improved readability */}
-        <p className="text-lg text-gray-600 text-center">{description}</p>
+        <p className="text-lg text-gray-600 text-center mt-2 px-4">
+          {description}
+        </p>
       </div>
     </motion.div>
   );

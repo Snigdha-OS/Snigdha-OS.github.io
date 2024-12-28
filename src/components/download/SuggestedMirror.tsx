@@ -1,6 +1,7 @@
 import { MapPin, Download } from 'lucide-react';
 import { type Mirror } from '../../types/download';
 import { type UserLocation } from '../../lib/location';
+import { motion } from 'framer-motion';
 
 interface SuggestedMirrorProps {
   mirror: Mirror;
@@ -23,13 +24,15 @@ export function SuggestedMirror({ mirror, userLocation, onSelect }: SuggestedMir
         <p className="font-semibold text-2xl text-gray-900">{mirror.name}</p>
         <p className="text-sm text-gray-600">{mirror.location}</p>
         
-        <button
+        <motion.button
           onClick={() => onSelect(mirror)}
           className="w-full mt-4 px-6 py-3 bg-cornflower-blue text-white rounded-lg hover:bg-blue-600 active:scale-95 transition-all ease-in-out flex items-center justify-center gap-2"
+          whileHover={{ scale: 1.05 }} // Zoom effect on hover
+          whileTap={{ scale: 0.98 }} // Slight zoom effect when clicked
         >
           <Download className="h-5 w-5" />
           <span>Download</span>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

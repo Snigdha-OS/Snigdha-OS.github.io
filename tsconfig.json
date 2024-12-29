@@ -1,5 +1,12 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "composite": true,   // Enables project references, necessary for the referenced tsconfigs
+    "baseUrl": ".",      // Ensures the base directory for resolving non-relative module imports
+    "paths": {
+      "@src/*": ["src/*"]  // Optional: adds path aliases if needed, adjust based on your structure
+    }
+  },
+  "files": [],  // No specific files to include at this level, as it's referencing other tsconfigs
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }

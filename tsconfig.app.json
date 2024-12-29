@@ -1,24 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2020",                        // Keep as is: Supports modern JavaScript features
+    "useDefineForClassFields": true,            // Ensures that class fields are defined via 'define' (ESNext behavior)
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],   // Includes necessary libraries for web development
+    "module": "ESNext",                        // Uses the latest ES module system
+    "skipLibCheck": true,                      // Improves build speed by skipping type-checking of declaration files
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "moduleResolution": "bundler",             // Configures module resolution for bundlers (Vite/Webpack)
+    "allowImportingTsExtensions": true,        // Allows importing TypeScript files without the extension
+    "isolatedModules": true,                   // Ensures compatibility with bundlers (treats each file as a module)
+    "moduleDetection": "force",                // Forces ECMAScript module resolution for all files
+    "noEmit": true,                            // Ensures no output is generated (useful for type-checking only)
+    "jsx": "react-jsx",                       // Supports the new JSX transform (React 17+)
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "strict": true,                            // Enforces all strict type-checking options
+    "noUnusedLocals": true,                    // Ensures no unused local variables
+    "noUnusedParameters": true,                // Ensures no unused function parameters
+    "noFallthroughCasesInSwitch": true,        // Prevents fallthrough in switch statements
+    "noImplicitAny": true,                     // Disallows the use of the `any` type (strict type-checking)
+    "strictNullChecks": true,                  // Makes null and undefined handling more strict
+    "strictFunctionTypes": true,               // Makes function types stricter
+    "esModuleInterop": true,                   // Ensures compatibility with CommonJS modules
+    "resolveJsonModule": true,                 // Allows importing JSON files as modules
+    "skipDefaultLibCheck": true                // Skips type-checking of default libraries to speed up compilation
   },
-  "include": ["src"]
+  "include": ["src"],                          // Includes all source files under the 'src' directory
+  "exclude": ["node_modules", "dist"]          // Excludes node_modules and dist directories to speed up compilation
 }

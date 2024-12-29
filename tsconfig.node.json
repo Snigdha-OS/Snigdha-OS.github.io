@@ -1,22 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "target": "ES2022",                       // Keep as is: suitable target for modern JS features
+    "lib": ["ES2023", "DOM"],                 // Include DOM types for web development
+    "module": "ESNext",                       // Keep as is: supports modern module system
+    "skipLibCheck": true,                     // Keep as is: improves build speed by skipping type-checking of declaration files
+    "moduleResolution": "bundler",            // Keep as is: ensures compatibility with bundlers (Vite/Webpack)
+    "allowImportingTsExtensions": true,       // Keep as is: allows .ts and .tsx imports without extensions
+    "isolatedModules": true,                  // Keep as is: ensures isolated module transpilation for compatibility with modern bundlers
+    "noEmit": true,                           // Keep as is: prevents emitting JavaScript output (for type-checking only)
+    
+    /* Linting & Type-Checking */
+    "strict": true,                           // Keep as is: enables all strict type-checking options
+    "noUnusedLocals": true,                   // Keep as is: ensures no unused local variables
+    "noUnusedParameters": true,               // Keep as is: ensures no unused parameters in functions
+    "noFallthroughCasesInSwitch": true,       // Keep as is: prevents fallthrough in switch statements
+    "alwaysStrict": true,                     // Enforces 'use strict' at the beginning of every file
+    "noImplicitReturns": true,                // Ensures every function has a return statement
+    "noImplicitThis": true,                   // Ensures `this` is always typed in functions
+    "strictNullChecks": true,                 // Enforces stricter null and undefined handling
+    "strictFunctionTypes": true,              // Enforces stricter function type compatibility
+    "esModuleInterop": true,                  // Enables compatibility with CommonJS modules (if needed)
+    "skipDefaultLibCheck": true,              // Skips checking of default libraries for faster compilation
+    "resolveJsonModule": true,                // Allows importing JSON modules as TypeScript objects
+    "useDefineForClassFields": true           // Enforces stricter behavior for class fields (ESNext)
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "src/**/*"],    // Include additional source files for type-checking (adjust based on your project structure)
+  "exclude": ["node_modules", "dist"]           // Exclude directories that should not be compiled
 }

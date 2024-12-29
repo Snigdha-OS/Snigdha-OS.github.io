@@ -1,0 +1,33 @@
+name: Deploy React to cPanel via FTP
+
+on:
+  schedule:
+    # Runs at midnight UTC on the 1st day of every month
+    - cron: '0 0 1 * *'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build React App
+      run: npm run build
+
+    - name: Deploy to cPanel via FTP
+      run: |
+        curl -s ftp://$FTP_SERVER --user $FTP_USER:$FTP_PASSWORD --upload-file ./dist/* --ftp-create-dirs
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USER: ${{ secrets.FTP_USER }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}

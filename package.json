@@ -5,8 +5,9 @@
   "type": "module",
   "homepage": "https://Snigdha-OS.github.io",
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run clean && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

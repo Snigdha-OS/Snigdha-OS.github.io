@@ -37,13 +37,6 @@ type_emoji=${type}
 type=${type_emoji#* }
 emoji=${type_emoji% *}
 
-# Prompt the user to enter a scope (optional)
-read -p "Enter a scope (optional): " scope
-scope_part=""
-if [ -n "$scope" ]; then
-    scope_part="($scope)"
-fi
-
 # Prompt the user to enter a short description
 read -p "Enter a short description: " desc
 if [ -z "$desc" ]; then
@@ -54,13 +47,11 @@ fi
 read -p "Enter a longer description (optional): " long_desc
 
 # Create the commit message
-commit_msg="$emoji $type$scope_part: $desc"
+commit_msg="$emoji $type: $desc"
 
 # If a longer description was provided, add it to the commit message
 if [ -n "$long_desc" ]; then
-    commit_msg+="
-
-$long_desc"
+    commit_msg+="\n\n$long_desc"
 fi
 
 # Print the commit message to the console

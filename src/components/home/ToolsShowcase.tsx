@@ -1,40 +1,51 @@
-import { motion } from 'framer-motion';
-import { Terminal, Shield, Wifi, Globe, Lock, Database } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Terminal, Shield, Wifi, Globe, Lock, Database } from "lucide-react";
 
 const tools = [
-  { name: 'Network Analysis', icon: Globe, color: 'text-blue-500' },
-  { name: 'Penetration Testing', icon: Shield, color: 'text-green-500' },
-  { name: 'Wireless Security', icon: Wifi, color: 'text-purple-500' },
-  { name: 'Cryptography', icon: Lock, color: 'text-red-500' },
-  { name: 'Forensics', icon: Database, color: 'text-yellow-500' },
-  { name: 'Exploitation', icon: Terminal, color: 'text-pink-500' },
+  { name: "Network Analysis", icon: Globe, color: "text-blue-500" },
+  { name: "Penetration Testing", icon: Shield, color: "text-green-500" },
+  { name: "Wireless Security", icon: Wifi, color: "text-purple-500" },
+  { name: "Cryptography", icon: Lock, color: "text-red-500" },
+  { name: "Forensics", icon: Database, color: "text-yellow-500" },
+  { name: "Exploitation", icon: Terminal, color: "text-pink-500" },
 ];
 
 export function ToolsShowcase() {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">Security Tools Suite</h2>
+          <h2 className="text-4xl font-extrabold text-gray-900">Security Tools Suite</h2>
           <p className="mt-4 text-lg text-gray-600">
-            Comprehensive toolkit for security professionals
+            A comprehensive toolkit tailored for security professionals.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        {/* Tools Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {tools.map((tool, index) => (
             <motion.div
               key={tool.name}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)" }}
-              className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out"
+              transition={{
+                delay: index * 0.1,
+                duration: 0.6,
+                ease: "easeOut",
+              }}
+              whileHover={{
+                scale: 1.08,
+                boxShadow: "0 15px 30px rgba(0, 0, 0, 0.15)",
+              }}
+              className="flex flex-col items-center p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition-transform duration-300"
             >
-              <div className="p-4 bg-gradient-to-r from-cornflower-blue/10 to-cornflower-blue/30 rounded-lg mb-4">
-                <tool.icon className={`h-12 w-12 ${tool.color} transition-all`} />
+              {/* Icon Section */}
+              <div className="p-4 bg-gradient-to-br from-cornflower-blue/10 to-cornflower-blue/30 rounded-full shadow-inner mb-6">
+                <tool.icon className={`h-14 w-14 ${tool.color} transition-all`} />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">{tool.name}</h3>
+              {/* Tool Name */}
+              <h3 className="text-xl font-semibold text-gray-800">{tool.name}</h3>
             </motion.div>
           ))}
         </div>

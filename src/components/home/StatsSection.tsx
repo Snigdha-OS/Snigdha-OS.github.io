@@ -15,6 +15,8 @@ export function StatsSection() {
     { label: "GitHub Stars", value: "Loading...", icon: Star },
   ]);
 
+  const [error, setError] = useState(false);
+
   const fetchGitHubStats = async (username: string) => {
     try {
       const response = await fetch(`https://api.github.com/users/${username}`);
@@ -32,12 +34,7 @@ export function StatsSection() {
       ]);
     } catch (error) {
       console.error("Error fetching GitHub data:", error);
-      setStats((prevStats) =>
-        prevStats.map((stat) => ({
-          ...stat,
-          value: "N/A",
-        }))
-      );
+      setError(true);
     }
   };
 
@@ -47,7 +44,7 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-gradient-to-b from-white via-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900">Our Impact</h2>
@@ -55,36 +52,42 @@ export function StatsSection() {
             A snapshot of our growing community and contributions.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.6 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
+        {error ? (
+          <div className="text-center text-red-500 font-medium">
+            Unable to fetch data. Please try again later.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {stats.map((stat, index) => (
               <motion.div
-                className="p-4 bg-gradient-to-r from-cornflower-blue/10 to-cornflower-blue/30 rounded-full mb-6"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <stat.icon className="h-10 w-10 text-cornflower-blue" />
-              </motion.div>
-              <motion.p
-                initial={{ scale: 0.8 }}
-                whileInView={{ scale: 1 }}
-                transition={{ delay: index * 0.2 + 0.2 }}
+                key={stat.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="text-4xl font-extrabold text-gray-900"
+                className="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
               >
-                {stat.value}
-              </motion.p>
-              <p className="text-lg font-medium text-gray-600">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
+                <motion.div
+                  className="p-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mb-6"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <stat.icon className="h-10 w-10 text-white" />
+                </motion.div>
+                <motion.p
+                  initial={{ scale: 0.8 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ delay: index * 0.2 + 0.2 }}
+                  viewport={{ once: true }}
+                  className="text-4xl font-extrabold text-gray-900"
+                >
+                  {stat.value}
+                </motion.p>
+                <p className="text-lg font-medium text-gray-600">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,34 +1,34 @@
 export const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-    alt: 'Security Dashboard',
-    category: 'Interface',
+    src: '/images/snigdhaos-plama-01.png',
+    alt: 'Snigdha OS Plasma 6 - Application Dashbord',
+    category: 'Plasma',
   },
   {
-    src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8',
-    alt: 'Network Analysis',
-    category: 'Tools',
+    src: '/images/snigdhaos-plasma-02.png',
+    alt: 'Snigdha OS Plasma 6 - Desktop',
+    category: 'Plasma',
   },
   {
-    src: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb',
-    alt: 'Terminal Environment',
-    category: 'Interface',
+    src: '/images/snigdhaos-plasma-03.png',
+    alt: 'Snigdha OS Plasma 6 - About',
+    category: 'Plasma',
   },
   {
-    src: 'https://images.unsplash.com/photo-1526374870839-e155464bb9b2',
-    alt: 'Security Testing',
-    category: 'Tools',
+    src: '/images/snigdhaos-plasma-04.png',
+    alt: 'Snigdha OS Plasma 6 - VS Code',
+    category: 'Plasma',
   },
   {
-    src: 'https://images.unsplash.com/photo-1551808525-51a94da548ce',
-    alt: 'Hardware Support',
-    category: 'Hardware',
+    src: '/images/snigdhaos-plasma-05.png',
+    alt: 'Snigdha OS Plasma 6 - Folders',
+    category: 'Plasma',
   },
   {
-    src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31',
-    alt: 'Wireless Testing',
-    category: 'Hardware',
+    src: '/images/snigdhaos-plasma-06.png',
+    alt: 'Snigdha OS Plasma 6 - Control Hub',
+    category: 'Plasma',
   },
 ];
 
-export const categories = ['All', 'Interface', 'Tools', 'Hardware'];
+export const categories = ['All', 'Plasma'];

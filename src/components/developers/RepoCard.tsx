@@ -10,6 +10,8 @@ interface RepoCardProps {
 export function RepoCard({ repo }: RepoCardProps) {
   return (
     <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -5, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: 'spring', stiffness: 300 }}
@@ -41,20 +43,20 @@ export function RepoCard({ repo }: RepoCardProps) {
           </span>
         )}
 
-        <span className="flex items-center gap-1">
+        <motion.span className="flex items-center gap-1" whileHover={{ scale: 1.1 }}>
           <Star className="h-5 w-5 text-yellow-500" />
           <span>{repo.stargazers_count}</span>
-        </span>
+        </motion.span>
 
-        <span className="flex items-center gap-1">
+        <motion.span className="flex items-center gap-1" whileHover={{ scale: 1.1 }}>
           <GitFork className="h-5 w-5 text-gray-600" />
           <span>{repo.forks_count}</span>
-        </span>
+        </motion.span>
 
-        <span className="flex items-center gap-1">
+        <motion.span className="flex items-center gap-1" whileHover={{ scale: 1.1 }}>
           <Clock className="h-5 w-5 text-gray-600" />
           <span>{formatDate(repo.updated_at)}</span>
-        </span>
+        </motion.span>
       </div>
     </motion.div>
   );

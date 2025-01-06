@@ -19,17 +19,28 @@ export function StatsSection() {
 
   const fetchGitHubStats = async (username: string) => {
     try {
-      const response = await fetch(`https://api.github.com/users/${username}`);
-      const userData = await response.json();
+      const userResponse = await fetch(`https://api.github.com/users/${username}`);
+      const userData = await userResponse.json();
 
-      const reposResponse = await fetch(userData.repos_url);
-      const reposData = await reposResponse.json();
+      const repos = [];
+      let page = 1;
 
-      const starsCount = reposData.reduce((acc: number, repo: any) => acc + repo.stargazers_count, 0);
+      // Fetch all repositories using pagination
+      while (true) {
+        const reposResponse = await fetch(
+          `https://api.github.com/users/${username}/repos?per_page=100&page=${page}`
+        );
+        const reposPage = await reposResponse.json();
+        if (reposPage.length === 0) break;
+        repos.push(...reposPage);
+        page++;
+      }
+
+      const starsCount = repos.reduce((acc: number, repo: any) => acc + repo.stargazers_count, 0);
 
       setStats([
         { label: "Followers", value: `${userData.followers}`, icon: Users },
-        { label: "Repositories", value: `${reposData.length}`, icon: Wrench },
+        { label: "Repositories", value: `${repos.length}`, icon: Wrench },
         { label: "Stars", value: `${starsCount}`, icon: Star },
       ]);
     } catch (error) {

@@ -55,11 +55,12 @@ export function SponsorshipTiers() {
           key={tier.name}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className={`relative rounded-2xl ${
             tier.featured 
               ? 'bg-gradient-to-b from-cornflower-blue/10 to-cornflower-blue/5 border-2 border-cornflower-blue'
               : 'bg-white/80 border border-gray-200'
-          } backdrop-blur-sm p-6 shadow-lg`}
+          } backdrop-blur-sm p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105`}
         >
           {tier.featured && (
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -89,7 +90,7 @@ export function SponsorshipTiers() {
             ))}
           </ul>
 
-          <a
+          <motion.a
             href={`https://github.com/sponsors/eshanized?frequency=one-time&amount=${convertINRToUSD(tier.amount)}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -98,11 +99,13 @@ export function SponsorshipTiers() {
                 ? 'bg-cornflower-blue text-white hover:bg-blue-600'
                 : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
             }`}
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             Make a One-Time Donation
-          </a>
+          </motion.a>
         </motion.div>
       ))}
     </div>
   );
-}
+} 

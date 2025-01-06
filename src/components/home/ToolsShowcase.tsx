@@ -35,14 +35,18 @@ export function ToolsShowcase() {
                 ease: "easeOut",
               }}
               whileHover={{
-                scale: 1.08,
-                boxShadow: "0 15px 30px rgba(0, 0, 0, 0.15)",
+                scale: 1.1,
+                rotate: 1,
+                boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)",
               }}
-              className="flex flex-col items-center p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition-transform duration-300"
+              className="flex flex-col items-center p-8 bg-white rounded-xl shadow-md hover:shadow-2xl transition-transform duration-300"
+              aria-label={tool.name}
             >
               {/* Icon Section */}
-              <div className="p-4 bg-gradient-to-br from-cornflower-blue/10 to-cornflower-blue/30 rounded-full shadow-inner mb-6">
-                <tool.icon className={`h-14 w-14 ${tool.color} transition-all`} />
+              <div
+                className={`p-6 rounded-full shadow-inner bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 mb-6 transition-transform`}
+              >
+                <tool.icon className={`h-14 w-14 ${tool.color}`} />
               </div>
               {/* Tool Name */}
               <h3 className="text-xl font-semibold text-gray-800">{tool.name}</h3>

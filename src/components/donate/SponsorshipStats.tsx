@@ -32,11 +32,13 @@ export function SponsorshipStats() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-gray-200"
+          className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300"
         >
-          <stat.icon className={`h-8 w-8 ${stat.color} mb-2`} />
-          <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
-          <p className="text-gray-600">{stat.label}</p>
+          <div className={`flex items-center mb-4`}>
+            <stat.icon className={`h-10 w-10 ${stat.color} mr-2`} />
+            <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+          </div>
+          <p className="text-gray-600 text-sm">{stat.label}</p>
         </motion.div>
       ))}
     </div>

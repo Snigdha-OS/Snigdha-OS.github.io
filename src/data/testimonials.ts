@@ -1,17 +1,17 @@
 export const testimonials = [
   {
-    content: "Snigdha OS has revolutionized our security testing workflow. The tools and interface are exceptional.",
-    author: "Sarah Chen",
-    role: "Security Engineer at TechCorp"
+    content: "स्निग्धा ओएस ने हमारे सुरक्षा परीक्षण के तरीके को पूरी तरह से बदल दिया है। टूल्स और उपयोगकर्ता-अनुकूल इंटरफेस शानदार हैं।",
+    author: "राजेश कुमार",
+    role: "सुरक्षा इंजीनियर, इंफोसेक्योर टेक"
   },
   {
-    content: "The best security-focused distribution I've used. Regular updates and great community support.",
-    author: "Michael Rodriguez",
-    role: "Penetration Tester"
+    content: "एक बेजोड़ सुरक्षा-केंद्रित डिस्ट्रीब्यूशन। नियमित अपडेट और जीवंत समुदाय इसे उपयोग करने का आनंद बनाते हैं।",
+    author: "अंजलि शर्मा",
+    role: "पेनिट्रेशन टेस्टर"
   },
   {
-    content: "Perfect for both beginners and advanced users. The documentation is comprehensive and helpful.",
-    author: "Emma Thompson",
-    role: "Cybersecurity Consultant"
+    content: "साइबर सुरक्षा के क्षेत्र में शुरुआती और पेशेवर दोनों के लिए आदर्श। व्यापक दस्तावेज़ीकरण एक बेहतरीन संसाधन है।",
+    author: "विक्रम अय्यर",
+    role: "साइबर सुरक्षा सलाहकार"
   }
 ];

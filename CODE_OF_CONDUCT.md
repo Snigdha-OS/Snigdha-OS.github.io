@@ -1,6 +1,6 @@
-# Snigdha OS Web Dev - Code of Conduct
+# Snigdha OS Web - Code of Conduct
 
-Welcome to the Snigdha OS Web Dev project! 🤗 We are thrilled to have you here and want to make sure that everyone feels welcome and respected. Please read through our Code of Conduct to ensure we create a positive environment for all contributors.
+Welcome to the Snigdha OS Web project! 🤗 We are thrilled to have you here and want to make sure that everyone feels welcome and respected. Please read through our Code of Conduct to ensure we create a positive environment for all contributors.
 
 ## 1. Be Respectful 🫶
 Treat others the way you want to be treated. Be kind, inclusive, and open-minded. Respect different perspectives and experiences. 🌍

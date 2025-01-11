@@ -14,13 +14,17 @@ export function StatsSection() {
     { label: "Security Tools", value: "Loading...", icon: Wrench },
     { label: "GitHub Stars", value: "Loading...", icon: Star },
   ]);
-
-  const [error, setError] = useState(false);
+  
+  const [loading, setLoading] = useState(true);  // Loading state
+  const [error, setError] = useState<string | null>(null);  // Error message
 
   const fetchGitHubStats = async (username: string) => {
     try {
       const userResponse = await fetch(`https://api.github.com/users/${username}`);
       const userData = await userResponse.json();
+
+      // Check for invalid response
+      if (userData.message) throw new Error("User not found");
 
       const repos = [];
       let page = 1;
@@ -43,14 +47,16 @@ export function StatsSection() {
         { label: "Repositories", value: `${repos.length}`, icon: Wrench },
         { label: "Stars", value: `${starsCount}`, icon: Star },
       ]);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching GitHub data:", error);
-      setError(true);
+      setError("Unable to fetch GitHub data. Please try again later.");
+      setLoading(false);
     }
   };
 
   useEffect(() => {
-    const username = "Snigdha-OS"; // Replace with the desired GitHub username
+    const username = "Snigdha-OS"; // Replace with desired GitHub username
     fetchGitHubStats(username);
   }, []);
 
@@ -78,10 +84,10 @@ export function StatsSection() {
         </div>
 
         {/* Stats Grid */}
-        {error ? (
-          <div className="text-center text-red-500 font-medium">
-            Unable to fetch data. Please try again later.
-          </div>
+        {loading ? (
+          <div className="text-center text-gray-500 font-medium">Loading data...</div>
+        ) : error ? (
+          <div className="text-center text-red-500 font-medium">{error}</div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {stats.map((stat, index) => (
@@ -95,8 +101,8 @@ export function StatsSection() {
                   ease: "easeOut",
                 }}
                 whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.2)",
+                  scale: 1.05,
+                  boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.1)",
                 }}
                 className="flex flex-col items-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform duration-300"
               >

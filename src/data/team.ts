@@ -10,6 +10,11 @@ export const teamMembers = [
     description: 'Specializes in integrating security tools and maintaining critical packages for enhanced system functionality.',
   },
   {
+    username: 'XlebyllleK',
+    role: 'Key Developer',
+    description: 'Leads Web Infrastructures and Package Builds.',
+  },
+  {
     username: 'iconized',
     role: 'Co-Maintainer & Server Designer',
     description: 'Focuses on designing and optimizing server infrastructures for seamless tool integration and performance.',

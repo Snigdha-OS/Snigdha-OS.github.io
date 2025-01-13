@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { MapPin, Users, Book } from 'lucide-react';
-import type { GithubUser  } from '../../lib/github';
+import { MapPin, Users, Book, Github } from 'lucide-react'; // Added Github icon
+import type { GithubUser } from '../../lib/github';
 
 interface TeamMemberCardProps {
-  user: GithubUser ;
+  user: GithubUser;
   role: string;
   description: string;
 }
@@ -52,6 +52,7 @@ export function TeamMemberCard({ user, role, description }: TeamMemberCardProps)
         rel="noopener noreferrer"
         className="mt-4 inline-flex items-center text-sm text-cornflower-blue hover:underline transition-colors duration-200"
       >
+        <Github className="h-4 w-4 mr-2" /> {/* Added spacing after the icon */}
         View GitHub Profile →
       </a>
     </motion.div>

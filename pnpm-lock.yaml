@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@tanstack/react-query':
-        specifier: ^5.63.0
-        version: 5.63.0(react@18.3.1)
+        specifier: ^5.64.0
+        version: 5.64.0(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -61,8 +61,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.18.0(jiti@1.21.7))
       eslint-plugin-react-refresh:
-        specifier: ^0.4.16
-        version: 0.4.16(eslint@9.18.0(jiti@1.21.7))
+        specifier: ^0.4.18
+        version: 0.4.18(eslint@9.18.0(jiti@1.21.7))
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
@@ -954,11 +954,11 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
-  '@tanstack/query-core@5.62.16':
-    resolution: {integrity: sha512-9Sgft7Qavcd+sN0V25xVyo0nfmcZXBuODy3FVG7BMWTg1HMLm8wwG5tNlLlmSic1u7l1v786oavn+STiFaPH2g==}
+  '@tanstack/query-core@5.64.0':
+    resolution: {integrity: sha512-/MPJt/AaaMzdWJZTafgMyYhEX/lGjQrNz8+NDQSk8fNoU5PHqh05FhQaBrEQafW2PeBHsRbefEf//qKMiSAbQQ==}
 
-  '@tanstack/react-query@5.63.0':
-    resolution: {integrity: sha512-QWizLzSiog8xqIRYmuJRok9VELlXVBAwtINgVCgW1SNvamQwWDO5R0XFSkjoBEj53x9Of1KAthLRBUC5xmtVLQ==}
+  '@tanstack/react-query@5.64.0':
+    resolution: {integrity: sha512-tBMzlROROUcTDMpDt1NC3n9ndKnJHPB3RCpa6Bf9f31TFvqhLz879x8jldtKU+6IwMSw1Pn4K1AKA+2SYyA6TA==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -1394,8 +1394,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
-  eslint-plugin-react-refresh@0.4.16:
-    resolution: {integrity: sha512-slterMlxAhov/DZO8NScf6mEeMBBXodFUolijDvrtTxyezyLoTQaa73FyYus/VbTdftd8wBgBxPMRk3poleXNQ==}
+  eslint-plugin-react-refresh@0.4.18:
+    resolution: {integrity: sha512-IRGEoFn3OKalm3hjfolEWGqoF/jPqeEYFp+C8B0WMzwGwBMvlRDQd06kghDhF0C61uJ6WfSDhEZE/sAQjduKgw==}
     peerDependencies:
       eslint: '>=8.40'
 
@@ -3562,11 +3562,11 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@tanstack/query-core@5.62.16': {}
+  '@tanstack/query-core@5.64.0': {}
 
-  '@tanstack/react-query@5.63.0(react@18.3.1)':
+  '@tanstack/react-query@5.64.0(react@18.3.1)':
     dependencies:
-      '@tanstack/query-core': 5.62.16
+      '@tanstack/query-core': 5.64.0
       react: 18.3.1
 
   '@types/babel__core@7.20.5':
@@ -4042,7 +4042,7 @@ snapshots:
     dependencies:
       eslint: 9.18.0(jiti@1.21.7)
 
-  eslint-plugin-react-refresh@0.4.16(eslint@9.18.0(jiti@1.21.7)):
+  eslint-plugin-react-refresh@0.4.18(eslint@9.18.0(jiti@1.21.7)):
     dependencies:
       eslint: 9.18.0(jiti@1.21.7)
 

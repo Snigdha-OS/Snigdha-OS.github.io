@@ -12,7 +12,7 @@ export const teamMembers = [
   {
     username: 'XlebyllleK',
     role: 'Key Developer',
-    description: 'Leads Web Infrastructures and Package Builds.',
+    description: 'Plays a pivotal role in core development, focusing on innovative solutions and system optimizations to enhance functionality.',
   },
   {
     username: 'iconized',

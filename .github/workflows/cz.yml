@@ -1,0 +1,38 @@
+name: Check Conventional Commit
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check-commit-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check Conventional Commit
+      run: |
+        # Define the conventional commit types with emojis
+        TYPES=("🚀 feat" "🐛 fix" "📝 docs" "✨ style" "🛠 refactor" "⚡️ perf" "🔬 test" "🔧 build" "🤖 ci" "🧹 chore" "⏪ revert")
+
+        # Extract the commit type and emoji from the commit message
+        COMMIT_MSG=$(git log --format=%B -n 1)
+        for type in "${TYPES[@]}"; do
+          type_emoji=${type}
+          type=${type_emoji#* }
+          emoji=${type_emoji% *}
+          if [[ $COMMIT_MSG == $emoji* ]]; then
+            echo "Commit message is a conventional commit"
+            exit 0
+          fi
+        done
+
+        # If we reach here, the commit message is not a conventional commit
+        echo "Commit message is not a conventional commit"
+        exit 1

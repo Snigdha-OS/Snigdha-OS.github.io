@@ -13,7 +13,7 @@ export function TeamMemberCard({ user, role, description }: TeamMemberCardProps)
     <motion.div
       whileHover={{ scale: 1.05 }}
       transition={{ type: 'spring', stiffness: 300 }}
-      className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col justify-between"
+      className="bg-gradient-to-r from-white to-blue-50 shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col justify-between"
     >
       <div className="flex items-start gap-4">
         <img

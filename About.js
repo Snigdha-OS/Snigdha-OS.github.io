@@ -1,4 +1,4 @@
-import{c as a,j as e,M as n}from"./script.js";import{m as s}from"./chunk-proxy-CI-F7568.js";import{U as r}from"./chunk-users-R8cL96Sh.js";import{S as o}from"./chunk-shield-D5uwo1pE.js";/**
+import{c as a,j as e,M as n}from"./script.js";import{m as s}from"./proxy.js";import{U as r}from"./users.js";import{S as o}from"./shield.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.

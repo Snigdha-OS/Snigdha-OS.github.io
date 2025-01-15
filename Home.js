@@ -1,4 +1,4 @@
-import{c as o,j as e,L as m,D as z,a as V,r as d}from"./script.js";import{m as a}from"./chunk-proxy-CI-F7568.js";import{U as y}from"./chunk-users-R8cL96Sh.js";import{S as f}from"./chunk-star-DZY-YPMg.js";import{G as I,W as H}from"./chunk-wifi-BISiL0Vq.js";import{S as v}from"./chunk-shield-D5uwo1pE.js";import{T as j}from"./chunk-terminal-DyNnEeID.js";/**
+import{c as o,j as e,L as m,D as z,a as V,r as d}from"./script.js";import{m as a}from"./proxy.js";import{U as y}from"./users.js";import{S as f}from"./star.js";import{G as I,W as H}from"./wifi.js";import{S as v}from"./shield.js";import{T as j}from"./terminal.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.

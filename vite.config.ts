@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         output: {
           entryFileNames: 'script.js',
-          chunkFileNames: 'chunk-[name]-[hash].js',
+          chunkFileNames: '[name].js',
           assetFileNames: ({ name }) => {
             if (name && name.endsWith('.css')) {
               return 'style.css';

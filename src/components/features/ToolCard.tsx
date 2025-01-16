@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Terminal, Clipboard } from 'lucide-react';
 import { useState } from 'react';
+import { Toast } from './Toast'; // Make sure to import the Toast component
 
 interface ToolCardProps {
   name: string;
@@ -11,12 +12,17 @@ interface ToolCardProps {
 
 export function ToolCard({ name, description, category, command }: ToolCardProps) {
   const [copied, setCopied] = useState(false);
+  const [showToast, setShowToast] = useState(false);
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(command)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Reset copied status after 2 seconds
+        setShowToast(true);
+        setTimeout(() => {
+          setCopied(false);
+          setShowToast(false);
+        }, 3000); // Hide toast after 3 seconds
       })
       .catch((error) => console.error('Failed to copy: ', error));
   };
@@ -55,6 +61,13 @@ export function ToolCard({ name, description, category, command }: ToolCardProps
           </button>
         </div>
       </div>
+
+      {showToast && (
+        <Toast
+          message="Command copied! Paste it in your terminal with Ctrl + Shift + V (Cmd + Shift + V on Mac)"
+          onClose={() => setShowToast(false)}
+        />
+      )}
     </motion.div>
   );
 }

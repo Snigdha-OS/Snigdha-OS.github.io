@@ -33,9 +33,23 @@ export function TeamMemberCard({ user, role, description }: TeamMemberCardProps)
         </div>
       </div>
 
-      <p className="mt-4 text-gray-600 flex-grow">{description}</p>
-      
-      <div className="mt-4 flex items-center gap-4 text-sm text-gray-500">
+      {/* Show full description on hover */}
+      <motion.p
+        className="mt-4 text-gray-600 flex-grow line-clamp-2"
+        whileHover={{ opacity: 1 }}
+        initial={{ opacity: 0.7 }}
+        transition={{ duration: 0.3 }}
+      >
+        {description}
+      </motion.p>
+
+      {/* Additional information shown when hovering */}
+      <motion.div
+        className="mt-4 flex items-center gap-4 text-sm text-gray-500"
+        whileHover={{ opacity: 1 }}
+        initial={{ opacity: 0.5 }}
+        transition={{ duration: 0.3 }}
+      >
         <div className="flex items-center gap-1">
           <Users className="h-4 w-4" />
           <span>{user.followers.toLocaleString()} followers</span>
@@ -44,8 +58,8 @@ export function TeamMemberCard({ user, role, description }: TeamMemberCardProps)
           <Book className="h-4 w-4" />
           <span>{user.public_repos} repos</span>
         </div>
-      </div>
-      
+      </motion.div>
+
       <a
         href={user.html_url}
         target="_blank"

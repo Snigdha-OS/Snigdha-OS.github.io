@@ -7,7 +7,7 @@ export function MissionSection() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="bg-gradient-to-r from-cornflower-blue/10 to-white p-10 rounded-lg shadow-xl"
+      className="p-10 rounded-lg"
     >
       <div className="flex items-center gap-4 mb-6">
         <Target className="h-8 w-8 text-cornflower-blue" />

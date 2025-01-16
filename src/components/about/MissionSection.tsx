@@ -9,9 +9,9 @@ export function MissionSection() {
       transition={{ duration: 0.6 }}
       className="p-10 rounded-lg"
     >
-      <div className="flex items-center gap-4 mb-6">
+      <div className="flex items-center gap-4 mb-6 justify-center text-center">
         <Target className="h-8 w-8 text-cornflower-blue" />
-        <h2 className="text-3xl font-extrabold text-gray-900">Our Mission</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900">Our Mission</h2>
       </div>
       
       <div className="max-w-3xl mx-auto">

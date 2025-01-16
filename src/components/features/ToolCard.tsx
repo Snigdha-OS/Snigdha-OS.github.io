@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Terminal } from 'lucide-react';
+import { Terminal, Clipboard } from 'lucide-react';
+import { useState } from 'react';
 
 interface ToolCardProps {
   name: string;
@@ -9,6 +10,17 @@ interface ToolCardProps {
 }
 
 export function ToolCard({ name, description, category, command }: ToolCardProps) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(command)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); // Reset copied status after 2 seconds
+      })
+      .catch((error) => console.error('Failed to copy: ', error));
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -28,7 +40,20 @@ export function ToolCard({ name, description, category, command }: ToolCardProps
 
       <div className="flex items-center justify-between mt-4">
         <span className="text-sm font-medium text-cornflower-blue">{category}</span>
-        <code className="text-sm bg-gray-100 px-3 py-1 rounded text-gray-800">{command}</code>
+        <div className="flex items-center gap-2">
+          <code className="text-sm bg-gray-100 px-3 py-1 rounded text-gray-800">{command}</code>
+          <button
+            onClick={handleCopyClick}
+            className="p-2 bg-cornflower-blue/20 rounded-full hover:bg-cornflower-blue/30 transition-all"
+            aria-label="Copy command"
+          >
+            {copied ? (
+              <span className="text-sm text-cornflower-blue">Copied!</span>
+            ) : (
+              <Clipboard className="h-5 w-5 text-cornflower-blue" />
+            )}
+          </button>
+        </div>
       </div>
     </motion.div>
   );
